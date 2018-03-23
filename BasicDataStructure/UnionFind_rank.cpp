@@ -1,31 +1,28 @@
 #include <iostream>
 
 const int M=1e6+5;
-int uf[M],dep[M];
+int uf[M],rank[M];
 void init(int n)
 {
 	for(int i=1;i<=n;i++)
 	{
-		uf[i]=i;
-		dep[i]=0;
+		uf[i]=i; rank[i]=0;
 	}
 }
 int find(int x)
 {
-	if(x==uf[x]) return x;
-	int fx=find(uf[x]);
-	dep[x]+=dep[fx];
-	return uf[x]=fx;
+	return x==uf[x]?x:uf[x]=find(uf[x]);
 }
 int merge(int a,int b)
 {
 	int fa=find(a),fb=find(b);
-	if(fa!=fb)
+	if(rank[fa]<rank[fb]) uf[fa]=fb;
+	else
 	{
 		uf[fb]=fa;
-		dep[fb]=dep[a]+1;
-	} 
-	return fa;
+		if(rank[fb]==rank[fa]) rank[fa]++;
+	}
+	return uf[fa];
 }
 
 int main()
