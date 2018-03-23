@@ -6,7 +6,10 @@ struct IdPool
 {
 	int b[M];
 	int pa,pb;
-	MomeryPool(){pa=pb=0;}
+	void init()
+	{
+		pa=pb=0;
+	}
 	int add()
 	{
 		return pb?b[--pb]:pa++;

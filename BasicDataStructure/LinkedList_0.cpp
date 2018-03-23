@@ -11,7 +11,7 @@ struct ListNode
 }ln[M];
 int nn=0;
 
-struct LinkList
+struct LinkedList
 {
 	int head;
 	void init()

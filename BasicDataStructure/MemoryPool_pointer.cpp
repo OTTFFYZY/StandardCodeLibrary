@@ -3,11 +3,11 @@
 const int M=1e5;
 
 template<class T>
-struct MomeryPool
+struct MemoryPool
 {
 	T a[M],*b[M];
 	int pa,pb;
-	MomeryPool()
+	MemoryPool()
 	{
 		pa=pb=0;
 	}

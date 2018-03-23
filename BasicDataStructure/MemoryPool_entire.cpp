@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 template<class T>
-struct MomeryPool
+struct MemoryPool
 {
 	T *a,**b; int pa,pb;
-	MomeryPool(int MAX)
+	MemoryPool(int MAX)
 	{
 		a=new T[MAX];
 		b=new T*[MAX];
@@ -23,7 +23,7 @@ struct MomeryPool
 		return x-a;
 	}
 };
-MomeryPool<int> mp(5);
+MemoryPool<int> mp(5);
 
 int main()
 {
