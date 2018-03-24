@@ -2,7 +2,7 @@
 
 
 
-| Content                             | Code | Test |
+| Contents                            | Code | Test |
 | ----------------------------------- | ---- | ---- |
 | Stack                               | OK!  |      |
 | Queue                               | OK!  |      |
@@ -12,5 +12,6 @@
 | Union-Find Set (basic, depth, rank) | OK!  |      |
 | Binary Heap                         | OK!  |      |
 | Range Minimum Query (Sparse-Table)  | OK!  | OK!  |
+| Fenwick Tree (basic, 2d)            | OK!  |      |
 |                                     |      |      |
 
