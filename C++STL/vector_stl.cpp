@@ -16,6 +16,9 @@ vector<Node> vec2;
 
 int main()
 {
+	vec.reserve(100);
+	cout<<vec.size()<<" "<<vec.capacity()<<endl<<endl;
+
 	vec.push_back(3);
 	vec.push_back(5);
 	vec.push_back(4);
@@ -38,6 +41,23 @@ int main()
 
 	for(auto i:vec2)
 		cout<<i.a<<" "<<i.b<<endl;
+
+	vec.clear();
+	vec.assign(10,26);
+	for(int i:vec)
+		cout<<i<<" ";
+	cout<<endl;
+
+	vec.clear();
+	for(int i=0;i<10;i++)
+		vec.push_back(i);
+	for(int i:vec)
+		cout<<i<<" ";
+	cout<<endl;
+	vec.erase(vec.begin()+2,vec.end()-3);
+	for(int i:vec)
+		cout<<i<<" ";
+	cout<<endl;
 
 	return 0;
 }

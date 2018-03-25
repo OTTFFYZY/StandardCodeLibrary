@@ -26,7 +26,7 @@ For ACM/ICPC or other algorithm contests.
 
 ## C++ STL
 
-vector, pair, stack, queue, priority_queue, deque, set, map, sort, unique
+vector, pair, stack, queue, priority_queue, deque, set, multiset, map, sort, unique
 
 
 
