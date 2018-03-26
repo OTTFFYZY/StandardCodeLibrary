@@ -69,7 +69,7 @@ int main()
 		cout<<endl;
 	}while(prev_permutation(b,b+3));
 	cout<<endl;
-	b[0]=3; b[1]=2; b[2]=1;
+	//b[0]=3; b[1]=2; b[2]=1;
 	do
 	{
 		for(int i=0;i<3;i++)
