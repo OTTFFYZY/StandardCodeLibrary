@@ -1,4 +1,4 @@
-# Algorithm Contest Template
+# Standard Code Library
 
 For ACM/ICPC or other algorithm contests.
 
