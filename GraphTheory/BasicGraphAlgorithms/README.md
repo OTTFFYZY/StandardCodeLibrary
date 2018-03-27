@@ -8,10 +8,10 @@
 
 | Contents                                 | Code | Test |
 | ---------------------------------------- | ---- | ---- |
-| Build Graph (adjacent_matrix, forward_star ,vector) |      |      |
-| DFS                                      |      |      |
-| BFS                                      |      |      |
-| have_loop                                |      |      |
+| Build Graph (adjacent_matrix, forward_star ,vector) | OK!  |      |
+| DFS                                      | OK!  |      |
+| BFS                                      | OK!  |      |
+|                                          |      |      |
 |                                          |      |      |
 
 
@@ -21,9 +21,3 @@
 
 
 
-
-
-
-
-
-##  

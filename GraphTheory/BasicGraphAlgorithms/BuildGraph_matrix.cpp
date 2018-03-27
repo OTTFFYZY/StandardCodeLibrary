@@ -33,6 +33,7 @@ bool have_edge(int a,int b)
 
 int main()
 {
+	init();
 	//traverse u's adjacent vertices
 	int u=0;
 	for(int i=0;i<M;i++)

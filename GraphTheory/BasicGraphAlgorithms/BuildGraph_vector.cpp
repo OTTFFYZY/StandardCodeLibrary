@@ -25,6 +25,7 @@ void add_edge2(int a,int b,int w) //undirected
 
 int main()
 {
+	init();
 	//traverse u's adjacent vertices
 	int u=0;
 	for(auto v:g[u])
