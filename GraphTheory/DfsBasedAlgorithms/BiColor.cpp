@@ -14,7 +14,7 @@ void init()
 	for(int i=0;i<MV;i++)
 		g[i].clear();
 }
-void add_edge(int a,int b) //undirected without self-loops and multiple edges
+void add_edge(int a,int b) //undirected
 {
 	g[a].push_back(b);
 	g[b].push_back(a);
@@ -23,8 +23,8 @@ void add_edge(int a,int b) //undirected without self-loops and multiple edges
 int color[MV];
 bool dfs(int u,int col) //if the graph cannot bi-color return true
 {
-	if(vis[u]) return vis[u]!=col;
-	vis[u]=col;
+	if(color[u]) return color[u]!=col;
+	color[u]=col;
 	for(auto v:g[u])
 		if(dfs(v,3-col)) return 1;
 	return 0;

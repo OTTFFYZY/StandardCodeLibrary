@@ -19,11 +19,13 @@ void add_edge(int fr,int to) //directed
 	g[fr].push_back(to);
 }
 bool vis[MV];
+int dep[MV];
 queue<int> qu;
 void bfs(int u)
 {
 	while(!qu.empty()) qu.pop();
 	vis[u]=1;
+	dep[u]=0;
 	qu.push(u);
 	while(!qu.empty())
 	{
@@ -32,7 +34,12 @@ void bfs(int u)
 		//operations for u
 		
 		for(auto v:g[u])
-			if(!vis[v]) qu.push(v);
+			if(!vis[v])
+			{
+				vis[v]=1;
+				dep[v]=dep[u]+1;
+				qu.push(v);
+			}
 	}
 }
 
