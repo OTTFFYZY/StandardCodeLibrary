@@ -5,9 +5,9 @@
 using namespace std;
 
 
-const int MV=1e5+5;//maximum number of vertices
+const int MV=1e5+5;//maximum number of vertex
 vector<int> g[MV];
-int nv;//number of vertices
+int nv;//number of vertex
 
 void init()
 {
