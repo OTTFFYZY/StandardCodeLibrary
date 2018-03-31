@@ -15,12 +15,12 @@ int dy[]={1,-1,0,0};
 struct Node
 {
 	int x,y;
-	int h;
+	int f;    //f=g+h
 	Node(){}
-	Node(int x,int y,int h):x(x),y(y),h(h){}
+	Node(int x,int y,int h):x(x),y(y),f(f){}
 	bool operator<(const Node &B) const
 	{
-		return h>B.h;
+		return f>B.f; 
 	}
 };
 
@@ -49,7 +49,7 @@ int bfs()
 			{
 				if(x==edx&&y==edy) return dis[nx][ny]+1;
 				dis[x][y]=dis[nx][ny]+1;
-				qu.emplace(x,y,geth(x,y));
+				qu.emplace(x,y,dis[x][y]+geth(x,y));
 			}
 		}
 	}
