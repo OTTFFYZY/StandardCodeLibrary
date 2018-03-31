@@ -21,13 +21,13 @@
 
 ## Basic Graph Algorithms
 
-build graph, DFS, BFS, have_loop, 
+build graph, DFS, BFS, 
 
 
 
 ## DFS-Based Algorithms
 
-have_loop (undirected, directed), bi-color, 
+have_loop (undirected, undirected 2, directed), bi-color, 
 
 
 
