@@ -26,10 +26,11 @@ struct Node
 
 priority_queue<Node> qu;
 int stx,sty,edx,edy;
-int geth(int x,int y)
+int h(int x,int y)
 {
 	return abs(edx-x)+abs(edy-y);
 	// an example for heuristic function
+	// if h==0 AStar -> BFS
 }
 
 int dis[M][M];
@@ -38,7 +39,7 @@ int bfs()
 	while(!qu.empty()) qu.pop();
 	memset(dis,-1,sizeof(dis));
 	dis[stx][sty]=0;
-	qu.emplace(stx,sty,geth(stx,sty));
+	qu.emplace(stx,sty,h(stx,sty));
 	while(!qu.empty())
 	{
 		int nx=qu.top().x,ny=qu.top().y;
@@ -49,7 +50,7 @@ int bfs()
 			{
 				if(x==edx&&y==edy) return dis[nx][ny]+1;
 				dis[x][y]=dis[nx][ny]+1;
-				qu.emplace(x,y,dis[x][y]+geth(x,y));
+				qu.emplace(x,y,dis[x][y]+h(x,y));
 			}
 		}
 	}
