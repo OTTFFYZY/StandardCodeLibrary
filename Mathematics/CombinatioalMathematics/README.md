@@ -8,6 +8,6 @@
 
 ## Contents
 
-| Contents       | Code | Test |
-| -------------- | ---- | ---- |
-| set (bit mask) |      |      |
+| Contents                       | Code | Test |
+| ------------------------------ | ---- | ---- |
+| set (bit mask) & Bit Operation |      |      |
