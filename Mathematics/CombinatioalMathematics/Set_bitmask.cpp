@@ -28,6 +28,9 @@ int lead0(unsigned x)
    return n;
 }
 
+//count 1
+
+
 // find the lowest 1 and highest 1
 inline int lowbit(int x)
 {
@@ -39,8 +42,6 @@ inline int highbit(int x)
     while (p != x) x -= p, p = low_bit(x);
     return p;
 }
-
-
 
 int only1(int x)  // x is the power of 2
 {

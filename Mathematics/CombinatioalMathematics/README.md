@@ -10,4 +10,8 @@
 
 | Contents                       | Code | Test |
 | ------------------------------ | ---- | ---- |
-| set (bit mask) & Bit Operation |      |      |
+| Set (bit mask) & Bit Operation |      |      |
+| Generate Permutation (dfs)     | OK!  |      |
+|                                |      |      |
+|                                |      |      |
+|                                |      |      |

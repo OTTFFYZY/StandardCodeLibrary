@@ -8,6 +8,7 @@
 
 | Contents                                 | Code | Test |
 | ---------------------------------------- | ---- | ---- |
+| Traversing Binary Tree                   | OK!  |      |
 | Have Loop (undirected, undirected2, directed) | OK!  |      |
 | Bi-color                                 | OK!  |      |
 |                                          |      |      |
