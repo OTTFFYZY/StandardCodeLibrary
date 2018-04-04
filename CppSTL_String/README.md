@@ -1,4 +1,4 @@
-# C++ STL
+# C++ STL & string
 
 
 
@@ -12,7 +12,7 @@
 | map                          | OK!  |      |
 | bitset                       | OK!  |      |
 | algorithm                    | OK!  |      |
-|                              |      |      |
+| string                       |      |      |
 
 
 
