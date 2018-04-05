@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include <string>
 #include <string.h>
 using namespace std;
@@ -60,6 +61,35 @@ int main()
 
     string sub=s3.substr(10,5);
     cout<<sub<<endl<<endl;
+
+    double db=3.1415926L;
+    string num1=to_string(db),num2=to_string(12345);
+    cout<<num1<<" "<<num2<<endl<<endl;
+    printf("%.10f  %s\n",db,num1.c_str());
+    double nu1=stod(num1);          //stof stold
+    int nu2=stoi(num2);             //stol stoll stoull
+    cout<<nu1<<" "<<nu2<<endl<<endl;
+
+    double f1=23.43;
+    double f2=1e-9;
+    double f3=1e40;
+    double f4=1e-40;
+    double f5=123456789;
+    string f_str1=std::to_string(f1);
+    string f_str2=std::to_string(f2); // Note: returns "0.000000"
+    string f_str3=std::to_string(f3); // Note: Does not return "1e+40".
+    string f_str4=std::to_string(f4); // Note: returns "0.000000"
+    string f_str5=std::to_string(f5);
+    cout<<"std::cout: "<<f1<<'\n'
+        <<"to_string: "<<f_str1<<"\n\n"
+        <<"std::cout: "<<f2<<'\n'
+        <<"to_string: "<<f_str2<<"\n\n"
+        <<"std::cout: "<<f3<<'\n'
+        <<"to_string: "<<f_str3<<"\n\n"
+        <<"std::cout: "<<f4<<'\n'
+        <<"to_string: "<<f_str4<<"\n\n"
+        <<"std::cout: "<<f5<<'\n'
+        <<"to_string: "<<f_str5<<'\n';
 
 	return 0;
 }

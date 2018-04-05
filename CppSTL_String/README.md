@@ -12,7 +12,7 @@
 | map                          | OK!  |      |
 | bitset                       | OK!  |      |
 | algorithm                    | OK!  |      |
-| string                       |      |      |
+| string                       | OK!  |      |
 
 
 
