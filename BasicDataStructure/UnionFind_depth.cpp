@@ -14,7 +14,7 @@ int find(int x)
 {
 	if(x==uf[x]) return x;
 	int fx=find(uf[x]);
-	dep[x]+=dep[fx];
+	dep[x]+=dep[uf[x]];
 	return uf[x]=fx;
 }
 int merge(int a,int b)
