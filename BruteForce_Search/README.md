@@ -15,3 +15,11 @@
 | Iterative Deepening & IDA-Star (IDA*) | OK!  |      |
 | Dancing Link X                        |      |      |
 |                                       |      |      |
+
+
+
+## BFS (maze)
+
+### Problem
+
+lrjb: LA3977*
