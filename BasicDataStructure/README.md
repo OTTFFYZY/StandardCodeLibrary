@@ -15,7 +15,7 @@
 | Binary Heap                         | OK!  |      |
 | Range Minimum Query (Sparse-Table)  | OK!  | OK!  |
 | Fenwick Tree (basic, 2d)            | OK!  |      |
-|                                     |      |      |
+| Prefix Sum                          | OK!  |      |
 
 
 

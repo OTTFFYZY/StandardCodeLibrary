@@ -10,17 +10,17 @@ For ACM/ICPC or other algorithm contests.
 
 ## Contents
 
-| Contents               |
-| ---------------------- |
-| C++ STL                |
-| Basic Data Structure   |
-| Brute-Force & Search   |
-| Hash                   |
-| Graph Theory           |
-| Mathematics            |
-| Computational Geometry |
-| String Algorithm       |
-| Others                 |
+| Contents                            |
+| ----------------------------------- |
+| C++ STL                             |
+| Basic Data Structure                |
+| Brute-Force & Search                |
+| Hash                                |
+| Graph Theory                        |
+| Mathematics                         |
+| Computational Geometry              |
+| String Algorithm                    |
+| Others （Tips & Skills & Techniques） |
 
 
 
