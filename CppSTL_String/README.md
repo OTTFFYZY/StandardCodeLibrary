@@ -22,7 +22,9 @@
 
 min, max, sort, stable_sort, swap, lower_bound, upper_bound, unique, next_permutation, prev_permutation, nth_element
 
+### set operation
 
+merge, includes, set_union, set_intersection, set_difference, set_symmetric_difference
 
 ## Problems
 

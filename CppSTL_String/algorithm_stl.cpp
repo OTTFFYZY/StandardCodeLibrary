@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <set>
 #include <algorithm>
 using namespace std;
 
@@ -87,7 +88,77 @@ int main()
 	nth_element(c,c+7,c+10);
 	for(int i=0;i<10;i++)
 		cout<<c[i]<<" ";
-	cout<<endl;
+	cout<<endl<<endl;
+
+	//set operation, A,B,C can be sorted vector list set 
+	set<int> A,B,C;
+	A.insert(1);A.insert(3);
+	A.insert(7);A.insert(9);
+	A.insert(13);
+	B.insert(1);B.insert(2);
+	B.insert(3);B.insert(5);
+	B.insert(6);B.insert(8);
+
+	//A u B
+	set_union(A.begin(),A.end(),B.begin(),B.end(),inserter(C,C.end()));
+	for(int i:C) cout<<i<<" "; cout<<endl;
+
+	//B is subset of A
+	cout<<includes(A.begin(),A.end(),B.begin(),B.end())<<" "
+		<<includes(C.begin(),C.end(),A.begin(),A.end())<<" "
+		<<includes(A.begin(),A.end(),C.begin(),C.end())<<endl;
+
+	//A n B
+	C.clear();
+	set_intersection(A.begin(),A.end(),B.begin(),B.end(),inserter(C,C.end()));
+	for(int i:C) cout<<i<<" "; cout<<endl;
+
+	//A - B
+	C.clear();
+	set_difference(A.begin(),A.end(),B.begin(),B.end(),inserter(C,C.end()));
+	for(int i:C) cout<<i<<" "; cout<<endl;
+
+	//(A - B) u (B - A)
+	C.clear();
+	set_symmetric_difference(A.begin(),A.end(),B.begin(),B.end(),inserter(C,C.end()));
+	for(int i:C) cout<<i<<" "; cout<<endl<<endl;
+
+
+	vector<int> D={1,2,2,3,3,3};
+	vector<int> E={2,3,5,5,6,8};
+	vector<int> F;
+	//D u E
+	F.clear();
+	set_union(D.begin(),D.end(),E.begin(),E.end(),inserter(F,F.end()));
+	for(int i:F) cout<<i<<" "; cout<<endl;
+
+	//D is subset of F
+	cout<<includes(F.begin(),F.end(),D.begin(),D.end())<<" "
+		<<includes(B.begin(),B.end(),D.begin(),D.end())<<endl;
+
+	//D n E
+	F.clear();
+	set_intersection(D.begin(),D.end(),E.begin(),E.end(),inserter(F,F.end()));
+	for(int i:F) cout<<i<<" "; cout<<endl;
+
+	//D - E
+	F.clear();
+	set_difference(D.begin(),D.end(),E.begin(),E.end(),inserter(F,F.end()));
+	for(int i:F) cout<<i<<" "; cout<<endl;
+
+	//(D - E) u (E - D)
+	F.clear();
+	set_symmetric_difference(D.begin(),D.end(),E.begin(),E.end(),inserter(F,F.end()));
+	for(int i:F) cout<<i<<" "; cout<<endl<<endl;
+
+
+	F.clear();	
+	set_union(A.begin(),A.end(),B.begin(),B.end(),inserter(F,F.end()));
+	for(int i:F) cout<<i<<" "; cout<<endl;
+	F.clear();
+	merge(A.begin(),A.end(),B.begin(),B.end(),inserter(F,F.end()));
+	for(int i:F) cout<<i<<" "; cout<<endl;
+
 
 	return 0;
 }
