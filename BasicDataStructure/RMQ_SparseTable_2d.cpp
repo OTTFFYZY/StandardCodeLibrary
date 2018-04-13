@@ -55,6 +55,24 @@ void rmq_init2(int n,int m,int a[M][M]) //O(n*log(n)*m*log(m))
 			                    	 st2[i+(1<<(k-1))][k-1][j+(1<<(l-1))][l-1]));
 	}
 }
+void rmq_init21(int n,int m,int a[M][M])
+{
+	int i,j,k,l;
+	for(i=0;i<n;i++)
+		for(j=0;j<m;j++)
+			st2[i][0][j][0]=a[i][j];
+	for(k=0;k<=lg[n];k++)
+	for(l=0;l<=lg[m];l++)
+	{
+		if(k+l)
+			for(i=0;i+(1<<k)<=n;i++)
+			for(j=0;j+(1<<l)<=m;j++)
+			{
+				if(k) st2[i][k][j][l]=min(st2[i][k-1][j][l],st2[i+(1<<(k-1))][k-1][j][l]);
+				else st2[i][k][j][l]=min(st2[i][k][j][l-1],st2[i][k][j+(1<<(l-1))][l-1]);
+			}
+	}
+}
 int rmq_min2(int l1,int r1,int l2,int r2) //O(1)
 {
 	int k=lg[r1-l1+1],l=lg[r2-l2+1];
