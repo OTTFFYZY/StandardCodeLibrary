@@ -55,7 +55,7 @@ void rmq_init2(int n,int m,int a[M][M]) //O(n*log(n)*m*log(m))
 			                    	 st2[i+(1<<(k-1))][k-1][j+(1<<(l-1))][l-1]));
 	}
 }
-void rmq_init21(int n,int m,int a[M][M])
+void rmq_init21(int n,int m,int a[M][M]) //O(n*log(n)*m*log(m))
 {
 	int i,j,k,l;
 	for(i=0;i<n;i++)
