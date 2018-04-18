@@ -15,7 +15,7 @@
 | Binary Heap                              | OK!  |      |
 | Range Minimum Query Sparse-Table (basic, 2d) | OK!  |      |
 | Fenwick Tree / Binary Index Tree (basic, rasq, rarq) | OK!  |      |
-| Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) |      |      |
+| Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) | OK!  |      |
 | Prefix Sum                               | OK!  |      |
 
 
