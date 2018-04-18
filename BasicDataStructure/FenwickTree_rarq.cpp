@@ -5,7 +5,7 @@ using namespace std;
 
 const int M=1e5+5;
 
-int bit[M],bit2[M];
+int bit[M],bit2[M];//Binary Index Tree
 inline int lowbit(int x)
 {
 	return x&(-x);
