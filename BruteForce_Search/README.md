@@ -9,7 +9,7 @@
 | Contents                              | Code | Test |
 | ------------------------------------- | ---- | ---- |
 | Binary Search (basic)                 | OK!  |      |
-|                                       |      |      |
+| Ternary Search                        | OK!  |      |
 | BFS (maze)                            | OK!  |      |
 | DFS (maze,floodfill)                  | OK!  |      |
 | Double BFS                            | OK!  |      |
