@@ -22,6 +22,7 @@ int bfs(int stx,int sty,int edx,int edy)
 	while(!qu.empty())
 	{
 		int nx=qu.front().first,ny=qu.front().second;
+		qu.pop();
 		for(int i=0;i<4;i++)
 		{
 			int x=nx+dx[i],y=ny+dx[i];

@@ -22,7 +22,7 @@ int bfs(int stx,int sty,int edx,int edy)
 	qu.emplace(stx,sty); qu.emplace(edx,edy);
 	while(!qu.empty())
 	{
-		int nx=qu.front().first,ny=qu.front().second;
+		int nx=qu.front().first,ny=qu.front().second; qu.pop();
 		for(int i=0;i<4;i++)
 		{
 			int x=nx+dx[i],y=ny+dx[i];
@@ -33,7 +33,7 @@ int bfs(int stx,int sty,int edx,int edy)
 					dis[x][y]=dis[nx][ny]+(dis[nx][ny]>0?1:-1);
 					qu.emplace(x,y);
 				}
-				else if(dis[nx][ny]*dis[x][y]<0)
+				else if(dis[nx][ny]^dis[x][y]<0)
 					return abs(dis[nx][ny]-dis[x][y])-1;
 			}
 		}

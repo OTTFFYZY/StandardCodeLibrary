@@ -36,7 +36,7 @@ bool topo_sort()   // if cannot do topo_sort return false
 		int u=qu.front(); qu.pop();
 		topo[p++]=u;
 		for(int v:g[u])
-			if(--ind[v]) qu.push(v);
+			if(!--ind[v]) qu.push(v);
 	}
 	return p==nv;
 }
