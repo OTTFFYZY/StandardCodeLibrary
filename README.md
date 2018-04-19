@@ -12,9 +12,11 @@ For ACM/ICPC or other algorithm contests.
 
 | Contents                            |
 | ----------------------------------- |
-| C++ STL                             |
+| C++ STL & String                    |
 | Basic Data Structure                |
+| Intermediate Data Structure         |
 | Brute-Force & Search                |
+| Dynamic Programming                 |
 | Hash                                |
 | Graph Theory                        |
 | Mathematics                         |
@@ -24,15 +26,15 @@ For ACM/ICPC or other algorithm contests.
 
 
 
-## C++ STL
+## C++ STL & String
 
-vector, pair, stack, queue, priority_queue, deque, set, multiset, map, bitset, algorithm
+vector, pair, stack, queue, priority_queue, deque, set, multiset, map, bitset, algorithm, string
 
 
 
 ## Basic Data Structure
 
-stack, queue, linked list, double linked list, memory pool, union-find set, binary heap, st-RMQ, Fenwick tree
+stack, queue, linked list, double linked list, memory pool, union-find set, binary heap, st-RMQ, Fenwick tree / binary index tree 
 
 
 
