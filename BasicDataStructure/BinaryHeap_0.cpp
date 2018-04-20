@@ -18,7 +18,7 @@ struct Heap
 		}
 		h[p]=x;
 	}
-	void insert(int x)
+	void push(int x)
 	{
 		h[++n]=x;
 		swim(n);
@@ -41,6 +41,7 @@ struct Heap
 		int r=h[1];
 		h[1]=h[n--];
 		sink(1);
+		return r;
 	}
 };
 
