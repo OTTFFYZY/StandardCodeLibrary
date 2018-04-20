@@ -1,6 +1,6 @@
 # Standard Code Library
 
-For ACM/ICPC or other algorithm contests.
+For ACM/ICPC or other Algorithm Contests.
 
 
 
