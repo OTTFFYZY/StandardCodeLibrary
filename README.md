@@ -13,6 +13,7 @@ For ACM/ICPC or other Algorithm Contests.
 | Contents                            |
 | ----------------------------------- |
 | C++ STL & String                    |
+| Sort Algorithm                      |
 | Basic Data Structure                |
 | Intermediate Data Structure         |
 | Brute-Force & Search                |
