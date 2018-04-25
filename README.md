@@ -13,7 +13,7 @@ For ACM/ICPC or other Algorithm Contests.
 | Contents                            |
 | ----------------------------------- |
 | C++ STL & String                    |
-| Sort Algorithm                      |
+| Sorting Algorithm                   |
 | Basic Data Structure                |
 | Intermediate Data Structure         |
 | Brute-Force & Search                |
@@ -39,3 +39,12 @@ stack, queue, linked list, double linked list, memory pool, union-find set, bina
 
 
 
+## Intermediate Data Structure
+
+partition tree, segment tree
+
+
+
+## Graph Theory
+
+BFS, DFS, connectivity, 
