@@ -8,10 +8,10 @@
 
 ## Contents
 
-| Contents                       | Code | Test |
-| ------------------------------ | ---- | ---- |
-| Set (bit mask) & Bit Operation |      |      |
-| Generate Permutation (dfs)     | OK!  |      |
-|                                |      |      |
-|                                |      |      |
-|                                |      |      |
+| Contents                             | Code | Test |
+| ------------------------------------ | ---- | ---- |
+| Set (bit mask) & Bit Operation       |      |      |
+| Generate Permutation (dfs)           | OK!  |      |
+| Generate Subset (duplicate elements) | OK!  |      |
+|                                      |      |      |
+|                                      |      |      |
