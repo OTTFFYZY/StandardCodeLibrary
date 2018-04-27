@@ -28,12 +28,12 @@ void merge(int *l,int *m,int *r)
 		p1++;
 	}
 }
-void mergesort(int *l,int *r)
+void merge_sort(int *l,int *r)
 {
 	if(l==r) return;
 	int *mid=l+(r-l)/2;
-	mergesort(l,mid);
-	mergesort(mid+1,r);
+	merge_sort(l,mid);
+	merge_sort(mid+1,r);
 	merge(l,mid,r);
 }
 
@@ -43,7 +43,7 @@ int main()
 	//cin>>n;
 	//for(int i=0;i<n;i++)
 	//	cin>>a[i];
-	mergesort(a,a+n-1);
+	merge_sort(a,a+n-1);
 	for(int i=0;i<n;i++)
 		cout<<a[i]<<" ";
 	cout<<endl;

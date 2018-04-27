@@ -8,7 +8,7 @@ int a[M]={7,3,8,2,5,3,7};
 int cnt[MN];
  //O(n+m) n is the number in a[]
  //       m is the range of a[]
-void countingsort(int a[],int l,int r)
+void counting_sort(int a[],int l,int r)
 {
 	memset(cnt,0,sizeof(cnt));
 	for(int i=l;i<=r;i++)
@@ -27,7 +27,7 @@ struct Node
 		cout<<a<<" "<<b<<endl;
 	}
 }node[M],tmp[M];
-void countingsort2(Node node[],int l,int r)
+void counting_sort2(Node node[],int l,int r)
 {
 	memset(cnt,0,sizeof(cnt));
 	for(int i=l;i<=r;i++)
@@ -43,7 +43,7 @@ void countingsort2(Node node[],int l,int r)
 int main()
 {
 	int n=7;
-	countingsort(a,0,n-1);
+	counting_sort(a,0,n-1);
 	for(int i=0;i<n;i++)
 		cout<<a[i]<<" ";
 	cout<<endl;
@@ -57,7 +57,7 @@ int main()
 	node[5].a=3; node[5].b=6;
 	node[6].a=2; node[6].b=7;
 
-	countingsort2(node,0,n-1);
+	counting_sort2(node,0,n-1);
 	for(int i=0;i<n;i++)
 		node[i].show();
 

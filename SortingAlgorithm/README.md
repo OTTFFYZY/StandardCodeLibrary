@@ -1,4 +1,4 @@
-# Sort Algorithm
+# Sorting Algorithm
 
 
 
@@ -10,11 +10,11 @@
 
 | Contents       | Code | Test |
 | -------------- | ---- | ---- |
-| Bubble Sort    |      |      |
-| Selection Sort |      |      |
-| Insertion Sort |      |      |
+| Bubble Sort    | OK!  |      |
+| Selection Sort | OK!  |      |
+| Insertion Sort | OK!  |      |
 | Merge Sort     | OK!  |      |
 | Quick Sort     |      |      |
-| Counting Sort  |      |      |
+| Counting Sort  | OK!  |      |
 | Radix Sort     |      |      |
 |                |      |      |
