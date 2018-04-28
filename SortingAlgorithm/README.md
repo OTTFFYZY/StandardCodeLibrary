@@ -14,7 +14,7 @@
 | Selection Sort | OK!  |      |
 | Insertion Sort | OK!  |      |
 | Merge Sort     | OK!  |      |
-| Quick Sort     |      |      |
+| Quick Sort     | OK!  |      |
 | Counting Sort  | OK!  |      |
 | Radix Sort     |      |      |
 |                |      |      |
