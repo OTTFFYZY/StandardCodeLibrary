@@ -15,6 +15,7 @@
 | Insertion Sort | OK!  |      |
 | Merge Sort     | OK!  |      |
 | Quick Sort     | OK!  |      |
+| Heap Sort      | OK!  |      |
 | Counting Sort  | OK!  |      |
-| Radix Sort     |      |      |
-|                |      |      |
+| Radix Sort     | OK!  |      |
+| Bucket Sort    |      |      |
