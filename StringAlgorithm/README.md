@@ -11,7 +11,7 @@
 | Contents               | Code | Test |
 | ---------------------- | ---- | ---- |
 | Trie (pointer)         | OK!  |      |
-| KMP                    |      |      |
+| KMP                    | OK!  |      |
 | Ex-KMP                 |      |      |
 | Aho-Corasick Automaton |      |      |
 | Suffix Array           |      |      |
