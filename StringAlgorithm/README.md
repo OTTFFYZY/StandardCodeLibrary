@@ -13,7 +13,7 @@
 | Trie (pointer)         | OK!  |      |
 | KMP                    | OK!  |      |
 | Ex-KMP                 |      |      |
-| Aho-Corasick Automaton |      |      |
+| Aho-Corasick Automaton | OK!  |      |
 | Suffix Array           |      |      |
 | Suffix Automaton       |      |      |
 | Manacher               |      |      |
