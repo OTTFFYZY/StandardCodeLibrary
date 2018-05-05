@@ -12,7 +12,7 @@
 | ---------------------- | ---- | ---- |
 | Trie (pointer)         | OK!  |      |
 | KMP                    | OK!  |      |
-| Ex-KMP                 |      |      |
+| Extend KMP             | OK!  |      |
 | Aho-Corasick Automaton | OK!  |      |
 | Suffix Array           |      |      |
 | Suffix Automaton       |      |      |
