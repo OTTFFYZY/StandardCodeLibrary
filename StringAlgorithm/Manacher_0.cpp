@@ -17,7 +17,7 @@ void manacher(char s[],int n,char ms[],int mp[])
 		ms[l++]=s[i];
 		ms[l++]='#';
 	}
-	//ms[l]=0;
+	ms[l]=0;
 	int p=0,o=0;
 	for(int i=0;i<l;i++)
 	{
