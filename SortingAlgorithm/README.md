@@ -18,4 +18,5 @@
 | Heap Sort      | OK!  |      |
 | Counting Sort  | OK!  |      |
 | Radix Sort     | OK!  |      |
-| Bucket Sort    |      |      |
+| Bucket Sort    | OK!  |      |
+| Shell Sort     |      |      |

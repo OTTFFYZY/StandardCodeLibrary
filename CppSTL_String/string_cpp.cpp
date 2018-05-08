@@ -13,6 +13,10 @@ int main()
 	cout<<a.length()<<endl;
 	cout<<a<<endl<<b<<endl<<a[5]<<endl<<endl;
 
+    cout<<"abc"+a+b<<endl;
+    a+=b+"cdcd";
+    cout<<a<<endl<<endl;
+
 	a.append(2,'!');
 	cout<<a<<endl<<endl;
 
