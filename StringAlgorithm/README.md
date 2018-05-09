@@ -16,5 +16,5 @@
 | Aho-Corasick Automaton | OK!  |      |
 | Suffix Array           |      |      |
 | Suffix Automaton       |      |      |
-| Manacher               | OK!  |      |
+| Manacher               | OK!  | OK!  |
 | Palindrome Tree        |      |      |
