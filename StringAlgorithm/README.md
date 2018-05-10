@@ -18,3 +18,4 @@
 | Suffix Automaton       |      |      |
 | Manacher               | OK!  | OK!  |
 | Palindrome Tree        |      |      |
+| Shift-And / Shift-Or   | OK!  |      |
