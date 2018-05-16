@@ -8,10 +8,10 @@
 
 ## Contents
 
-| Contents                                 | Code | Test |
-| ---------------------------------------- | ---- | ---- |
-| Shortest Path Dijkstra (basic, stl, heap, Fibonacci) |      |      |
-| Shortest Path Bellman-Ford (basic, queue, slf, lll) |      |      |
-| Shortest Path Floyd                      |      |      |
-|                                          |      |      |
-|                                          |      |      |
+| Contents                               | Time     | Memory   | Code | Test |
+| -------------------------------------- | -------- | -------- | ---- | ---- |
+| Dijkstra (basic, stl, heap, Fibonacci) |          |          |      |      |
+| Bellman-Ford (basic, queue, slf, lll)  |          |          |      |      |
+| Floyd                                  | $O(V^3)$ | $O(V^2)$ |      |      |
+|                                        |          |          |      |      |
+|                                        |          |          |      |      |
