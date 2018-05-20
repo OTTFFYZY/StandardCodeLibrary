@@ -21,4 +21,5 @@
 | Bucket Sort         | OK!  |      |
 | Shell Sort          |      |      |
 | Three-Color Sorting | OK!  |      |
-| Find k-th Number    |      |      |
+|                     |      |      |
+
