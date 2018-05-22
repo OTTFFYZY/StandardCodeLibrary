@@ -16,7 +16,7 @@
 | A-Star (A*)                           | $/$          | $/$     | OK!  |      |
 | Iterative Deepening & IDA-Star (IDA*) | $/$          | $/$     | OK!  |      |
 | Dancing Link X                        | $/$          | $/$     |      |      |
-| Searching In A Sorted Matrix          | $O(N\!+\!M)$ | $O(1)$  | OK!  |      |
+| Searching In A Sorted Matrix          | $O(N\!+\!M)$ | $O(1)$  | OK!  | OK!  |
 | Find K-th Largest Number (Quick Sort) | $O(N)$       | $O(1)$  | OK!  | OK!  |
 
 
