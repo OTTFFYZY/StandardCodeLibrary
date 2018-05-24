@@ -2,7 +2,7 @@
 
 typedef unsigned long long ULL;
 
-ULL BKDR_hash(char str[])
+ULL BKDR_hash(char *str)
 {
 	register ULL hash=0;
 	ULL ch;
@@ -12,7 +12,7 @@ ULL BKDR_hash(char str[])
 	return hash;
 }
 
-ULL SDBM_hash(char str[])
+ULL SDBM_hash(char *str)
 {
 	register ULL hash=0;
 	ULL ch;
@@ -22,7 +22,7 @@ ULL SDBM_hash(char str[])
 	return hash;
 }
 
-ULL RS_hash(char str[])
+ULL RS_hash(char *str)
 {
 	register ULL hash=0;
 	ULL magic=63689,ch;
@@ -34,7 +34,7 @@ ULL RS_hash(char str[])
 	return hash;
 }
 
-ULL AP_hash(char str[])
+ULL AP_hash(char *str)
 {
 	register ULL hash=0;
 	ULL ch;
@@ -48,7 +48,7 @@ ULL AP_hash(char str[])
 	return hash;
 }
 
-ULL JS_hash(char str[])
+ULL JS_hash(char *str)
 {
 	register ULL hash=1315423911L;
 	ULL ch;
@@ -57,7 +57,7 @@ ULL JS_hash(char str[])
 	return hash;
 }
 
-ULL DEK_hash(char str[])
+ULL DEK_hash(char *str)
 {
 	register ULL hash=1315423911L;
 	ULL ch;
@@ -66,7 +66,7 @@ ULL DEK_hash(char str[])
 	return hash;
 }
 
-ULL FNV_hash(char str[])
+ULL FNV_hash(char *str)
 {
 	register ULL hash=2166136261L;
 	ULL ch;
@@ -78,7 +78,7 @@ ULL FNV_hash(char str[])
 	return hash;
 }
 
-ULL DJB_hash(char str[])
+ULL DJB_hash(char *str)
 {
 	register ULL hash=5381;
 	ULL ch;
@@ -87,7 +87,7 @@ ULL DJB_hash(char str[])
 	return hash;
 }
 
-ULL DJB2_hash(char str[])
+ULL DJB2_hash(char *str)
 {
 	register ULL hash=5381;
 	ULL ch;
@@ -96,7 +96,7 @@ ULL DJB2_hash(char str[])
 	return hash;
 }
 
-ULL PJW_hash(char str[])
+ULL PJW_hash(char *str)
 {
 	static const ULL TotalBits     =sizeof(ULL)*8;  
     static const ULL ThreeQuarters =(TotalBits*3)/4;  
@@ -113,7 +113,7 @@ ULL PJW_hash(char str[])
     return hash;  
 }
 
-ULL ELFHash(char str[])  
+ULL ELFHash(char *str)  
 {  
     static const ULL TotalBits     =sizeof(ULL)*8;  
     static const ULL ThreeQuarters =(TotalBits*3)/4;  

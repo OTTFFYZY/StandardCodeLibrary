@@ -11,7 +11,7 @@ pair<ULL,ULL> double_hashing(ULL val)
 	return make_pair(val%MOD1,val%MOD2);
 }
 
-pair<ULL,ULL> string_double_hashing(char str[])
+pair<ULL,ULL> string_double_hashing(char *str)
 {
 	ULL ch,h1=0,h2=0;
 	while(ch=*str++)

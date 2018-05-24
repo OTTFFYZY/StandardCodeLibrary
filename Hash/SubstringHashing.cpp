@@ -8,7 +8,7 @@ const ULL SEED=1e9+7;
 const ULL MOD=1e9+9;
 
 ULL h[M],seed[M]={1};
-void hash_init(char str[])
+void hash_init(char *str)
 {
 	h[0]=0;
 	ULL ch;
