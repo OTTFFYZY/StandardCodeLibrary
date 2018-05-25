@@ -19,8 +19,8 @@ void addedge(int fr,int to,int dis)
 {
 	g[fr].emplace_back(to,dis);
 }
-// single source shortest path  Dijkstra    O(ElogE)
-void dij(int st,int ed)
+// single source shortest path  Dijkstra  O(ElogE)
+void dijkstra(int st,int ed)
 {
 	while(!qu.empty()) qu.pop();
 	memset(d,0x3f,sizeof(d));
