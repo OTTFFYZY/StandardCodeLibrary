@@ -30,6 +30,6 @@ lrjb: LA3644 LA3027* LA4487* UVA11987*
 
 ## Fenwick Tree / Binary Index Tree
 
-rasq -> Range Add Single-point Query
+rasq -> Range Add Single-Point Query
 
 rarq -> Range Add Range Query
