@@ -15,6 +15,8 @@
 | String Hashing     | $O(|S|)$           | $O(1)$   | OK!  |      |
 | Double Hashing     | $O(1)/O(|S|)$      | $O(1)$   | OK!  |      |
 | Substring Hashing  | $O(|S|) \sim O(1)$ | $O(|S|)$ | OK!  |      |
+| Tree Hashing       |                    |          |      |      |
+| Graph Hashing      |                    |          |      |      |
 |                    |                    |          |      |      |
 
 
