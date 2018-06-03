@@ -16,6 +16,7 @@
 | Euler Loop & Path        |
 | Bipartite Graph Matching |
 | Network Flow             |
+| Others                   |
 
 
 
@@ -31,8 +32,8 @@ have_loop (undirected, undirected 2, directed), bi-color,
 
 
 
+## Others
 
-
-
-
+1.  Traveling Salesman Problem (TSP)
+2.  Chinese Postman Problem (CPP)
 

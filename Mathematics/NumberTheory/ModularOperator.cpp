@@ -48,11 +48,6 @@ struct Num
 		}
 		return ans;
 	}
-	// if MOD is a prime B.a>0
-	Num operator/(const Num &B) const
-	{
-		return (*this)*(B^(MOD-2));
-	}
 };
 
 int main()
