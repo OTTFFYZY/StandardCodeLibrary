@@ -10,6 +10,7 @@ const int ME=1e5+5;
 struct Edge
 {
 	int to,nxt,w; //undirected graph
+	//int id; if we need output the edges in mst
 	Edge(int to=0,int nxt=0,int w=0):to(to),nxt(nxt),w(w){}
 	bool operator<(const Edge &B)const
 	{

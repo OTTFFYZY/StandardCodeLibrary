@@ -12,11 +12,11 @@ int dis[MV],pre[MV];
 
 int prim(int nv)
 {
-	int minw=0;
+	int mst=0;
 	dis[0]=0; inmst[0]=1;
 	for(int i=1;i<nv;i++)
 	{
-		pre[i]=0;
+		//pre[i]=0;
 		inmst[i]=0;
 		dis[i]=g[0][i];
 	}
@@ -29,7 +29,7 @@ int prim(int nv)
 				mi=dis[j];
 				p=j;
 			}
-		minw+=dis[p];
+		mst+=dis[p];
 		inmst[p]=1;
 		for(int j=1;j<nv;j++)
 			if(!inmst[j]&&dis[j]>g[p][j])
@@ -38,7 +38,7 @@ int prim(int nv)
 				pre[j]=p;
 			}
 	}
-	return minw;
+	return mst;
 }
 
 int main()
