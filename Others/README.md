@@ -8,10 +8,10 @@
 
 ## Contents
 
-| Contents       | Code | Test |
-| -------------- | ---- | ---- |
-| Discretization | OK!  |      |
-|                |      |      |
-|                |      |      |
-|                |      |      |
-|                |      |      |
+| Contents        | Code | Test |
+| --------------- | ---- | ---- |
+| Discretization  | OK!  | OK!  |
+| Intervals Union | OK!  | OK!  |
+|                 |      |      |
+|                 |      |      |
+|                 |      |      |
