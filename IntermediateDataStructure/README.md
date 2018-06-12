@@ -12,7 +12,7 @@
 | ---------------------------------------------- | ---- | ---- |
 | Partition Tree                                 | OK!  | OK!  |
 | Segment Tree (scrq, rcrq)                      |      |      |
-| Scan Line Segment Tree (rectangles area union) |      |      |
+| Scan Line Segment Tree (rectangles area union) | OK!  | OK!  |
 | Treap                                          |      |      |
 |                                                |      |      |
 |                                                |      |      |
