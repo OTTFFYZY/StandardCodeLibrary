@@ -18,6 +18,6 @@
 | Persistent Segment Tree                        |      |      |
 | Segment Tree Merging                           |      |      |
 | Treap                                          |      |      |
-|                                                |      |      |
+| Treap (without rotation)                       |      |      |
 |                                                |      |      |
 |                                                |      |      |
