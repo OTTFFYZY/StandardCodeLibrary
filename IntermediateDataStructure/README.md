@@ -19,5 +19,7 @@
 | Segment Tree Merging                           |      |      |
 | Treap                                          |      |      |
 | Treap (without rotation)                       |      |      |
+| Splay Tree                                     |      |      |
+| Scapegoat Tree                                 |      |      |
 |                                                |      |      |
 |                                                |      |      |
