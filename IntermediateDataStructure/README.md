@@ -17,7 +17,7 @@
 | Scan Line Segment Tree (rectangles perimeter)  |      |      |
 | Persistent Segment Tree                        |      |      |
 | Segment Tree Merging                           |      |      |
-| Treap                                          |      |      |
+| Treap (rotation)                               |      |      |
 | Treap (without rotation)                       |      |      |
 | Splay Tree                                     |      |      |
 | Scapegoat Tree                                 |      |      |
