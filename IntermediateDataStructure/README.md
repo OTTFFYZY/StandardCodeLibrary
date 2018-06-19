@@ -11,6 +11,7 @@
 | Contents                                       | Code | Test |
 | ---------------------------------------------- | ---- | ---- |
 | Partition Tree                                 | OK!  | OK!  |
+| Leftist Tree                                   |      |      |
 | Segment Tree (scrq, rcrq)                      |      |      |
 | Weight Segment Tree (array, pointer)           |      |      |
 | Scan Line Segment Tree (rectangles area union) | OK!  | OK!  |
