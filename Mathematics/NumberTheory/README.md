@@ -12,7 +12,7 @@
 | ---------------------------------- | --------- | ------ | ---- | ---- |
 | Modular Operator (+, -, *, ^, mod) | $/$       | $/$    | OK!  |      |
 | GCD & LCM (Euclid Method)          | $O(logN)$ | $/$    | OK!  |      |
-| Extend Euclid                      | $O(logN)$ | /      |      |      |
+| Extend Euclid                      | $O(logN)$ | /      | OK!  |      |
 | Prime Table (basic, bitmap)        |           |        |      |      |
 | Is Prime (basic, Miller-Robin)     |           |        |      |      |
 | Factorization                      |           |        |      |      |
