@@ -17,6 +17,7 @@
 | Fenwick Tree / Binary Index Tree (basic, rasq, rarq)    | $O(logN)$        | $O(NlogN)$     | OK!  |      |
 | Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) | $log^2N$         | $O(N^2log^2N)$ | OK!  |      |
 | Prefix Sum                                              | $O(1) \sim O(N)$ | $O(N)$         | OK!  |      |
+| Bitmap                                                  | $O(1)$           | $O(N)$         | OK!  |      |
 
 
 

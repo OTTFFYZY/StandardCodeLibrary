@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 const int M=1e6+5;
 
 int isp[M],pri[M],npri=0;
@@ -24,4 +27,15 @@ void getpri1(int n)
 				isp[j]=1;
 	for(int i=2;i<=n;i++)
 		if(!isp[i]) pri[npri++]=i;
+}
+
+int main()
+{
+	getpri1(100);
+	cout<<npri<<endl;
+
+	npri=0;
+	getpri0(1e6);
+	cout<<npri<<endl;
+	return 0;
 }
