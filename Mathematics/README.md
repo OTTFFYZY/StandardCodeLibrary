@@ -14,6 +14,7 @@
 | Number Theory             |
 | Linear Algebra            |
 | Numerical Method          |
+| Game Theory               |
 | Others                    |
 |                           |
 
