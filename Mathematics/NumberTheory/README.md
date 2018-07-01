@@ -12,8 +12,8 @@
 | ---------------------------------- | ------------- | ------ | ---- | ---- |
 | Modular Operator (+, -, *, ^, mod) | $/$           | $/$    | OK!  |      |
 | GCD & LCM (Euclid Method)          | $O(logN)$     | $/$    | OK!  |      |
-| Extend Euclid                      | $O(logN)$     | /      |      |      |
-| Inverse Element / Modular Division | $O(logN)$     | $O(1)$ |      |      |
+| Extend Euclid                      | $O(logN)$     | $O(1)$ | OK!  | OK!  |
+| Inverse Element / Modular Division | $O(logN)$     | $O(1)$ | OK!  |      |
 | Prime Table (basic, bitmap)        | $O(NloglogN)$ | $O(N)$ | OK!  |      |
 | Is Prime (basic, Miller-Robin)     | $O(\sqrt{N})$ | $O(1)$ |      |      |
 | Factorization                      | $O(\sqrt{N})$ |        |      |      |
