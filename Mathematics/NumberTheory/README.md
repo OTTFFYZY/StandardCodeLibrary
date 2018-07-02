@@ -80,4 +80,6 @@ $\begin{align} a^{M-1}&\equiv1&(mod\ M)\\1&\equiv a^{M-1}&(mod\ M) \\ a^{-1}&\eq
 
 ### Euler Theorem
 
-$\begin{align} a^{\phi}&\equiv1&(mod\ M)\\1&\equiv a^{M-1}&(mod\ M) \\ a^{-1}&\equiv a^{M-2} &(mod\ M)\end{align}$
+$gcd(a,n)=1$
+
+$\begin{align} a^{\varphi(M)}&\equiv1&(mod\ M)\\1&\equiv a^{\varphi(M)}&(mod\ M) \\ a^{-1}&\equiv a^{\varphi(M)-1} &(mod\ M)\end{align}$
