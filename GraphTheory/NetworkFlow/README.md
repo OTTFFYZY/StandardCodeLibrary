@@ -8,13 +8,13 @@
 
 ## Contents
 
-| Contents                 | Time | Memory | Code | Test |
-| ------------------------ | ---- | ------ | ---- | ---- |
-| Max Flow (EK)            |      |        |      |      |
-| Max Flow (ISAP)          |      |        |      |      |
-| Max Flow (Dinic)         |      |        |      |      |
-| Min Cost Max Flow (spfa) |      |        |      |      |
-| Min Cost Max Flow (zkw)  |      |        |      |      |
+| Contents                 | Time      | Memory       | Code | Test |
+| ------------------------ | --------- | ------------ | ---- | ---- |
+| Max Flow (EK)            | $O(VE^2)$ | $O(V\!+\!E)$ |      |      |
+| Max Flow (ISAP)          | $O(V^2E)$ | $O(V\!+\!E)$ |      |      |
+| Max Flow (Dinic)         | $O(V^2E)$ | $O(V\!+\!E)$ | OK!  |      |
+| Min Cost Max Flow (spfa) |           |              |      |      |
+| Min Cost Max Flow (zkw)  |           |              |      |      |
 
 
 
