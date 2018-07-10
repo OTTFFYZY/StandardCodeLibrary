@@ -21,7 +21,7 @@ struct Num
 	}
 	Num operator-(const Num &B) const
 	{
-		return (a-B.a+MOD)%MOD;
+		return (a+MOD-B.a)%MOD;
 	}
 	Num operator*(const Num &B) const
 	{

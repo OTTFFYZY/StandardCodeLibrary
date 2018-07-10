@@ -15,9 +15,10 @@
 | Extend Euclid                      | $O(logN)$     | $O(1)$    | OK!  | OK!  |
 | Inverse Element / Modular Division | $O(logN)$     | $O(1)$    | OK!  |      |
 | Prime Table (basic, bitmap)        | $O(NloglogN)$ | $O(N)$    | OK!  |      |
-| Is Prime (basic, Miller-Robin)     | $O(\sqrt{N})$ | $O(1)$    |      |      |
-| Factorization (basic)              | $O(\sqrt{N})$ | $O(logN)$ |      |      |
-| Factorization ()                   |               |           |      |      |
+| Is Prime (basic)                   | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
+| Is Prime (Miller-Robin)            |               |           |      |      |
+| Factorization (basic)              | $O(\sqrt{N})$ | $O(logN)$ | OK!  |      |
+| Factorization (Pollard-Rho)        |               |           |      |      |
 | Factorization Table                | $O(NloglogN)$ | $O(N)$    |      |      |
 | Phi Function / Phi Table           |               |           |      |      |
 | Power Reduction Formula            |               |           |      |      |
