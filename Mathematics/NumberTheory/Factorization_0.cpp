@@ -24,7 +24,7 @@ int get_fac(int n,int fa[15][2])
 }
 
 // use prime table
-int isp[M],pri[M];
+int isp[M],pri[M],npri=0;
 void getpri1()
 {
 	//isp[0]=isp[1]=1;

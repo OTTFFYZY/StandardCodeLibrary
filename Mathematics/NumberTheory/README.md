@@ -17,9 +17,9 @@
 | Prime Table (basic, bitmap)        | $O(NloglogN)$ | $O(N)$    | OK!  |      |
 | Is Prime (basic)                   | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
 | Is Prime (Miller-Robin)            |               |           |      |      |
-| Factorization (basic)              | $O(\sqrt{N})$ | $O(logN)$ | OK!  |      |
+| Factorization (basic)              | $O(\sqrt{N})$ | $O(logN)$ | OK!  | OK!  |
 | Factorization (Pollard-Rho)        |               |           |      |      |
-| Factorization Table                | $O(NloglogN)$ | $O(N)$    |      |      |
+| Factorization Table                | $O(NloglogN)$ | $O(N)$    | OK!  | OK!  |
 | Phi Function / Phi Table           |               |           |      |      |
 | Power Reduction Formula            |               |           |      |      |
 | Chinese Remainder Theory           |               |           |      |      |
