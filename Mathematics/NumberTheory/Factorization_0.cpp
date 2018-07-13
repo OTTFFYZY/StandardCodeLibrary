@@ -4,7 +4,7 @@ int fa[15][2]; //2*3*5*7*11*13*17*19=9699690
 int get_fac(int n,int fa[15][2])
 {
 	int k=0;
-	for(int i=2;i*i<=n;i++)
+	for(int i=2;i<=n/i;i++)
 		if(n%i==0)
 		{
 			fa[k][0]=i; fa[k][1]=0;
@@ -39,7 +39,7 @@ void getpri1()
 int get_fac2(int n,int fa[15][2])
 {
 	int k=0;
-	for(int i=0;pri[i]*pri[i]<=n;i++)
+	for(int i=0;pri[i]<=n/pri[i]&&i<npri;i++)
 		if(n%pri[i]==0)
 		{
 			fa[k][0]=pri[i]; fa[k][1]=0;
