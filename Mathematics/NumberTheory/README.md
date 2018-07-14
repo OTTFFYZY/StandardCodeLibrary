@@ -20,10 +20,12 @@
 | Factorization (basic)              | $O(\sqrt{N})$ | $O(logN)$ | OK!  | OK!  |
 | Factorization (Pollard-Rho)        |               |           |      |      |
 | Factorization Table                | $O(NloglogN)$ | $O(N)$    | OK!  | OK!  |
-| Phi Function / Phi Table           |               |           |      |      |
+| Phi Function $\varphi(x)$          | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
+| Phi Table                          | $O(NloglogN)$ | $O(N)$    | OK!  |      |
 | Power Reduction Formula            |               |           |      |      |
 | Chinese Remainder Theory           |               |           |      |      |
 | Modular Linear Equations           |               |           |      |      |
+| Modular Combinatorial Number       |               |           |      |      |
 | Lucas Theory / Extend Lucas Theory |               |           |      |      |
 |                                    |               |           |      |      |
 

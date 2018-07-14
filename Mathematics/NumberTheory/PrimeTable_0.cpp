@@ -5,7 +5,7 @@ const int M=1e6+5;
 
 int isp[M],pri[M],npri=0;
 
-//nlogn
+//nloglogn
 void getpri0(int n)
 {
 	//isp[0]=isp[1]=1;
