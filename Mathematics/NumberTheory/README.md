@@ -86,3 +86,10 @@ $\begin{align} a^{M-1}&\equiv1&(mod\ M)\\1&\equiv a^{M-1}&(mod\ M) \\ a^{-1}&\eq
 $gcd(a,n)=1$
 
 $\begin{align} a^{\varphi(M)}&\equiv1&(mod\ M)\\1&\equiv a^{\varphi(M)}&(mod\ M) \\ a^{-1}&\equiv a^{\varphi(M)-1} &(mod\ M)\end{align}$
+
+
+
+## Power Reduction Formula
+
+$A^B \equiv A^{B \% \varphi(C)+\varphi(C)}(mod\ C)\ (B \ge \varphi(C))$
+
