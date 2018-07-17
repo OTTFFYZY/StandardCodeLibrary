@@ -27,7 +27,7 @@
 | Modular Linear Equations           |               |           |      |      |
 | Modular Combinatorial Number       |               |           |      |      |
 | Lucas Theory / Extend Lucas Theory |               |           |      |      |
-|                                    |               |           |      |      |
+| Linear Sieve (prime, phi, mu)      | $O(N)$        | $O(N)$    |      |      |
 
 
 
