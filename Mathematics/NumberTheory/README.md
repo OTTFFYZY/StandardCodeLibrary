@@ -22,12 +22,14 @@
 | Factorization Table                | $O(NloglogN)$ | $O(N)$    | OK!  | OK!  |
 | Phi Function $\varphi(x)$          | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
 | Phi Table                          | $O(NloglogN)$ | $O(N)$    | OK!  |      |
-| Power Reduction Formula            |               |           |      |      |
+| Power Reduction Formula            | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
 | Chinese Remainder Theory           |               |           |      |      |
 | Modular Linear Equations           |               |           |      |      |
 | Modular Combinatorial Number       |               |           |      |      |
 | Lucas Theory / Extend Lucas Theory |               |           |      |      |
-| Linear Sieve (prime, phi, mu)      | $O(N)$        | $O(N)$    |      |      |
+| Linear Sieve (prime, phi, mu)      | $O(N)$        | $O(N)$    | OK！ |      |
+| Mobius Inversion                   |               |           |      |      |
+|                                    |               |           |      |      |
 
 
 
