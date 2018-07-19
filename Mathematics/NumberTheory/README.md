@@ -45,9 +45,37 @@
 
 
 
-## Euclid & Extend Euclid
+## GCD LCM & Euclid & Extend Euclid
+
+gcd -> greatest common divisor
+
+lcm -> least common multiple
 
 
+
+$A=p_{1}^{a_1}\cdot p_{2}^{a_2}\cdots p_{k}^{a_k}$
+
+$B=p_{1}^{b_1}\cdot p_{2}^{b_2}\cdots p_{k}^{b_k}$
+
+$gcd(A,B)=p_{1}^{min(a_1,b_1)}\cdot p_{2}^{min(a_2,b_2)}\cdots p_{k}^{min(a_k,b_k)}$
+
+$lcm(A,B)=p_{1}^{max(a_1,b_1)}\cdot p_{2}^{max(a_2,b_2)}\cdots p_{k}^{max(a_k,b_k)}$
+
+$gcd(A,B)lcm(A,B)=AB$
+
+
+
+$gcd(a,b)=gcd(b,a\%b)$
+
+$gcd(a,0)=a$
+
+
+
+### Extend Euclid
+
+$ax+by=c=gcd(a,b)$
+
+$\begin{align} gcd(a,b)&=c=ax+by \\ gcd(b,a\%b)&=c=ax+by \\ \end{align}$
 
 
 
@@ -75,7 +103,7 @@ $\begin{align}M=ka+r&\equiv0&(mod\ M)\\kr^{-1}+a^{-1}&\equiv0&(mod\ M)\\a^{-1}&\
 
 
 
-### Fermat's Little Theorem
+### Using Fermat's Little Theorem
 
 M is a prime
 
@@ -83,11 +111,21 @@ $\begin{align} a^{M-1}&\equiv1&(mod\ M)\\1&\equiv a^{M-1}&(mod\ M) \\ a^{-1}&\eq
 
 
 
-### Euler Theorem
+### Using Euler Theorem
 
 $gcd(a,n)=1$
 
 $\begin{align} a^{\varphi(M)}&\equiv1&(mod\ M)\\1&\equiv a^{\varphi(M)}&(mod\ M) \\ a^{-1}&\equiv a^{\varphi(M)-1} &(mod\ M)\end{align}$
+
+
+
+## Euler Phi Function $\varphi(x)$
+
+$n=p_{1}^{a_1}\cdot p_{2}^{a_2}\cdots p_{k}^{a_k}$
+
+$\begin{align} \varphi(n)=&\sum\limits_{S\subseteq\{p_1,p_2,\cdots ,p_k\}} (-1)^{|S|}\frac{n}{\prod\limits_{p_i\in S}p_i}\\=&n\prod\limits_{i=1}^{k}(1-\frac{1}{p_i}) \end{align}$
+
+
 
 
 
