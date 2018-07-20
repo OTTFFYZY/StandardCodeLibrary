@@ -32,7 +32,7 @@ const int M=999983; // a prime
 LL inv[M];
 LL inv_table(int m) //O(m) m is a prime
 {
-	in[1]=1;
+	inv[1]=1;
     for(int i=2;i<m;i++)
         inv[i]=(m-m/i)*inv[m%i]%m;
 }
