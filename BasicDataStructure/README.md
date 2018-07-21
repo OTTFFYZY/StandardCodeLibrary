@@ -4,6 +4,8 @@
 
 [TOC]
 
+## Contents
+
 | Contents                                                | Time             | Memory         | Code | Test |
 | ------------------------------------------------------- | ---------------- | -------------- | ---- | ---- |
 | Stack                                                   | $O(1)$           | $O(N)$         | OK!  |      |
@@ -35,3 +37,16 @@ lrjb: LA3644 LA3027* LA4487* UVA11987*
 rasq -> Range Add Single-Point Query
 
 rarq -> Range Add Range Query
+
+
+## Monotone Stack & Monotone Queue
+
+### Max Rectangle In Histogram
+
+### Find ACB
+
+### Max Value In The Sliding Window
+
+### Huffman-Tree-Like Merge
+
+### Max Extension
