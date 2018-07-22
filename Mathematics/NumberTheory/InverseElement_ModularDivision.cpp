@@ -56,4 +56,25 @@ LL inv3(LL a,LL m)
 	return qp(a,m-2,m);
 }
 
+// approach 4: gcd(a,m)==1
+// Euler theorem
+LL phi(LL n)
+{
+	LL ans=n;
+	for(LL i=2;i*i<=n;i++)
+		if(n%i==0)
+		{
+			ans=ans/i*(i-1);
+			while(n%i==0) n/=i;
+		}
+	if(n!=1) ans=ans/n*(n-1);
+	return ans;
+}
+LL inv4(LL a,LL m)
+{
+	return qp(a,phi(m-1),m);
+}
+
+// approach 5:
+// modular division, not inverse element
 // a/b mod m => (a mod bm)/b
