@@ -25,7 +25,7 @@
 | Power Reduction Formula            | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
 | Chinese Remainder Theory           | $O(NlogN)$    | $O(1)$    | OK!  |      |
 | Modular Linear Equations           |               |           |      |      |
-| Modular Combinatorial Number       |               |           |      |      |
+| Modular Combinatorial Number       | $/$           | $/$       | OK!  |      |
 | Lucas Theory / Extend Lucas Theory |               |           |      |      |
 | Linear Sieve (prime, phi, mu)      | $O(N)$        | $O(N)$    | OK！ |      |
 | Mobius Inversion                   |               |           |      |      |
@@ -132,4 +132,20 @@ $\begin{align} \varphi(n)=&\sum\limits_{S\subseteq\{p_1,p_2,\cdots ,p_k\}} (-1)^
 ## Power Reduction Formula
 
 $A^B \equiv A^{B \% \varphi(C)+\varphi(C)}(mod\ C)\ (B \ge \varphi(C))$
+
+
+
+## Modular Combinatorial Number
+
+### $n,m<10^6$
+
+
+
+### $m<10^6$
+
+
+
+### $p<10^6$
+
+
 
