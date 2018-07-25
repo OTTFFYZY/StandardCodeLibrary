@@ -53,8 +53,8 @@ int main()
 	int A,B; long long C; //set
 	int c;
 	A|=1<<c;            //insert c (c = 0~31)
-	A&=~(1<<c);
-	A^=1<<c;            //erase c (c = 0~31)
+	A&=~(1<<c);         //erase c (c = 0~31)
+	A^=1<<c;            //erase c (c = 0~31) ((A>>c)&1==1)
 	a&(-a);             //lowbit of A
 	A=0;                //empty set
 	A|B;                //union
@@ -75,7 +75,7 @@ int main()
 	}
 
 	//enumerate the subset of ALL
-	for(int i=0;i<ALL;i++)
+	for(int i=0;i<=ALL;i++)
 		;
 
 	//enumerate the nonempty proper subset of A
