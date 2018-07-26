@@ -23,6 +23,7 @@ For ACM/ICPC or other Algorithm Contests.
 | Mathematics                         |
 | Computational Geometry              |
 | String Algorithm                    |
+| Data Maker                          |
 | Others （Tips & Skills & Techniques） |
 
 
