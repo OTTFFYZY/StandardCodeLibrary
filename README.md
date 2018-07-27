@@ -10,20 +10,20 @@ For ACM/ICPC or other Algorithm Contests.
 
 ## Contents
 
-| Contents                            |
-| ----------------------------------- |
-| C++ STL & String                    |
-| Sorting Algorithm                   |
-| Basic Data Structure                |
-| Intermediate Data Structure         |
-| Brute-Force & Search                |
-| Dynamic Programming                 |
-| Hash                                |
-| Graph Theory                        |
-| Mathematics                         |
-| Computational Geometry              |
-| String Algorithm                    |
-| Data Maker                          |
+| Contents                              |
+| ------------------------------------- |
+| C++ STL & String                      |
+| Sorting Algorithm                     |
+| Basic Data Structure                  |
+| Intermediate Data Structure           |
+| Brute-Force & Search                  |
+| Dynamic Programming                   |
+| Hash                                  |
+| Graph Theory                          |
+| Mathematics                           |
+| Computational Geometry                |
+| String Algorithm                      |
+| Data Maker & Special Judge & Debug    |
 | Others （Tips & Skills & Techniques） |
 
 
