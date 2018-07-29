@@ -29,6 +29,7 @@
 | Lucas Theory / Extend Lucas Theory |               |           |      |      |
 | Linear Sieve (prime, phi, mu)      | $O(N)$        | $O(N)$    | OK！ |      |
 | Mobius Inversion                   |               |           |      |      |
+| Pell Function                      |               |           |      |      |
 |                                    |               |           |      |      |
 
 

@@ -47,7 +47,14 @@ int lca(int a,int b)
 	}
 	return fa[a][0];
 }
-
+void addnode(int u,int v) //add v, u is father of v
+{
+	//g[u].push_back(v); g[v].push_back(u);
+	dep[v]=dep[u]+1;
+	fa[v][0]=u;
+	for(int i=1;i<MB;i++)
+		fa[v][i]=fa[fa[v][i-1]][i-1];
+}
 
 int main()
 {

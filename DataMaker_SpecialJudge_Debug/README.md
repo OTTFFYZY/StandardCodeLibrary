@@ -8,14 +8,14 @@
 
 ## Contents
 
-| Contents                | Time | Memory | Code | Test |
-| ----------------------- | ---- | ------ | ---- | ---- |
-| Random Number           |      |        |      |      |
-| Random Permutation      |      |        |      |      |
-| Random Rooted Tree      |      |        |      |      |
-| Random Undirected Graph |      |        |      |      |
-| Random Directed Graph   |      |        |      |      |
-| Random Bipartite Graph  |      |        |      |      |
-|                         |      |        |      |      |
-|                         |      |        |      |      |
+| Contents                | Time       | Memory | Code | Test |
+| ----------------------- | ---------- | ------ | ---- | ---- |
+| Random Number           | $O(1)$     | $O(1)$ | OK!  |      |
+| Random Permutation      | $O(NlogN)$ | $O(N)$ | OK!  |      |
+| Random Rooted Tree      |            |        |      |      |
+| Random Undirected Graph |            |        |      |      |
+| Random Directed Graph   |            |        |      |      |
+| Random Bipartite Graph  |            |        |      |      |
+|                         |            |        |      |      |
+|                         |            |        |      |      |
 
