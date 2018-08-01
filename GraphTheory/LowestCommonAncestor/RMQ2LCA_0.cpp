@@ -5,11 +5,32 @@
 #include <algorithm>
 using namespace std;
 
-const int MV=1e5+5;
-const int MQ=1e5+5;
 typedef pair<int,int> PII;
+const int M=1e5+5;
+const int MQ=1e5+5;
+int a[M]={2,4,3,1,6,7,8,9,1,7};
+//        0,1,2,3,4,5,6,7,8,9
+PII rmqq[M];
+int na=10,cntq;
 
-vector<int> g[MV];
+vector<int> g[M];
+int fa[M];
+int st[M],stp;
+void rmq2lca()
+{
+	stp=0;
+	for(int i=0;i<na;i++)
+	{
+		int k=stp;
+		while(k&&a[st[k]]>a[i]) k--;
+		if(k) fa[i]=st[k];
+		if(k<stp) fa[st[k+1]]=i;
+		st[++k]=i;
+		stp=k;
+	}
+	fa[st[1]]=-1;
+}
+
 int nv,ne;
 void add_edge(int a,int b)
 {
@@ -23,33 +44,31 @@ struct Query
 	Query(int v=0,int id=0):v(v),id(id){}
 };
 vector<Query> q[MQ];
-int ans[MQ],cntq,nq;
+int ans[MQ],nq;
 void add_query(int a,int b)
 {
 	q[a].emplace_back(b,nq);
 	q[b].emplace_back(a,nq++);
 }
 
-int uf[MV],vis[MV];
+int uf[M],vis[M];
 int uf_find(int x)
 {
 	return x==uf[x]?x:uf[x]=uf_find(uf[x]);
 }
-void lca_init()
+int lca_init()
 {
+	int root;
 	memset(vis,0,sizeof(vis));
-	int a,b;
-	for(int i=0;i<ne;i++)
+	for(int i=0;i<nv;i++)
 	{
-		scanf("%d%d",&a,&b);
-		add_edge(a,b);
+		if(fa[i]!=-1) add_edge(i,fa[i]);
+		else root=i;
 	}
 	nq=0;
 	for(int i=0;i<cntq;i++)
-	{
-		scanf("%d%d",&a,&b);
-		add_query(a,b);
-	}
+		add_query(rmqq[i].first,rmqq[i].second);
+	return root;
 }
 
 void dfs(int u,int fa)
@@ -63,15 +82,19 @@ void dfs(int u,int fa)
 			uf[v]=u;
 		}
 	for(Query v:q[u])
-		if(vis[v.v]) ans[v.id]=uf_find(v.v);
+		if(vis[v.v]) ans[v.id]=a[uf_find(v.v)];
 }
-void lca(int root)
+void lca() //main process
 {
-	lca_init();
+	int root=lca_init();
 	dfs(root,root);
 }
 
 int main()
 {
+	rmq2lca();
+	for(int i=0;i<10;i++)
+		cout<<i<<" "<<fa[i]<<endl;
+	lca();
 	return 0;
 }
