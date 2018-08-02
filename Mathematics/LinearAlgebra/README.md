@@ -10,9 +10,9 @@
 
 | Contents                 | Time          | Memory     | Code | Test |
 | ------------------------ | ------------- | ---------- | ---- | ---- |
-| Matrix Class             | $/$           | $O(N^2)$   |      |      |
+| Matrix Class             | $/$           | $O(N^2)$   | OK!  |      |
 | Matrix Multiplication () |               |            |      |      |
-| Fibonacci / Recursion    | $N_m^3logN_n$ | $O(N_m^2)$ |      |      |
+| Fibonacci / Recursion    | $N_m^3logN_n$ | $O(N_m^2)$ | OK!  |      |
 | Guess Elimination        | $O(N^3)$      | $O(N^2)$   |      |      |
 |                          |               |            |      |      |
 |                          |               |            |      |      |
