@@ -8,16 +8,20 @@
 
 ## Contents
 
-| Contents                        | Time          | Memory     | Code | Test |
-| ------------------------------- | ------------- | ---------- | ---- | ---- |
-| Matrix Class                    | $/$           | $O(N^2)$   | OK!  |      |
-| Matrix Multiplication ()        |               |            |      |      |
-| Fibonacci / Recursion           | $N_m^3logN_n$ | $O(N_m^2)$ | OK!  | OK!  |
-| Circulant Matrix Multiplication | $N^2$         | $O(N)$     | OK!  | OK!  |
-| Guess Elimination (basic)       | $O(N^3)$      | $O(N^2)$   |      |      |
-|                                 |               |            |      |      |
-|                                 |               |            |      |      |
-|                                 |               |            |      |      |
+| Contents                          | Time             | Memory     | Code | Test |
+| --------------------------------- | ---------------- | ---------- | ---- | ---- |
+| Matrix Class                      | $/$              | $O(N^2)$   | OK!  |      |
+| Sparse Matrix Multiplication      | $O(N^3)$         | $O(N^2)$   | OK!  |      |
+| Matrix Multiplication Application | $O(N^3)$         | $O(N^2)$   |      |      |
+| Fibonacci / Recursion             | $N_m^3logN_n$    | $O(N_m^2)$ | OK!  | OK!  |
+| Circulant Matrix Multiplication   | $N^2$            | $O(N)$     | OK!  | OK!  |
+| Guess Elimination (basic)         | $O(N^3)$         | $O(N^2)$   |      |      |
+| Guess Elimination (Guess-Jordan)  | $O(N^3)$         | $O(N^2)$   |      |      |
+| Guess Elimination (xor)           | $O(N^3/W)$       | $O(N^2/W)$ |      |      |
+| Guess Elimination (modular)       | $O(N^3)$         | $O(N^2)$   |      |      |
+| Guess Elimination (int)           | $O(N_m^3logN_n)$ | $O(N^2)$   |      |      |
+| Determinant                       | $O(N^3)$         | $O(N^2)$   |      |      |
+|                                   |                  |            |      |      |
 
 
 
@@ -69,4 +73,9 @@ $A_{ij}=A_{0,(j-i+n)\%n}$
 
 ### Problem
 
-lrjb: LA3704
+lrjb: LA3704*
+
+
+
+## Guess Elimination
+
