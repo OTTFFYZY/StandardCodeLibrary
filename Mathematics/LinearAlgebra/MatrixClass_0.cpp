@@ -23,7 +23,7 @@ struct Ma // Matrix
 		n=_n; m=_m;
 		memset(a,0,sizeof(a));
 	}
-	int* operator[](const int n)
+	T* operator[](const int n)
 	{
 		return a[n];
 	}
