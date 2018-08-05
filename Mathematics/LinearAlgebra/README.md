@@ -8,21 +8,21 @@
 
 ## Contents
 
-| Contents                          | Time             | Memory     | Code | Test |
-| --------------------------------- | ---------------- | ---------- | ---- | ---- |
-| Matrix Class                      | $/$              | $O(N^2)$   | OK!  |      |
-| Sparse Matrix Multiplication      | $O(N^3)$         | $O(N^2)$   | OK!  |      |
-| Matrix Multiplication Application | $O(N^3)$         | $O(N^2)$   |      |      |
-| Fibonacci / Recursion             | $O(N_m^3logN_n)$ | $O(N_m^2)$ | OK!  | OK!  |
-| Circulant Matrix Multiplication   | $O(N^2)$         | $O(N)$     | OK!  | OK!  |
-| Upper Triangularization           | $O(N^3)$         | $O(N)$     |      |      |
-| Gauss Elimination (basic)         | $O(N^3)$         | $O(N^2)$   | OK!  |      |
-| Gauss Elimination (Gauss-Jordan)  | $O(N^3)$         | $O(N^2)$   |      |      |
-| Gauss Elimination (xor)           | $O(N^3/W)$       | $O(N^2/W)$ | OK!  |      |
-| Gauss Elimination (modular)       | $O(N^3)$         | $O(N^2)$   |      |      |
-| Gauss Elimination (int)           | $O(N_m^3logN_n)$ | $O(N^2)$   |      |      |
-| Determinant                       | $O(N^3)$         | $O(N^2)$   |      |      |
-|                                   |                  |            |      |      |
+| Contents                          | Time                | Memory     | Code | Test |
+| --------------------------------- | ------------------- | ---------- | ---- | ---- |
+| Matrix Class                      | $/$                 | $O(N^2)$   | OK!  |      |
+| Sparse Matrix Multiplication      | $O(N^3)$            | $O(N^2)$   | OK!  |      |
+| Matrix Multiplication Application | $O(N^3)$            | $O(N^2)$   |      |      |
+| Fibonacci / Recursion             | $O(N_m^3logN_n)$    | $O(N_m^2)$ | OK!  | OK!  |
+| Circulant Matrix Multiplication   | $O(N^2)$            | $O(N)$     | OK!  | OK!  |
+| Upper Triangularization           | $O(N^3)$            | $O(N)$     | OK!  |      |
+| Gauss Elimination (basic)         | $O(N_cN_r^2)$       | $O(N^2)$   | OK!  |      |
+| Gauss Elimination (Gauss-Jordan)  | $O(N_cN_r^2)$       | $O(N^2)$   | OK!  |      |
+| Gauss Elimination (xor)           | $O(N_cN_r^2/W)$     | $O(N^2/W)$ | OK!  |      |
+| Gauss Elimination (modular)       | $O(N_cN_r^2)$       | $O(N^2)$   |      |      |
+| Gauss Elimination (int)           | $O(N_cN_r^2logN_n)$ | $O(N^2)$   |      |      |
+| Determinant                       | $O(N^3)$            | $O(N^2)$   | OK!  |      |
+|                                   |                     |            |      |      |
 
 
 
