@@ -21,7 +21,7 @@
 | Gauss Elimination (xor)           | $O(N_cN_r^2/W)$     | $O(N^2/W)$ | OK!  |      |
 | Gauss Elimination (modular)       | $O(N_cN_r^2)$       | $O(N^2)$   |      |      |
 | Gauss Elimination (int)           | $O(N_cN_r^2logN_n)$ | $O(N^2)$   |      |      |
-| Linear Basis                      | $O(N_BN^2)$         | $O(N)$     |      |      |
+| Linear Basis                      | $O(N_BN^2)$         | $O(N)$     | OK!  |      |
 | Determinant                       | $O(N^3)$            | $O(N^2)$   | OK!  |      |
 |                                   |                     |            |      |      |
 
@@ -80,4 +80,8 @@ lrjb: LA3704*
 
 
 ## Gauss Elimination
+
+
+
+## Linear Basis
 
