@@ -78,6 +78,20 @@ struct VS // Vector Space
         return ans;
     }
     // rank in VS is get_rank(v)*2^(n-nb)
+    LL qp(LL a,LL n)
+    {
+        LL ans=1;
+        while(n)
+        {
+            if(n&1) ans*=a;
+            a*=a; n>>=1;
+        }
+        return ans;
+    }
+    LL get_allrank(LL v)
+    {
+        return get_rank(v)*qp(2,n-nb);
+    }
     void show(int aug=0) //printed augmented matrix
     {
         #ifdef Debug
