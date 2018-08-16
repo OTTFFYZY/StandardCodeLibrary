@@ -7,7 +7,7 @@ const int MT=1e6+5;
 const int MP=65;
 char t[MT]="abcabcab",p[MP]="abcab";
 
-unsigned int b[128]; //assi
+unsigned int b[128]; //ascii
 void get_b(char p[],int m)
 {
 	memset(b,0,sizeof(b));

@@ -8,17 +8,18 @@
 
 ## Contents
 
-| Contents                      | Code | Test |
-| ----------------------------- | ---- | ---- |
-| Trie (pointer)                | OK!  |      |
-| MP & KMP (Knuth-Morris-Pratt) | OK!  |      |
-| Extend KMP                    | OK!  | OK!  |
-| Aho-Corasick Automaton        | OK!  |      |
-| Suffix Array                  |      |      |
-| Suffix Automaton              |      |      |
-| Manacher                      | OK!  | OK!  |
-| Palindrome Tree               |      |      |
-| Shift-And / Shift-Or          | OK!  |      |
+| Contents                      | Time              | Memory            | Code | Test |
+| ----------------------------- | ----------------- | ----------------- | ---- | ---- |
+| Trie (pointer)                | $O(N)$            | $O(\sum N)$       | OK!  | OK!  |
+| Trie (array)                  | $O(N)$            | $O(\sum N)$       | OK!  |      |
+| MP & KMP (Knuth-Morris-Pratt) | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
+| Extend KMP                    | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  | OK!  |
+| Aho-Corasick Automaton        | $O(T\!+\!\sum P)$ | $O(T\!+\!\sum P)$ | OK!  |      |
+| Suffix Array                  |                   |                   |      |      |
+| Suffix Automaton              |                   |                   |      |      |
+| Manacher                      | $O(N)$            | $O(N)$            | OK!  | OK!  |
+| Palindrome Tree               | $O(N)$            | $O(N)$            |      |      |
+| Shift-And / Shift-Or          | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
 
 
 
