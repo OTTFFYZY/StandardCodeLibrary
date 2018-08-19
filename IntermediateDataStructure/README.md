@@ -22,5 +22,5 @@
 | Treap (without rotation)                       |      |      |
 | Splay Tree                                     |      |      |
 | Scapegoat Tree                                 |      |      |
-|                                                |      |      |
+| Block                                          |      |      |
 |                                                |      |      |
