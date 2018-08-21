@@ -24,7 +24,8 @@ For ACM/ICPC or other Algorithm Contests.
 | Computational Geometry                |
 | String Algorithm                      |
 | Data Maker & Special Judge & Debug    |
-| Others （Tips & Skills & Techniques） |
+| Others (Tips & Skills & Techniques)   |
+| Java & Python                         |
 
 
 
