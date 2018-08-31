@@ -13,7 +13,7 @@
 | Partition Tree                                 | OK!  | OK!  |
 | Leftist Tree                                   |      |      |
 | Segment Tree (scrq, rcrq)                      |      |      |
-| Weight Segment Tree (array, pointer)           |      |      |
+| Weight Segment Tree (array, pointer)           | OK!  |      |
 | Scan Line Segment Tree (rectangles area union) | OK!  | OK!  |
 | Scan Line Segment Tree (rectangles perimeter)  |      |      |
 | Persistent Segment Tree                        |      |      |
