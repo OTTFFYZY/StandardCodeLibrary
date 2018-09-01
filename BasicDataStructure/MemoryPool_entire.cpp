@@ -12,7 +12,10 @@ struct MemoryPool
 	}
 	T* add()
 	{
-		return pb?b[--pb]:&a[pa++];
+		T *p=pb?b[--pb]:&a[pa++];
+		*p=0; // T is a number
+		//p->clear(); T is a class
+		return p;
 	}
 	void del(T *x)
 	{ 
