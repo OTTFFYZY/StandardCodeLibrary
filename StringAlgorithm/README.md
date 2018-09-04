@@ -22,6 +22,7 @@
 | Manacher                      | $O(N)$            | $O(N)$            | OK!  | OK!  |
 | Palindrome Tree               | $O(N)$            | $O(N)$            |      |      |
 | Shift-And / Shift-Or          | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
+| String Minimum Representation | $O(S)$            | $O(1)$            |      |      |
 
 
 
@@ -32,6 +33,5 @@ mp[i]: ms[i] is palindromic center, the max extension in ms to left or right (in
 the length of this palindrome in the original string is mp[i]-1
 
 $\begin{matrix} s\ index: &0,&1,&2,&\dots,&i \\ ms\ index:&2,&4,&6,&\dots,&(i+1)*2 \end{matrix}$
-
 
 
