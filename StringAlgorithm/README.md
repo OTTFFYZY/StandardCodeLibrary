@@ -22,7 +22,7 @@
 | Manacher                      | $O(N)$            | $O(N)$            | OK!  | OK!  |
 | Palindrome Tree               | $O(N)$            | $O(N)$            |      |      |
 | Shift-And / Shift-Or          | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
-| String Minimum Representation | $O(S)$            | $O(1)$            |      |      |
+| String Minimum Representation | $O(S)$            | $O(1)$            | OK!  |      |
 
 
 
