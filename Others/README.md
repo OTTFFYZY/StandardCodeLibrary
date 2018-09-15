@@ -8,10 +8,10 @@
 
 ## Contents
 
-| Contents        | Code | Test |
-| --------------- | ---- | ---- |
-| Discretization  | OK!  | OK!  |
-| Intervals Union | OK!  | OK!  |
-|                 |      |      |
-|                 |      |      |
-|                 |      |      |
+| Contents        | Time                    | Memory | Code | Test |
+| --------------- | ----------------------- | ------ | ---- | ---- |
+| Discretization  | $O(NlogN) \sim O(logN)$ | $O(N)$ | OK!  | OK!  |
+| Intervals Union | $O(N)$                  | $O(N)$ | OK!  | OK!  |
+|                 |                         |        |      |      |
+|                 |                         |        |      |      |
+|                 |                         |        |      |      |
