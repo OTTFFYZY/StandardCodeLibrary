@@ -10,7 +10,7 @@ void merge(int *l,int *m,int *r)
 	int *p1=l,*p2=m+1; int k=0;
 	while(p1<=m||p2<=r)
 	{
-		if(p1>m||p2<=r&&*p1>*p2)
+		if(p1>m||(p2<=r&&*p1>*p2))
 		{
 			tmp[k++]=*p2;
 			p2++;

@@ -13,7 +13,7 @@
 | Linked List                                             | $/$              | $O(N)$         | OK!  |      |
 | Double-Linked List                                      | $/$              | $O(N)$         | OK!  |      |
 | Memory Pool (id, pointer, entire)                       | $O(1)$           | $O(N)$         | OK!  |      |
-| Union-Find Set (basic, depth, rank)                     | $O(\alpha(N))$   | $O(N)$         | OK!  | OK!  |
+| Union-Find Set (basic, depth, rank)                     | $O(\alpha(N))$   | $O(N)$         |   | OK!  |
 | Binary Heap (basic, entire, entire2)                    | $O(logN)$        | $O(N)$         |      |      |
 | Range Minimum Query Sparse-Table (basic, 2d)            | $/$              | $/$            | OK!  |      |
 | Fenwick Tree / Binary Index Tree (basic, rasq, rarq)    | $O(logN)$        | $O(NlogN)$     | OK!  |      |
