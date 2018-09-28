@@ -16,7 +16,7 @@ int cmp(int *r,int a,int b,int l)
 }
 void get_sa(int *s,int *sa,int n,int m)
 {
-	int i,j,p; int *x,*y,*t;
+	int i,j,p; int *x=wa,*y=wb,*t;
 	// count sort
 	for(i=0;i<m;i++) ws[i]=0;
 	for(i=0;i<n;i++) ws[x[i]=s[i]]++;
@@ -26,7 +26,7 @@ void get_sa(int *s,int *sa,int n,int m)
 	for(j=1,p=1;p<n;j*=2,m=p)
 	{
 		for(p=0,i=n-j;i<n;i++) y[p++]=i;
-		for(i=0;i<n;i++) if(sa[i]>=y) y[p++]=sa[i]-j;
+		for(i=0;i<n;i++) if(sa[i]>=j) y[p++]=sa[i]-j;
 		for(i=0;i<n;i++) wv[i]=x[y[i]];
 		
 		for(i=0;i<m;i++) ws[i]=0;
