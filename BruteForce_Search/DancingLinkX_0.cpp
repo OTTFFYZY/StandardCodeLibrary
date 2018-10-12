@@ -40,12 +40,12 @@ struct DLX // Dancing Link X
 		}
 		else
 		{
+
 			a[si]=CLLNode(c,a[C].d,c[R],a[c[R]].r,R,C);
 		}
-
 		si++;
 	}
-}
+};
 
 int main()
 {
