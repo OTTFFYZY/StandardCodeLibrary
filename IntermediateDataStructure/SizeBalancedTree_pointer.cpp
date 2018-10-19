@@ -39,6 +39,12 @@ struct SBT
         maintain(t,0);
         maintain(t,1);
     }
+    int getmax(TN *t)
+    {
+        while(t->ch[1])
+            t=t->ch[1];
+        return t->v;
+    }
     void insert(TN *&t,int v)
     {
         if(t==zero)
@@ -56,6 +62,10 @@ struct SBT
                 insert(t->ch[1],v);
             maintain(t,v>=t->v);
         }
+    }
+    void remove(int v)
+    {
+
     }
     void show(TN *t)
     {
