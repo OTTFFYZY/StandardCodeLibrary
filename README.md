@@ -10,22 +10,23 @@ For ACM/ICPC or other Algorithm Contests.
 
 ## Contents
 
-| Contents                              |
-| ------------------------------------- |
-| C++ STL & String                      |
-| Sorting Algorithm                     |
-| Basic Data Structure                  |
-| Intermediate Data Structure           |
-| Brute-Force & Search                  |
-| Dynamic Programming                   |
-| Hash                                  |
-| Graph Theory                          |
-| Mathematics                           |
-| Computational Geometry                |
-| String Algorithm                      |
-| Data Maker & Special Judge & Debug    |
-| Others (Tips & Skills & Techniques)   |
-| Java & Python                         |
+| Contents                            |
+| ----------------------------------- |
+| C++ STL & String                    |
+| Sorting Algorithm                   |
+| Basic Data Structure                |
+| Intermediate Data Structure         |
+| Advanced Data Structure             |
+| Brute-Force & Search                |
+| Dynamic Programming                 |
+| Hash                                |
+| Graph Theory                        |
+| Mathematics                         |
+| Computational Geometry              |
+| String Algorithm                    |
+| Data Maker & Special Judge & Debug  |
+| Others (Tips & Skills & Techniques) |
+| Java & Python                       |
 
 
 
@@ -50,3 +51,8 @@ partition tree, segment tree
 ## Graph Theory
 
 BFS, DFS, connectivity, 
+
+
+
+## Others (Tips & Skills & Techniques)
+
