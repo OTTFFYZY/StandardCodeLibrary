@@ -8,16 +8,17 @@
 
 ## Contents
 
-| Contents           | Time               | Memory   | Code | Test |
-| ------------------ | ------------------ | -------- | ---- | ---- |
-| Hash Table (chain) | $O(1)$             | $O(N)$   | OK!  |      |
-| Modular Hashing    | $O(1)$             | $O(1)$   | OK!  |      |
-| String Hashing     | $O(|S|)$           | $O(1)$   | OK!  |      |
-| Double Hashing     | $O(1)/O(|S|)$      | $O(1)$   | OK!  |      |
-| Substring Hashing  | $O(|S|) \sim O(1)$ | $O(|S|)$ | OK!  |      |
-| Tree Hashing       |                    |          |      |      |
-| Graph Hashing      |                    |          |      |      |
-|                    |                    |          |      |      |
+| Contents                     | Time               | Memory   | Code | Test |
+| ---------------------------- | ------------------ | -------- | ---- | ---- |
+| Hash Table (chaining)        | $O(1)$             | $O(N)$   | OK!  |      |
+| Hash Table (open addressing) | $O(1)$             | $O(N)$   | OK!  |      |
+| Modular Hashing              | $O(1)$             | $O(1)$   | OK!  |      |
+| String Hashing               | $O(|S|)$           | $O(1)$   | OK!  |      |
+| Double Hashing               | $O(1)/O(|S|)$      | $O(1)$   | OK!  |      |
+| Substring Hashing            | $O(|S|) \sim O(1)$ | $O(|S|)$ | OK!  |      |
+| Tree Hashing                 |                    |          |      |      |
+| Graph Hashing                |                    |          |      |      |
+|                              |                    |          |      |      |
 
 
 

@@ -92,7 +92,7 @@ ULL DJB2_hash(char *str)
 	register ULL hash=5381;
 	ULL ch;
 	while(ch=*str++)
-		hash+=(hash<<5)+ch;
+		hash+=(hash<<5)+hash+ch;
 	return hash;
 }
 
