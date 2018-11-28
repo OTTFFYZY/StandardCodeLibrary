@@ -13,14 +13,16 @@
 | Linked List                                             | $/$              | $O(N)$         | OK!  |      |
 | Double-Linked List                                      | $/$              | $O(N)$         | OK!  |      |
 | Memory Pool (id, pointer, entire)                       | $O(1)$           | $O(N)$         | OK!  |      |
-| Union-Find Set (basic, depth, rank)                     | $O(\alpha(N))$   | $O(N)$         |   | OK!  |
+| Union-Find Set (basic, depth, rank, mod)                | $O(\alpha(N))$   | $O(N)$         | OK! |   |
 | Binary Heap (basic, entire, entire2)                    | $O(logN)$        | $O(N)$         |      |      |
-| Range Minimum Query Sparse-Table (basic, 2d)            | $/$              | $/$            | OK!  |      |
-| Fenwick Tree / Binary Index Tree (basic, rasq, rarq)    | $O(logN)$        | $O(NlogN)$     | OK!  |      |
-| Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) | $log^2N$         | $O(N^2log^2N)$ | OK!  |      |
-| Prefix Sum                                              | $O(1) \sim O(N)$ | $O(N)$         | OK!  |      |
-| Bitmap                                                  | $O(1)$           | $O(N)$         | OK!  |      |
-| Monotone Stack / Queue                                  | $/$              | $O(N)$         | OK!  |      |
+| Range Minimum Query Sparse-Table (basic)            | $O(NlogN) \sim O(1)$ | $O(NlogN)$   | OK!  |      |
+| Range Minimum Query Sparse-Table (2d0) | $O(N^2logN) \sim O(N)$ | $O(N^2logN)$ | OK! | |
+| Range Minimum Query Sparse-Table (2d1) | $O(N^2log^2N) \sim O(1)$ | $O(N^2log^2N)$ | OK! | |
+| Fenwick Tree / Binary Index Tree (basic, rasq, rarq)    | $O(logN)$      | $O(NlogN)$     | OK!  |      |
+| Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) | $O(log^2N)$     | $O(N^2log^2N)$ | OK!  |      |
+| Prefix Sum                                              | $O(N) \sim O(1)$ | $O(N)$         | OK!  |      |
+| Bitmap                                                  | $O(1)$          | $O(N)$         | OK!  |      |
+| Monotone Stack / Queue                                  | $O(N)$        | $O(N)$        | OK!  |      |
 
 
 
@@ -37,6 +39,7 @@ lrjb: LA3644 LA3027* LA4487* UVA11987*
 rasq -> Range Add Single-Point Query
 
 rarq -> Range Add Range Query
+
 
 
 ## Monotone Stack & Monotone Queue
