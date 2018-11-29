@@ -8,11 +8,12 @@
 
 ## Contents
 
-| Contents                                       | Code | Test |
+| Content                                        | Code | Test |
 | ---------------------------------------------- | ---- | ---- |
 | Partition Tree                                 | OK!  | OK!  |
 | Leftist Tree                                   |      |      |
-| Segment Tree (scrq, rcrq)                      |      |      |
+| Segment Tree (scrq_0)                          | OK!  |      |
+| Segment Tree (rcrq_0)                          |      |      |
 | Weight Segment Tree (array, pointer)           | OK!  |      |
 | Scan Line Segment Tree (rectangles area union) | OK!  | OK!  |
 | Scan Line Segment Tree (rectangles perimeter)  |      |      |
@@ -20,7 +21,7 @@
 | Segment Tree Merging                           |      |      |
 | Binary Search Tree                             |      |      |
 | Size Balanced Tree (pointer)                   |      |      |
-| Treap (rotation)                               |      |      |
+| Treap (rotation)                               | OK!  |      |
 | Treap (without rotation)                       |      |      |
 | Splay Tree                                     |      |      |
 | Scapegoat Tree                                 |      |      |
