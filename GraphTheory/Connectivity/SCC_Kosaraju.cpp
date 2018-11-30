@@ -43,3 +43,8 @@ void kosaraju(int nv)
 			ncnt++;
 		}
 }
+
+int main()
+{
+	return 0;
+}

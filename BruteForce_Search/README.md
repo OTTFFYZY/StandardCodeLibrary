@@ -20,7 +20,7 @@
 | Dancing Link X (Sudoku)                | $/$           | $/$     |      |      |
 | Searching In A Sorted Matrix           | $O(N\!+\!M)$  | $O(1)$  | OK!  | OK!  |
 | Find K-th Smallest Number (Quick Sort) | $O(N)$        | $O(1)$  | OK!  | OK!  |
-| Find K-th Smallest Number (BFPRT)      | $O(N)$        | $$      |      |      |
+| Find K-th Smallest Number (BFPRT)      | $O(N)$        | $O(N)$  | OK!  |      |
 | N Queens                               | $O(N!)$       | $/$     | OK!  | OK!  |
 | Median of Two Sorted Arrays            | $O(log(N+M))$ | $O(1)$  | OK!  | OK!  |
 
