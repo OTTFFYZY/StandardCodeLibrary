@@ -10,12 +10,12 @@ struct Heap
 	               // cnt is the number of element push in the heap 
 	int id[M],pos[M]; //
 	Heap() :n(0),cnt(0) {}
-	Heap(int a[],int nn) :n(0),cnt(nn)
+	Heap(int a[],int n) :n(n),cnt(n)
 	{
-		for(int i=0;i<nn;i++)
+		for(int i=1;i<=n;i++)
 		{
-			h[++n]=a[i];
-			id[n]=pos[n]=n;
+			h[i]=a[i-1];
+			id[i]=pos[i]=i;
 		}
 		for(int i=n/2;i>=1;i--) sink(i);
 	}
@@ -74,13 +74,13 @@ struct Heap
 		swim(pos[i]);
 		pop();
 	}
-	void change(int i,int val)
+	void change(int i,int v)
 	{
-		h[pos[i]]=val;
+		h[pos[i]]=v;
 		sink(pos[i]);
 		swim(pos[i]);
 	}
-	int get_kpush(int k)
+	int getv(int k) //id k -> v
 	{
 		return h[pos[k]];
 	}
