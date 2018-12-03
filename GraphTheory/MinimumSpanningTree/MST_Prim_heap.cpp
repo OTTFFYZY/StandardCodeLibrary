@@ -7,7 +7,7 @@ using namespace std;
 
 const int MV=1e5+5;
 const int ME=1e5+5;
-const int INF=1e5+5;
+const int INF=0x3f3f3f3f;
 
 typedef pair<int,int> PII;
 
