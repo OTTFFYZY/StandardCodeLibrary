@@ -8,14 +8,14 @@ typedef long long LL;
 struct Ma // Matrix
 {
 	LL a[MM][MM];
-	int n,m;
-	Ma(int n=0,int m=0):n(n),m(m)
+	int n; // m==n
+	Ma(int n=0):n(n)
 	{
 		memset(a,0,sizeof(a));
 	}
-	void clear(int _n,int _m)
+	void clear(int _n)
 	{
-		n=_n; m=_m;
+		n=_n;
 		memset(a,0,sizeof(a));
 	}
 	void uni()
@@ -26,18 +26,18 @@ struct Ma // Matrix
 	}
 	Ma operator=(const Ma &B)
 	{
-		n=B.n; m=B.m;
+		n=B.n;
 		for(int i=0;i<n;i++)
-			for(int j=0;j<m;j++)
+			for(int j=0;j<n;j++)
 				a[i][j]=B.a[i][j];
 		return *this;
 	}
 	Ma operator*(const Ma &B) const
 	{
-		Ma ans(n,B.m);
+		Ma ans(n);
 		for(int i=0;i<n;i++)
-			for(int j=0;j<B.m;j++)
-				for(int k=0;k<m;k++)
+			for(int j=0;j<n;j++)
+				for(int k=0;k<n;k++)
 				{
 					ans.a[i][j]+=a[i][k]*B.a[k][j]%MO;
 					ans.a[i][j]%=MO;
@@ -46,7 +46,7 @@ struct Ma // Matrix
 	}
 	Ma operator^(LL nn) const
 	{
-		Ma ans(n,n),x=*this;
+		Ma ans(n),x=*this;
 		ans.uni();
 		while(nn)
 		{
@@ -64,15 +64,15 @@ Ma Ans,A,B; // Ans = B^n * A
 LL getv(LL n)
 {
 	if(n<m) return f[n];
-	A.clear(1,m);
+	A.clear(m);
 	for(int i=0;i<m;i++)
-		A.a[i][0]=f[m-1-i];
-	B.clear(m,m);
+		A.a[i][0]=f[i];
+	B.clear(m);
 	for(int i=0;i<m;i++)
-		B.a[0][i]=a[m-1-i];
+		B.a[m-1][i]=a[i];
 	for(int i=1;i<m;i++)
-		B.a[i][i-1]=1;
-	Ans=(B^(n-m+1))*A;
+		B.a[i-1][i]=1;
+	Ans=(B^n)*A;
 	return Ans.a[0][0];
 }
 
@@ -81,6 +81,6 @@ int main()
 	m=2; f[0]=1; f[1]=1; a[0]=1; a[1]=1;
 	// 1 1 2 3 5 8 13
 	// 0 1 2 3 4 5 6
-	cout<<getv(5)<<endl;
+	cout<<getv(6)<<endl;
 	return 0;
 }

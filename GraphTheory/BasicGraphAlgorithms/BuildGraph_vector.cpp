@@ -23,6 +23,21 @@ void add_edge2(int a,int b,int w) //undirected
 	g[b].emplace_back(a,w);
 }
 
+const int M;
+int gm[M][M];
+vector<int> g2[M];
+int nv;
+void init2()
+{
+	for(int i=0;i<nv;i++)
+	{
+		g2[i].clear();
+		for(int j=0;j<nv;j++)
+			if(gm[i][j])
+				g2[i].push_back(j);
+	}
+}
+
 int main()
 {
 	init();

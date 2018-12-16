@@ -16,8 +16,8 @@ void bellmanFord(int st,int nv,int ne)
 	memset(d,INF,sizeof(d));
 	d[st]=0;
 	int u,v;
-	for(int i=0;i<n-1;i++)
-		for(int j=0;j<m;j++)
+	for(int i=0;i<nv-1;i++)
+		for(int j=0;j<ne;j++)
 		{
 			u=edges[j].fr; v=edges[j].to;
 			if(d[u]<INF) d[v]=min(d[v],d[u]+edges[i].d);
