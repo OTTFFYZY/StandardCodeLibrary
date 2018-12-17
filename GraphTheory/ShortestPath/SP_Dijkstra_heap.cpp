@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 const int MV=1e5+5;
@@ -70,6 +72,8 @@ struct Heap
 	}
 }heap;
 
+vector<PII> g[MV];
+int nv,ne;
 int vis[MV],d[MV];
 
 void dij(int s)
@@ -78,5 +82,22 @@ void dij(int s)
 	memset(d,0x3f,sizeof(d));
 	d[s]=0;
 	heap.init(nv);
-	change(s,0);
+	heap.change(s+1,0);
+	while(heap.h[1]!=INF)
+	{
+		PII p=heap.top();
+		int u=p.second-1;
+		d[u]=p.first;
+		vis[u]=1;
+		for(PII e:g[u])
+		{
+			if(vis[e.first]) continue;
+			heap.change(e.first+1,d[u]+e.second);
+		}
+	}
+}
+
+int main()
+{
+	return 0;
 }
