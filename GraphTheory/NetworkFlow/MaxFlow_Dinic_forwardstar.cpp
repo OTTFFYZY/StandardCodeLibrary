@@ -73,7 +73,7 @@ int dfs(int u,int mf)
 		}
 	}
 	return nf;
-
+}
 int maxflow()
 {
 	int mf=0;
