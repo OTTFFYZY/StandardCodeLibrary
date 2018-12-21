@@ -13,6 +13,7 @@ vector<int> cg[MV]; //complementary graph
 int nv,ne;
 
 int d[MV];
+//unordered_set<int> nvis,tmp;
 set<int> nvis,tmp;
 queue<int> qu;
 void bfs_cg(int st)

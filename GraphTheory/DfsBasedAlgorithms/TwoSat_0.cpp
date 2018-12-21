@@ -41,9 +41,14 @@ bool solve()
 		if(!dfs(i))
 		{
 			while(stp)
-				sat[st[stp--]]=0;
+				mark[st[stp--]]=0;
 			if(!dfs(i+1)) return 0;
 		}
 	}
 	return 1;
+}
+int main()
+{
+
+	return 0;
 }
