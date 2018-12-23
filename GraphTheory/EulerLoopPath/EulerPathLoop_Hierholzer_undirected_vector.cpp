@@ -2,13 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 #include <vector>
+#include <stack>
 #include <algorithm>
 
 using namespace std;
 
 typedef pair<int,int> PII;
-const int MV=1005;
-const int ME=1e5+5;
+const int MV=55;
+//const int ME=1e5+5;
 
 struct Edge
 {
@@ -30,7 +31,10 @@ void init()
 
 void add_edge(int u,int v)
 {
-	g[u].emplace_back(v,0,g[v].size());
+	if(u==v) //self loop
+		g[u].emplace_back(v,0,g[v].size()+1);
+	else
+		g[u].emplace_back(v,0,g[v].size());
 	g[v].emplace_back(u,0,g[u].size()-1);
 	deg[u]++; deg[v]++;
 }
@@ -42,31 +46,29 @@ int cur[MV];
 
 void dfs(int u)
 {
+	//for(int i=0;i<g[u].size();i++)
 	for(int &i=cur[u];i<g[u].size();i++)
 	{
 		if(g[u][i].vis) continue;
 		Edge &e=g[u][i];
 		e.vis=1; g[e.v][e.rev].vis=1;
-		dfs(u);
-		anse.push_back(u,e.v);
+		dfs(e.v);
+		anse.emplace(u,e.v);
 	}
-	ansv.push_back(u);
-}
-
-bool eulerLoop()
-{
-	int cnt=0;
-	for(int i=0;i<nv;i++)
-		if(deg[i]&1) cnt++;
-	if(!cnt) return 0;
-	while(!ansv.empty()) ansv.pop();
-	while(!anse.empty()) anse.pop();
-	memset(cur,0,sizeof(cur));
-	dfs(0);
-	return anse.size()==ne;
 }
 
 int st,ed;
+bool eulerLoop()
+{
+	for(int i=1;i<=nv;i++)
+		if(deg[i]&1) return 0;
+	while(!ansv.empty()) ansv.pop();
+	while(!anse.empty()) anse.pop();
+	memset(cur,0,sizeof(cur));
+	dfs(st);
+	return anse.size()==ne;
+}
+
 bool eulerPath()
 {
 	int cnt=0; st=ed=-1;
