@@ -6,8 +6,8 @@
 #include <algorithm>
 using namespace std;
 
-const int MV=1005;
-const int ME=1e6+5;
+const int MV=1e5+5;
+const int ME=1e5+5;
 
 vector<int> g[MV];
 int nv,ne;
@@ -19,7 +19,6 @@ stack<int> stu,stv;
 
 void init()
 {
-	memset(og,0,sizeof(og));
 	for(int i=0;i<nv;i++)
 		g[i].clear();
 }
@@ -85,3 +84,57 @@ void find_bcc() // Biconnected Component
 	for(int i=0;i<nv;i++)
 		if(!dfn[i]) dfs(i,-1);
 }
+
+
+int main()
+{
+	int u,v;
+	while(scanf("%d%d",&nv,&ne)!=EOF&&nv&&ne)
+	{
+		init();
+		for(int i=0;i<ne;i++)
+		{
+			scanf("%d%d",&u,&v);
+			add_edge(u,v);
+		}
+		find_bcc();
+		
+		cout<<"i:\t";
+		for(int i=0;i<nv;i++)
+			cout<<i<<"\t";
+		cout<<endl<<"iscut:\t";
+		for(int i=0;i<nv;i++)
+			cout<<iscut[i]<<"\t";
+		cout<<endl<<"bccno:\t";
+		for(int i=0;i<nv;i++)
+			cout<<bccno[i]<<"\t";
+		cout<<endl;
+		
+		cout<<endl<<nbcc<<endl;
+		for(int i=0;i<nbcc;i++)
+		{
+			cout<<i<<":";
+			for(int j:bcc[i]) cout<<" "<<j;
+			cout<<endl;
+		}	
+	}
+	return 0;
+}
+
+/*
+6 5
+0 1
+1 2
+2 3
+3 4
+4 5
+
+5 5
+0 1
+1 2
+2 3
+3 4
+4 0
+
+0 0
+*/

@@ -24,7 +24,7 @@ void dfs2(int u)
 {
 	vis[u]=1;
 	scc[u]=ncnt;
-	for(int v:g[u])
+	for(int v:tg[u])
 		if(!vis[v]) dfs2(v);
 }
 
