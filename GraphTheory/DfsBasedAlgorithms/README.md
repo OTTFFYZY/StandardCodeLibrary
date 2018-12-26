@@ -11,7 +11,7 @@
 | Traversing Binary Tree                        | $O(N)$       | $O(N)$       | OK!  |      |
 | Have Loop (undirected, undirected2, directed) | $O(V\!+\!E)$ | $O(V\!+\!E)$ | OK!  |      |
 | Bi-color                                      | $O(V\!+\!E)$ | $O(V\!+\!E)$ | OK!  |      |
-| 2-SAT                                         | $O(V\!+\!E)$ | $O(V\!+\!E)$ | OK!  |      |
+| 2-SAT                                         | $O(V\!+\!E)$ | $O(V\!+\!E)$ | OK!  | OK!  |
 |                                               |              |              |      |      |
 
 

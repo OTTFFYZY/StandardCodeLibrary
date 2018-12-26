@@ -12,7 +12,7 @@ int nv,ne;
 
 int dfn[MV],low[MV],ndfn;
 int st[MV],inst[MV],stp;
-int col[MV],ncol;
+int sccno[MV],nscc;
 
 void tarjan(int u)
 {
@@ -27,17 +27,17 @@ void tarjan(int u)
 			low[u]=min(low[u],low[v]);
 		}
 		else if(inst[v])
-			low[u]=min(low[u],low[v]);
+			low[u]=min(low[u],dfn[v]);
 	}
-	if(low[u]==u)
+	if(low[u]==dfn[u])
 	{
 		while(1)
 		{
 			inst[st[stp]]=0;
-			col[st[stp]]=ncol;
+			sccno[st[stp]]=nscc;
 			if(st[stp--]==u) break;
 		}
-		ncol++;
+		nscc++;
 	}
 }
 
@@ -47,7 +47,7 @@ void scc_tarjan()
 	ndfn=0;
 	memset(inst,0,sizeof(inst));
 	stp=0;
-	ncol=0;
+	nscc=0;
 	for(int i=0;i<nv;i++)
 		if(!dfn[i]) tarjan(i);
 }

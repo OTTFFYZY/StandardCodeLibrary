@@ -9,6 +9,12 @@ const int MV=1e5+5;
 vector<int> g[MV*2];
 int nv;
 
+void init()
+{
+	for(int i=0;i<nv*2;i++)
+		g[i].clear();
+}
+
 // x==vx or y==vy
 void add_clause(int x,int vx,int y,int vy)
 {
@@ -26,13 +32,13 @@ bool dfs(int u)
 	if(mark[u^1]) return 0;
 	if(mark[u]) return 1;
 	mark[u]=1;
-	st[++stp]=0;
+	st[++stp]=u;
 	for(int v:g[u])
 		if(!dfs(v)) return 0;
 	return 1;
 }
 
-bool solve()
+bool twoSat()
 {
 	memset(mark,0,sizeof(mark));
 	for(int i=0;i<nv*2;i+=2)
