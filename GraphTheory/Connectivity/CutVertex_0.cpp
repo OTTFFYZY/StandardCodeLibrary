@@ -36,7 +36,7 @@ void find_cut_vertex()
 	memset(dfn,0,sizeof(dfn));
 	ndfn=0;
 	for(int i=0;i<nv;i++)
-		if(!dfn[i]) dfs(nv,-1);
+		if(!dfn[i]) dfs(i,-1);
 }
 
 
