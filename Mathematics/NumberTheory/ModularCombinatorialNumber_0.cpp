@@ -9,8 +9,6 @@ void init()
 {
 	inv[1]=fa[1]=ifa[1]=1;
     for(int i=2;i<M;i++)
-        
-    for(int i=2;i<M;i++)
     {
     	fa[i]=fa[i-1]*i%MOD;
     	inv[i]=(MOD-MOD/i)*inv[MOD%i]%MOD;
