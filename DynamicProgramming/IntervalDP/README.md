@@ -12,9 +12,9 @@
 | ----------------------------------------- | -------- | -------- | ---- | ---- |
 | Longest Palindromic Subsequence (LPS)     | $O(N^2)$ | $O(N)$   | OK!  |      |
 | Number of Palindromic Subsequence         | $O(N^2)$ | $O(N)$   | OK!  |      |
-| Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ |      |      |
+| Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Matrix Chain Multiplication (MCM)         | $O(N^3)$ | $O(N^2)$ | OK!  |      |
-| Optimal Triangulation                     | $O(N^3)$ | $O(N^2)$ | OK!  |      |
+| Optimal Triangulation (convex, polygon)   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (basic)                    | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (quadrilateral inequality) | $O(N^2)$ |          |      |      |
 |                                           |          |          |      |      |
