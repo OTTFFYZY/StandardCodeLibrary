@@ -15,7 +15,7 @@ int lps(char s[])
 		for(int j=0;j<=l-i;j++)
 		{
 			if(s[j]==s[j+i-1])
-				dp[i%3][j]=dp[(i+1)%3][j+1]+2;
+				dp[i%3][j]=dp[(i+1)%3][j+1]+2; //(i-2+3)%3=(i+1)%3
 			else
 				dp[i%3][j]=max(dp[(i+2)%3][j],dp[(i+2)%3][j+1]);
 		}
