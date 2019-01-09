@@ -51,7 +51,7 @@ It provides one of two known approaches to solving the graph realization problem
 
 A sequence of non-negative integers $ d_{1} \geq \cdots \geq d_{n} $ can be represented as the degree sequence of a finite simple graph on n vertices if and only if $d_1+\cdots+d_n$ is even and
 $$
-\sum_{i=1}^{k} d_i \leq k(k+1)+\sum_{i=k+1}^{n} min(d_i,k)
+\sum_{i=1}^{k} d_i \leq k(k-1)+\sum_{i=k+1}^{n} min(d_i,k)
 $$
 for every k in $1 \leq k \leq n$.
 
