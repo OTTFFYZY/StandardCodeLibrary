@@ -17,8 +17,8 @@
 | Optimal Triangulation (convex, polygon)   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (basic)                    | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (quadrilateral inequality) | $O(N^2)$ |          |      |      |
-|                                           |          |          |      |      |
-|                                           |          |          |      |      |
+| Stones Merging ()                         |          |          |      |      |
+| Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 
 
 
@@ -42,7 +42,7 @@ $dp[0][j]=0$
 
 $dp[i][j]=dp[i-1][j]+dp[i-1][j+1]-dp[i-2][j+1]$
 
-$dp[i][j]+=dp[i-2][j+1]+1\ (if\ s[j]==s[j+i-1])$
+$ dp[i][j]+=dp[i-2][j+1]+1\ (if\ s[j]==s[j+i-1]) $
 
 
 
@@ -54,7 +54,7 @@ $dp[i][j] : Minimum \ Number \ of \ Operations \  of A_i A_{i+1} \cdots A_{j}$
 
 $dp[i][i]=0$
 
-$dp[i][j]=min(dp[i][k]+dp[k+1][j]+si[i]*si[k+1]*si[j+1])$ , for $i<=k<j$
+$dp[i][j]=min(dp[i][k]+dp[k+1][j]+si[i]*si[k+1]*si[j+1])$ , for $ i<=k<j $
 
 
 
@@ -68,7 +68,7 @@ $dp[i][j] : Minimum \ Sum \ of \ w \ of \ Convex \ P_i P_{i+1} \cdots P_{j}$
 
 $dp[i][i+1]=0$
 
-$dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+w(i,j,k))$ , for $i<k<j$
+$dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+w(i,j,k))$ , for $ i<k<j $
 
 
 
@@ -84,8 +84,25 @@ $sum[0]=0$
 
 $sum[i]=\sum_{1}^{i} stone[i]$
 
-$dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+sum[j]-sum[i])$ , for $i<k<j$
+$dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+sum[j]-sum[i])$ , for $ i<k<j $
 
 
 
 ### Quadrilateral Inequality
+
+
+
+
+
+## Regular Brackets Sequence
+
+Given a sequence S of ‘[’, ‘]’, ‘(’ and ‘)’ , add least number of brackets to get an regular brackets sequence.
+
+$dp[i][j] : the \ Least \ Number \ of \ Brackets \ Need \ to \ Add \\ Which\ Make \ Subsequence \ S[i,j] \ Be \ A \ Regular \ Brackets \ Sequence$
+
+$dp[i+1][i]=0,dp[i][i]=1$
+
+$dp[i][j]=min(dp[i][j],dp[i+1][j-1])$ , if $match(s[i],s[j])$
+
+$dp[i][j]=min(dp[i][j],dp[i][k]+dp[k+1][j])$ , for $ i <= k<j$
+
