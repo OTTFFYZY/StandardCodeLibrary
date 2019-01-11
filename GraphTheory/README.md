@@ -8,6 +8,7 @@
 | ------------------------ |
 | Basic Graph Algorithms   |
 | DFS-Based Algorithms     |
+| Tree Algorithms          |
 | Connectivity             |
 | Topological Sort         |
 | Shortest Path            |
