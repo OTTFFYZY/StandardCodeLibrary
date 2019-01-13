@@ -27,10 +27,23 @@ struct BT
 	}
 	void preorder(int u)
 	{
-		if(!u) continue;
+		if(!u) return;
 		cout<<tn[u].v<<" ";
 		preorder(u.ls);
 		preorder(u.rs);
 	}
-	void inorder()
+	void inorder(int u)
+	{
+		if(!u) return;
+		inorder(u.ls);
+		cout<<tn[u].v<<" ";
+		inorder(u.rs);
+	}
+	void postorder(int u)
+	{
+		if(!u) return;
+		postorder(u.ls);
+		postorder(u.rs);
+		cout<<tn[u].v<<" ";
+	}
 };
