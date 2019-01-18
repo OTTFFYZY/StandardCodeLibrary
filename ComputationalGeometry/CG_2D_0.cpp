@@ -29,6 +29,7 @@ inline double sqr(double x)
 /*================================*\
 |                                  |
 |  1.Point & Vector                |
+|  2.Line & Seg & Ray              |
 |                                  |
 \*================================*/
 
@@ -66,11 +67,11 @@ struct Point
 	{
 		return Point(-x,-y);
 	}
-	friend double dot(const Point &A,const Point &B) //dot prodect
+	friend double dot(const Point &A,const Point &B) //dot product
 	{
 		return A.x*B.x+A.y*B.y;
 	}
-	friend double det(const Point &A,const Point &B) //cross prodect
+	friend double det(const Point &A,const Point &B) //cross product
 	{
 		return A.x*B.y-A.y*B.x;
 	}
@@ -132,8 +133,85 @@ struct Point
 			x=-x,y=-y;
 		return p;
 	}
+
+	friend Point lineIntersection
+		(const Point &a,const Point &b,const Point &c,const Point &d)
+	{
+		double u=a.det3(b,c),v=b.det3(a,d);
+		return Point((c.x*v+d.x*u)/(u+v),(c.y*v+d.y*u)/(u+v));
+	}
+	bool onLine(const Point &b,const Point &c) const
+	{
+		return !sgn(det3(b,c));
+	}
+	double toLine(const Point &b,const Point &c) const
+	{
+		return fabs(det3(b,c)) / dis(b,c);
+	}
+	
+	bool onSeg(const Point &b,const Point &c) const
+	{
+		return !sgn(det3(b,c)) 
+		      &&sgn(dot3(b,c))<=0;
+	}
+	bool inSeg(const Point &b,const Point &c) const
+	{   // without endpoint
+		return !sgn(det3(b,c)) 
+		      &&sgn(dot3(b,c))<0;
+	}
+	double toSeg(const Point &b,const Point &c) const
+	{
+		Point d=*this+(b-c).normal(); // ad bc
+		Point p=lineIntersection(*this,d,b,c);
+		if(p.onSeg(b,c)) 
+			return dis(p);
+		return min(dis(b),dis(c));
+	}
+
+	bool onRay(const point &p,const Point &v) const
+	{
+		return !sgn(det3(p,p+v)) && sgn(dot(*this-p,v))>=0;
+	}
+	bool onLeft(const Point &p,const Point &v) const
+	{
+		return sgn(det(*this-p,v))>0;
+	}
 };
 // typedef Point Vector;
+
+bool isLineSame(const Point &a,const Point &b,const Point &c,const Point &d)
+{
+	return c.onSeg(a,b) && d.onSeg(a,b);
+}
+
+bool isParallel(const Point &a,const Point &b,const Point &c,const Point &d)
+{
+	//return !sgn(det(b-a,d-c));
+	return !isSame(a,b,c,d) && !sgn(det(b-a,d-c));
+}
+bool isLineIntersection(const Point &a,const Point &b,const Point &c,const Point &d)
+{
+	return sgn(det(b-a,d-c));
+}
+bool isSegIntersection(const Point &a,const Point &b,const Point &c,const Point &d)
+{
+	// with endpoint
+	// return !isParallel(a,b,c,d)
+	//	    &&sgn(a.det3(b,c)*a.det3(b,d))<=0
+	//	    &&sgn(c.det3(d,a)*c.det3(d,b))<=0;
+	// without endpoint
+	return sgn(a.det3(b,c)*a.det3(b,d))<0
+		 &&sgn(c.det3(d,a)*c.det3(d,b))<0;
+}
+
+struct Line
+{
+	Point a,b;
+	Line(double xa=0,double ya=0,double xb=0,double yb=0)
+		:a(xa,ya),b(xb,yb){}
+	Line(const Point &a,const Point &b)
+		:a(a),b(b){}
+};
 
 int main()
 {
