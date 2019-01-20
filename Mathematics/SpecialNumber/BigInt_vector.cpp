@@ -422,7 +422,7 @@ struct BigInt
         return res;
     }
 
-    BigInt operator*(const BigInt &v) const 
+    BigInt operator*(const BigInt &v) const //O(n^log(3))
     {
         vector<int> a6 = convert_BASE(this->a, BASE_DIGITS, 6);
         vector<int> b6 = convert_BASE(v.a, BASE_DIGITS, 6);

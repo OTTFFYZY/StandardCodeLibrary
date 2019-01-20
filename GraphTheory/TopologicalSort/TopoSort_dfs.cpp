@@ -21,7 +21,7 @@ void add_edge(int fr,int to) //directed
 
 
 int vis[MV];
-int topo[MV],p; // ans
+int topo[MV],ord[MV],p; // ans
 bool dfs(int u)
 {
 	if(vis[u]==1) return 1;
@@ -31,6 +31,7 @@ bool dfs(int u)
 		if(dfs(v)) return 1;
 	vis[u]=2;
 	topo[--p]=u;
+	ord[u]=p;
 	return 0;
 }
 bool topo_sort()   // if cannot do topo_sort return false

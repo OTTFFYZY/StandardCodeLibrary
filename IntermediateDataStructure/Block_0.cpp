@@ -7,7 +7,7 @@ const int M=1e5+5;
 int bs,belong[M],nb,l[M],r[M],n,q;
 int a[M],ma[M];
 
-void build()
+void build() // O(n)
 {
 	bs=sqrt(n);
 	nb=n/bs; if(n%bs) nb++;
@@ -25,10 +25,16 @@ void build()
 void update(int x,int y)
 {
 	a[x]+=y;
+	// y>=0 O(1)
 	ma[belong[x]]=max(ma[belong[x]],a[x]);
+	// y>=0 or y<0 O(sqrt(n))
+	// x=belong[x];
+	// ma[x]=-INF;
+	// for(int i=l[x];i<=r[x];i++)
+	//     ma[x]=max(ma[x],a[i]);
 }
 
-int query(int x,int y)
+int query(int x,int y) // O(sqrt(n))
 {
 	int ans=0;
 	if(belong[x]==belong[y])
