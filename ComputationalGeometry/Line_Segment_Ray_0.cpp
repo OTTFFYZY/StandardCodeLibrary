@@ -134,6 +134,10 @@ struct Point
 		return p;
 	}
 
+	friend Point mid(const Point &a,const Point &b)
+	{
+		return (a+b)*0.5;
+	}
 	friend Point lineIntersection
 		(const Point &a,const Point &b,const Point &c,const Point &d)
 	{

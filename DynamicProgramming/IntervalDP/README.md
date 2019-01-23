@@ -16,8 +16,9 @@
 | Matrix Chain Multiplication (MCM)         | $O(N^3)$ | $O(N^2)$ | OK!  |      |
 | Optimal Triangulation (convex, polygon)   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (basic)                    | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
-| Stones Merging (quadrilateral inequality) | $O(N^2)$ |          |      |      |
-| Stones Merging ()                         |          |          |      |      |
+| Stones Merging (quadrilateral inequality) | $O(N^2)$ | $O(N^2)$ | OK!  |      |
+| Stones Merging (circle)                   |          |          |      |      |
+| Stones Merging (Garsia Wachs)             |          |          |      |      |
 | Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 
 
