@@ -16,3 +16,6 @@
 
 
 
+## Egg Drop
+
+$dp[i][j]: the \ highest \ floor \ of \ i \  eggs , \ j \ tries​$

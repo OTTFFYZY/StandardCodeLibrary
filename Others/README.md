@@ -8,9 +8,10 @@
 
 ## Contents
 
-| Contents        | Time                    | Memory | Code | Test |
-| --------------- | ----------------------- | ------ | ---- | ---- |
-| Discretization  | $O(NlogN) \sim O(logN)$ | $O(N)$ | OK!  | OK!  |
-| Intervals Union | $O(N)$                  | $O(N)$ | OK!  | OK!  |
-| strtok & sscanf | $O(N)$                  | $O(N)$ | OK!  | OK!  |
-|                 |                         |        |      |      |
+| Contents          | Time                    | Memory | Code | Test |
+| ----------------- | ----------------------- | ------ | ---- | ---- |
+| Discretization    | $O(NlogN) \sim O(logN)$ | $O(N)$ | OK!  | OK!  |
+| Intervals Union   | $O(N)$                  | $O(N)$ | OK!  | OK!  |
+| Run Length Coding | $O(N)$                  | $O(N)$ |      |      |
+| strtok & sscanf   | $O(N)$                  | $O(N)$ | OK!  | OK!  |
+|                   |                         |        |      |      |
