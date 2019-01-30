@@ -17,7 +17,7 @@
 | Min Vertices Cover Set Of Tree                 | $O(N)$              | $O(N)$ |      |      |
 | Min Vertices Cover Set Of Tree (precise cover) |                     |        |      |      |
 | Min Edges Cover Set Of Tree                    |                     |        |      |      |
-| Tree Chain Partition                           | $O(N) \sim O(logN)$ | $O(N)$ |      |      |
+| Tree Chain Partition                           | $O(N) \sim O(logN)$ | $O(N)$ | OK!  |      |
 |                                                |                     |        |      |      |
 |                                                |                     |        |      |      |
 
