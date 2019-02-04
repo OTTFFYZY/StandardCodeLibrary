@@ -7,6 +7,7 @@ const int MOD=1e9+7;
 LL inv[M],fa[M],ifa[M];
 void init()
 {
+	fa[0]=ifa[0]=1;
 	inv[1]=fa[1]=ifa[1]=1;
     for(int i=2;i<M;i++)
     {
