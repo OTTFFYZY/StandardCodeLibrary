@@ -5,28 +5,30 @@ typedef long long LL;
 
 const int MOD=1e9+7;
 template<typename T>
-struct Num
+struct ModNum
 {
 	T a;
-	Num(T a=0):a(a){}
-	Num mod()
+	ModNum(T a=0):a(a)
 	{
-		a%=MOD;
-		a=(a+MOD)%MOD;
+		mod();
+	}
+	ModNum mod()
+	{
+		a=(a%MOD+MOD)%MOD;
 		return *this;
 	}
-	Num operator+(const Num &B) const
+	ModNum operator+(const ModNum &B) const
 	{
 		return (a+B.a)%MOD;
 	}
-	Num operator-(const Num &B) const
+	ModNum operator-(const ModNum &B) const
 	{
 		return (a+MOD-B.a)%MOD;
 	}
-	Num operator*(const Num &B) const
+	ModNum operator*(const ModNum &B) const
 	{
 		//return (a*b)%MOD; if a,b is small
-		Num ans=0,tmp=*this;
+		ModNum ans=0,tmp=*this;
 		T b=B.a;
 		while(b)
 		{
@@ -36,9 +38,9 @@ struct Num
 		}
 		return ans;
 	}
-	Num operator^(const Num &B) const
+	ModNum operator^(const ModNum &B) const
 	{
-		Num ans=1,tmp=*this;
+		ModNum ans=1,tmp=*this;
 		T b=B.a;
 		while(b)
 		{

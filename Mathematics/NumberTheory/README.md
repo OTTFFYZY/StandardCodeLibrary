@@ -10,7 +10,7 @@
 
 | Contents                           | Time          | Memory    | Code | Test |
 | ---------------------------------- | ------------- | --------- | ---- | ---- |
-| Modular Operator (+, -, *, ^, mod) | $/$           | $/$       | OK!  |      |
+| Modular Operator (+, -, *, ^, mod) | $/$           | $/$       | OK!  | OK!  |
 | GCD & LCM (Euclid Method)          | $O(logN)$     | $/$       | OK!  |      |
 | Extend Euclid                      | $O(logN)$     | $O(1)$    | OK!  | OK!  |
 | Inverse Element / Modular Division | $O(logN)$     | $O(1)$    | OK!  |      |
