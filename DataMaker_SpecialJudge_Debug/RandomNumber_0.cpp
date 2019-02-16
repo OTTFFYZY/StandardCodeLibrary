@@ -2,9 +2,14 @@
 #include <stdio.h>
 #include <time.h>
 #include <algorithm>
+#include <chrono>
 #include <random>
 #include <math.h>
 using namespace std;
+
+mt19937 rnd(chrono::system_clock::now().time_since_epoch().count());
+// rnd() is a better generator
+
 
 int randn(int l,int r) // generate random number in range [l,r]
 {
@@ -21,8 +26,12 @@ double randd(int l,int r,double eps) // generate random number in range [l*eps,r
 
 int main()
 {
-	cout<<RAND_MAX<<endl;
+	for(int i=0;i<10;i++)
+		cout<<rnd()<<" ";
+	cout<<endl;
+
 	srand(time(0));
+	cout<<RAND_MAX<<endl;
 	for(int i=0;i<10;i++)
 		cout<<rand()<<" ";
 	cout<<endl;
