@@ -11,6 +11,7 @@
 | Contents                          | Time                | Memory     | Code | Test |
 | --------------------------------- | ------------------- | ---------- | ---- | ---- |
 | Matrix Class                      | $/$                 | $O(N^2)$   | OK!  |      |
+| Matrix Multiplication (block)     | $O(N^3)$            | $O(N^2)$   | OK!  |      |
 | Sparse Matrix Multiplication      | $O(N^3)$            | $O(N^2)$   | OK!  |      |
 | Matrix Multiplication Application | $O(N^3)$            | $O(N^2)$   |      |      |
 | Fibonacci / Recursion             | $O(N_m^3logN_n)$    | $O(N_m^2)$ | OK!  |      |

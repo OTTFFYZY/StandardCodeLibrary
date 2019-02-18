@@ -62,9 +62,10 @@ struct Ma // Matrix
 	Ma operator*(const Ma &B) const
 	{
 		Ma ans(n,B.m);
-		for(int i=0;i<n;i++)
-			for(int j=0;j<B.m;j++)
-				for(int k=0;k<m;k++)
+		int i,j,k;
+		for(i=0;i<n;i++)
+			for(j=0;j<B.m;j++)
+				for(k=0;k<m;k++)
 					ans[i][j]+=a[i][k]*B[k][j];
 		return ans;
 	}
