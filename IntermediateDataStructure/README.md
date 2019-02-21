@@ -17,7 +17,7 @@
 | Weight Segment Tree (array, pointer)           | OK!  |      |
 | Scan Line Segment Tree (rectangles area union) | OK!  | OK!  |
 | Scan Line Segment Tree (rectangles perimeter)  |      |      |
-| Persistent Segment Tree                        |      |      |
+| Persistent Segment Tree (static k-th)          | OK!  |      |
 | Segment Tree Merging                           |      |      |
 | Binary Search Tree                             |      |      |
 | Size Balanced Tree (pointer)                   |      |      |
