@@ -20,7 +20,7 @@
 | Suffix Array (induce sort)    | $O(N)$            |                   |      |      |
 | Suffix Automaton              | $O(N)$            |                   |      |      |
 | Manacher                      | $O(N)$            | $O(N)$            | OK!  | OK!  |
-| Palindrome Tree               | $O(N)$            | $O(N)$            |      |      |
+| Palindrome Tree               | $O(N_N log(N_B))$ | $O(N_N N_B)$      | OK!  |      |
 | Shift-And / Shift-Or          | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
 | String Minimum Representation | $O(S)$            | $O(1)$            | OK!  |      |
 
