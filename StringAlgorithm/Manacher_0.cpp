@@ -32,7 +32,6 @@ void manacher(char s[],int n,char ms[],int mp[])
 	}
 }
 
-
 int main()
 {
 	int n=strlen(s);

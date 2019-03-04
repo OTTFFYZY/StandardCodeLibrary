@@ -19,6 +19,7 @@
 | Stones Merging (quadrilateral inequality) | $O(N^2)$ | $O(N^2)$ | OK!  |      |
 | Stones Merging (circle)                   |          |          |      |      |
 | Stones Merging (Garsia Wachs)             |          |          |      |      |
+| Stones K Merging                          | $O(N^3)$ | $O(N^3)$ | OK!  | OK!  |
 | Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 
 
@@ -37,13 +38,13 @@ $dp[i][j]=dp[i-2][j+1]+2\ (if\ s[j]==s[j+i-1])$
 
 ## Number of Palindromic Subsequence
 
-$dp[i][j]: Number\ of\ Palindromic\ Subsequence\ of\ Interval\ [j,j+i)$
+$dp[i][j]: Number\ of\ Palindromic\ Subsequence\ of\ Interval\ [j,j+i)​$
 
 $dp[0][j]=0$
 
-$dp[i][j]=dp[i-1][j]+dp[i-1][j+1]-dp[i-2][j+1]$
+$dp[i][j]=dp[i-1][j]+dp[i-1][j+1]-dp[i-2][j+1]​$
 
-$ dp[i][j]+=dp[i-2][j+1]+1\ (if\ s[j]==s[j+i-1]) $
+$ dp[i][j]+=dp[i-2][j+1]+1\ (if\ s[j]==s[j+i-1]) ​$
 
 
 
@@ -90,6 +91,12 @@ $dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+sum[j]-sum[i])$ , for $ i<k<j $
 
 
 ### Quadrilateral Inequality
+
+
+
+## Stones K Merging
+
+$dp[l][r][p]: the \ cost \ of \ merge \ [l,r] \ into \ p \ piles$
 
 
 

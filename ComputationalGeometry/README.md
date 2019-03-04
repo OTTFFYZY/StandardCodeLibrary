@@ -17,5 +17,6 @@
 | Half Plane Intersection | $O(NlogN)$ | $O(N)$     |      |      |
 | Convex Hull (Graham)    | $/$        | $O(NlogN)$ |      |      |
 | Rotating Calipers       |            |            |      |      |
-|                         |            |            |      |      |
+| KD Tree                 |            |            |      |      |
+| 4-ary Tree              |            |            |      |      |
 
