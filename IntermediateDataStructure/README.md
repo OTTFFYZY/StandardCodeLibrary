@@ -11,7 +11,7 @@
 | Content                                        | Time | Memory            | Code | Test |
 | ---------------------------------------------- | ---- | ----------------- | ---- | ---- |
 | Partition Tree                                 | $$   | $O(NlogN)$        | OK!  | OK!  |
-| Leftist Tree                                   |      | $O(N)$            |      |      |
+| Leftist Tree (basic)                           |      | $O(N)$            | OK!  |      |
 | Segment Tree (scrq_0)                          |      | $O(N)$            | OK!  |      |
 | Segment Tree (rcrq_0)                          |      | $O(N)$            | OK!  |      |
 | Weight Segment Tree (array, pointer)           |      | $O(N)$            | OK!  |      |

@@ -72,7 +72,7 @@ struct SegT
 	}
 	TN query(int o,int l,int r,int ql,int qr)
 	{
-		if(ql<=l && r<=ql)
+		if(ql<=l&&r<=ql)
 			return tn[o];
 		int m=(l+r)>>1;
 		int ls=o+1,rs=o+((m-l+1)<<1);
@@ -91,7 +91,7 @@ struct SegT
 	}
 	void modify(int o,int l,int r,int ml,int mr,int v)
 	{
-		if(ml<=l && r<= mr)
+		if(ml<=l&&r<=mr)
 		{
 			tn[o].apply(l,r,v);
 			return;

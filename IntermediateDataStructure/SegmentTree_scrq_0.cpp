@@ -5,17 +5,18 @@ using namespace std;
 const int M=1e5+5;
 const int INF=0x3f3f3f3f;
 
-int n;
-int ML,MR;
 struct SegT
 {
-	int tn[M*4];
+	int tn[M*2];
+	void pull(int o,int ls,int rs)
+	{
+		tn[o]=max(tn[ls],tn[rs]);
+	}
 	void init(int v[],int n)
 	{
-		ML=0; MR=n-1;
-		build(v,1,ML,MR);
+		build(0,0,n-1,v);
 	}
-	void build(int v[],int o,int l,int r)
+	void build(int o,int l,int r,int v[])
 	{
 		if(l==r)
 		{
@@ -23,49 +24,35 @@ struct SegT
 			return;
 		}
 		int mid=(l+r)>>1;
-		build(v,o<<1,l,mid);
-		build(v,o<<1|1,mid+1,r);
-		pushup(o);
+		int ls=o+1,rs=o+((mid-l+1)<<1);
+		build(ls,l,mid,v);
+		build(rs,mid+1,r,v);
+		pull(o,ls,rs);
 	}
-	int pushup(int o)
-	{
-		tn[o]=max(tn[o<<1],tn[o<<1|1]);
-	}
-	int ans;
-	int ql,qr;
-	int query(int ql,int qr)
-	{
-		ans=-INF;
-		this->ql=ql; this->qr=qr;
-		query();
-		return ans;
-	}
-	void query(int o=1,int l=ML,int r=MR)
-	{
-		if(ql<=l&&r<=qr)
-		{
-			ans=max(ans,tn[o]);
-			return;
-		}
-		int mid=(l+r)>>1;
-		if(ql<=mid)
-			query(o<<1,l,mid);
-		if(qr>mid)
-			query(o<<1|1,mid+1,r);
-	}
-	void add(int x,int p,int o=1,int l=ML,int r=MR)
+	int L,R,V;
+	void add(int o,int l,int r)
 	{
 		if(l==r)
 		{
-			tn[o]+=x;
+			tn[o]=V;
 			return;
 		}
 		int mid=(l+r)>>1;
-		if(p<mid)
-			add(x,p,o<<1,l,mid);
-		else
-			add(x,p,o<<1|1,mid+1,r);
-		pushup(o);
+		int ls=o+1,rs=o+((mid-l+1)<<1);
+		if(L<=mid) add(ls,l,mid);
+		else add(rs,mid+1,r);
+		pull(o,ls,rs);
+	}
+	int query(int o,int l,int r)
+	{
+		if(L<=l&&r<=R)
+			return tn[o];
+		int mid=(l+r)>>1;
+		int ls=o+1,rs=o+((mid-l+1)<<1);
+		int res=-INF;
+		if(L<=mid) res=max(res,query(ls,l,mid));
+		if(mid<R) res=max(res,query(rs,mid+1,r));
+		return res;
 	}
 };
 
