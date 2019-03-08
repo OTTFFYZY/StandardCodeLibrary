@@ -21,6 +21,7 @@
 | Stones Merging (Garsia Wachs)             |          |          |      |      |
 | Stones K Merging                          | $O(N^3)$ | $O(N^3)$ | OK!  | OK!  |
 | Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
+| Clear the String                          | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 
 
 
