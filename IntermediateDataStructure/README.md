@@ -22,7 +22,7 @@
 | Treap (rotation)                               |      | $O(N)$            | OK!  |      |
 | Treap (split merge)                            |      | $O(N)$            |      |      |
 | Splay Tree                                     |      | $O(N)$            |      |      |
-| Scapegoat Tree                                 |      | $O(N)$            |      |      |
+| Scapegoat Tree                                 | $$   | $O(N)$            | OK!  |      |
 | Block (max)                                    |      | $O(N)$            | OK!  |      |
 |                                                |      |                   |      |      |
 
