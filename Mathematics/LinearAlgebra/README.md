@@ -24,7 +24,7 @@
 | Gauss Elimination (int)           | $O(N_cN_r^2logN_n)$ | $O(N^2)$   |      |      |
 | Linear Basis                      | $O(N_BN^2)$         | $O(N)$     | OK!  |      |
 | Determinant                       | $O(N^3)$            | $O(N^2)$   | OK!  |      |
-|                                   |                     |            |      |      |
+| Matrix Inversion                  | $O(N^3)$            | $O(N^2)$   |      |      |
 
 
 
