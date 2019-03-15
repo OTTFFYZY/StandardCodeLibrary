@@ -93,10 +93,13 @@ $a_i \odot b_i$ -> $(a_i \or b_i) \and (\neg a_i \or \neg b_i)$ -> case 3
 
 If there is a path $u \rightarrow v$ in the graph, there must be a path $\neg v \rightarrow \neg u$
 
-If there is a path $u \rightarrow \neg u$ and a path $\neg u \rightarrow u$ , no solution.
+If there is a path $u \rightarrow \neg u​$ and a path $\neg u \rightarrow u​$ , no solution.
 
 If there is a path $u \rightarrow \neg u$ choose $\neg u$
 
 If there is a path $\neg u \rightarrow u$ choose $u$
 
 Otherwise, try to choose $\neg u$ first (lexicographic order).
+
+
+

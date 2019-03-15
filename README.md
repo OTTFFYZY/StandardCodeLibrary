@@ -18,6 +18,8 @@ For ACM/ICPC or other Algorithm Contests.
 | Intermediate Data Structure         |
 | Advanced Data Structure             |
 | Brute-Force & Search                |
+| Divide and Conquer                  |
+| Greedy                              |
 | Dynamic Programming                 |
 | Hash                                |
 | Graph Theory                        |
