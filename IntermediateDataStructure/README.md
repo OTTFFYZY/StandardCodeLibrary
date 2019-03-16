@@ -23,6 +23,7 @@
 | Treap (split merge)                            |      | $O(N)$            |      |      |
 | Splay Tree                                     |      | $O(N)$            |      |      |
 | Scapegoat Tree                                 | $$   | $O(N)$            | OK!  |      |
+| Weight Balanced Leafy Tree                     |      |                   |      |      |
 | Block (max)                                    |      | $O(N)$            | OK!  |      |
 |                                                |      |                   |      |      |
 
