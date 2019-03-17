@@ -14,4 +14,4 @@
 | Intervals Union   | $O(N)$                  | $O(N)$ | OK!  | OK!  |
 | Run Length Coding | $O(N)$                  | $O(N)$ |      |      |
 | strtok & sscanf   | $O(N)$                  | $O(N)$ | OK!  | OK!  |
-|                   |                         |        |      |      |
+| Read Line         | $O(N)$                  | $O(N)$ | OK!  |      |

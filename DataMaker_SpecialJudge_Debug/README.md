@@ -11,6 +11,7 @@
 | Contents                 | Time       | Memory | Code | Test |
 | ------------------------ | ---------- | ------ | ---- | ---- |
 | Checker                  | $/$        | $/$    | OK!  | OK!  |
+| Debug                    | $/$        | $/$    | OK!  | OK!  |
 | Random Number            | $O(1)$     | $O(1)$ | OK!  |      |
 | Random Permutation       | $O(NlogN)$ | $O(N)$ | OK!  |      |
 | Random Rooted Tree       |            |        |      |      |

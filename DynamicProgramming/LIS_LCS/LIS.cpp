@@ -26,6 +26,8 @@ int lis2(int a[],int n)
 	for(int i=0;i<n;i++)
 	{
 		int k=lower_bound(nlis,nlis+nn,a[i])-nlis;
+		// unique in lis lower_bound
+		// duplicate in lis upper_bound
 		if(k==nn) nn++;
 		nlis[k]=a[i];
 		dp2[i]=k+1;
