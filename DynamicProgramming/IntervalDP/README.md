@@ -17,7 +17,7 @@
 | Optimal Triangulation (convex, polygon)   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (basic)                    | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (quadrilateral inequality) | $O(N^2)$ | $O(N^2)$ | OK!  |      |
-| Stones Merging (circle)                   |          |          |      |      |
+| Stones Merging (circle)                   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
 | Stones Merging (Garsia Wachs)             |          |          |      |      |
 | Stones K Merging                          | $O(N^3)$ | $O(N^3)$ | OK!  | OK!  |
 | Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |

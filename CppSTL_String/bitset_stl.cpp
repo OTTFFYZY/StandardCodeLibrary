@@ -50,8 +50,16 @@ int main()
 	cout<<b.to_string()<<endl;
 	cout<<(b>>2).to_string()<<endl<<endl;
 
-	cout<<(b==c)<<endl;
+	cout<<(b==c)<<endl<<endl;
 
+	// to binary
+	int intval=12345;
+	bitset<32> bitint(intval);
+	cout<<intval<<" "<<bitint<<endl;
+	double dbval=3.1415926;
+	void *p=&dbval;
+	bitset<64> bitdouble(*((unsigned long long*)p));
+	cout<<dbval<<" "<<bitdouble<<endl;
 
 
 	return 0;
