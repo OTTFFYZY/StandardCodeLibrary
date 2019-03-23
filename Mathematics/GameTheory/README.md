@@ -20,11 +20,19 @@
 
 
 
+## N/P-Position
+
+N(Now) Position: who do the operation now, win the game.
+
+P(Previous) Position: who do the previous operation, win the game.
+
+
+
 ## Bash Game
 
 Describe: n things, pick at most m every times.
 
-Win State: $n\%(m+1)!=0$
+Win State: $n\%(m+1)!=0​$
 
 To Win: pick $n\%(m+1)$
 
@@ -36,22 +44,22 @@ To Win: pick $n\%(m+1)$
 
 Describe: n piles, pick any numbers in one piles every times. Who pick up all remains win.
 
-Win State: $p[0] \oplus  p[1] \oplus p[2] \oplus \dots \oplus p[n-1]=0​$
+Win State: $p[0] \oplus  p[1] \oplus p[2] \oplus \dots \oplus p[n-1] \neq 0$
 
-To win: $p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1] = a$, pick any $p[i] \oplus a$, if $p[i]>=(p[i] \oplus a)$
+To win: $p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1] = a$, pick any $p[i]-(p[i] \oplus a)$, if $p[i]>=(p[i] \oplus a)$
 
 ### pick m at most:
 
-Win State: $(p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1])\%(m+1)=0$
+Win State: $(p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1])\%(m+1) \neq 0$
 
-To win: $(p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1])\%(m+1)=a$, 
+To win: $(p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1])\%(m+1)=a​$, 
 
-​              pick any $p[i] \oplus a$, if $p[i]>=(p[i] \oplus a)​$
+​              pick any $p[i]-(p[i] \oplus a)​$, if $p[i]>=(p[i] \oplus a)​$
 
 
 
 ## Sprague Grundy (SG) Theorem
 
-$mex(S)$ minimal excludant operation. Return the smallest non-negtive value from the whole set that does not belong to the subset S.
+$mex(S)​$ minimal excludant operation. Return the smallest non-negtive value from the whole set that does not belong to the subset S.
 
 For impartial combinational game (ICG), 
