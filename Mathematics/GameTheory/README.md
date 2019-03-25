@@ -10,17 +10,19 @@
 
 | Contents                   | Time     | Memory      | Code | Test |
 | -------------------------- | -------- | ----------- | ---- | ---- |
+| Failure State              | $/$      | $O(N)$      | OK!  |      |
 | Bash Game                  | $O(1)$   | $O(1)$      |      |      |
 | Nim Game                   | $O(N)$   | $O(N)/O(1)$ |      |      |
+| Staircase Nim              | $O(N)$   | $O(N)$      | OK!  |      |
 | Wythoff                    | $O(1)$   | $O(1)$      |      |      |
-| Sprague Grundy(SG) Theorem | $O(N^2)$ | $O(N)$      |      |      |
+| Sprague Grundy(SG) Theorem | $O(N^2)$ | $O(N)$      | OK!  |      |
 |                            |          |             |      |      |
 |                            |          |             |      |      |
 |                            |          |             |      |      |
 
 
 
-## N/P-Position
+## Failure State (N/P-Position)
 
 N(Now) Position: who do the operation now, win the game.
 
@@ -54,7 +56,7 @@ Win State: $(p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1])\%(m+1) \ne
 
 To win: $(p[0] \oplus p[1] \oplus p[2] \oplus \dots \oplus p[n-1])\%(m+1)=a​$, 
 
-​              pick any $p[i]-(p[i] \oplus a)​$, if $p[i]>=(p[i] \oplus a)​$
+​              pick any $p[i]-(p[i] \oplus a)$, if $p[i]>=(p[i] \oplus a)​$
 
 
 
