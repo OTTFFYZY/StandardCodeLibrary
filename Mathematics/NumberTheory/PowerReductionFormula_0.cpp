@@ -49,7 +49,7 @@ LL bp2(LL a,str *s,LL m) //a^s%m  big n
 	int f=0;
 	for(;*s;s++)
 	{
-		n=n+(*s)-'0';
+		n=n*10+(*s)-'0';
 		if(n>=p) f=1;
 		n%=p;
 	}

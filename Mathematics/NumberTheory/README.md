@@ -8,29 +8,29 @@
 
 ## Contents
 
-| Contents                           | Time          | Memory    | Code | Test |
-| ---------------------------------- | ------------- | --------- | ---- | ---- |
-| Modular Operator (+, -, *, ^, mod) | $/$           | $/$       | OK!  | OK!  |
-| GCD & LCM (Euclid Method)          | $O(logN)$     | $/$       | OK!  |      |
-| Extend Euclid                      | $O(logN)$     | $O(1)$    | OK!  | OK!  |
-| Inverse Element / Modular Division | $O(logN)$     | $O(1)$    | OK!  |      |
-| Prime Table (basic, bitmap)        | $O(NloglogN)$ | $O(N)$    | OK!  |      |
-| Is Prime (basic)                   | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
-| Is Prime (Miller-Robin)            |               |           |      |      |
-| Factorization (basic)              | $O(\sqrt{N})$ | $O(logN)$ | OK!  | OK!  |
-| Factorization (Pollard-Rho)        |               |           |      |      |
-| Factorization Table                | $O(NloglogN)$ | $O(N)$    | OK!  | OK!  |
-| Phi Function $\varphi(x)$          | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
-| Phi Table                          | $O(NloglogN)$ | $O(N)$    | OK!  |      |
-| Power Reduction Formula            | $O(\sqrt{N})$ | $O(1)$    | OK!  |      |
-| Chinese Remainder Theory           | $O(NlogN)$    | $O(1)$    | OK!  |      |
-| Modular Linear Equations           |               |           |      |      |
-| Modular Combinatorial Number       | $/$           | $/$       | OK!  |      |
-| Lucas Theory / Extend Lucas Theory |               |           |      |      |
-| Linear Sieve (prime, phi, mu)      | $O(N)$        | $O(N)$    | OK！ |      |
-| Mobius Inversion                   |               |           |      |      |
-| Pell Function                      |               |           |      |      |
-|                                    |               |           |      |      |
+| Contents                           | Time                | Memory    | Code | Test |
+| ---------------------------------- | ------------------- | --------- | ---- | ---- |
+| Modular Operator (+, -, *, ^, mod) | $/$                 | $/$       | OK!  | OK!  |
+| GCD & LCM (Euclid Method)          | $O(logN)$           | $/$       | OK!  |      |
+| Extend Euclid                      | $O(logN)$           | $O(1)$    | OK!  | OK!  |
+| Inverse Element / Modular Division | $O(logN)$           | $O(1)$    | OK!  |      |
+| Prime Table (basic, bitmap)        | $O(NloglogN)$       | $O(N)$    | OK!  |      |
+| Is Prime (basic)                   | $O(\sqrt{N})$       | $O(1)$    | OK!  |      |
+| Is Prime (Miller-Robin)            |                     |           |      |      |
+| Factorization (basic)              | $O(\sqrt{N})$       | $O(logN)$ | OK!  | OK!  |
+| Factorization (Pollard-Rho)        |                     |           |      |      |
+| Factorization Table                | $O(NloglogN)$       | $O(N)$    | OK!  | OK!  |
+| Phi Function $\varphi(x)$          | $O(\sqrt{N})$       | $O(1)$    | OK!  |      |
+| Phi Table                          | $O(NloglogN)$       | $O(N)$    | OK!  |      |
+| Power Reduction Formula            | $O(N_L+\sqrt{N_M})$ | $O(1)$    | OK!  | OK!  |
+| Chinese Remainder Theory           | $O(NlogN)$          | $O(1)$    | OK!  |      |
+| Modular Linear Equations           |                     |           |      |      |
+| Modular Combinatorial Number       | $/$                 | $/$       | OK!  |      |
+| Lucas Theory / Extend Lucas Theory |                     |           |      |      |
+| Linear Sieve (prime, phi, mu)      | $O(N)$              | $O(N)$    | OK！ |      |
+| Mobius Inversion                   |                     |           |      |      |
+| Pell Function                      |                     |           |      |      |
+|                                    |                     |           |      |      |
 
 
 
