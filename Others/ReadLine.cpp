@@ -6,10 +6,10 @@ char s[M];
 
 int readline(char *s)
 {
-	if(fgets(s,M,stdin)==EOF) return -1;
+	if(fgets(s,M,stdin)==NULL) return EOF;
 	int l=strlen(s);
-	if(s[l-1]=='\n') s[--l]==' ';
-	if(s[l-1]=='\r') s[--l]==' ';
+	if(s[l-1]=='\n') s[--l]='\0';
+	if(s[l-1]=='\r') s[--l]='\0';
 	return l;
 }
 
