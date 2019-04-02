@@ -15,6 +15,7 @@
 | Random Number                  | $O(1)$              | $O(1)$ | OK!  |      |
 | Random Number With Weight      | $O(N) \sim O(logN)$ | $O(N)$ | OK!  | OK!  |
 | Random Number Not in Blacklist | $O(N) \sim O(logN)$ | $O(N)$ | OK!  | OK!  |
+| Random Number Set              | $O(1)$              | $O(N)$ | OK!  | OK!  |
 | Random Permutation             | $O(NlogN)$          | $O(N)$ | OK!  |      |
 | Random Rooted Tree             |                     |        |      |      |
 | Random Undirected Graph        |                     |        |      |      |
