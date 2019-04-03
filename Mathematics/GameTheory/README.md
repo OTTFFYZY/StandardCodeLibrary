@@ -11,10 +11,10 @@
 | Contents                   | Time     | Memory      | Code | Test |
 | -------------------------- | -------- | ----------- | ---- | ---- |
 | Failure State              | $/$      | $O(N)$      | OK!  |      |
-| Bash Game                  | $O(1)$   | $O(1)$      |      |      |
-| Nim Game                   | $O(N)$   | $O(N)/O(1)$ |      |      |
+| Bash Game                  | $O(1)$   | $O(1)$      | OK!  |      |
+| Nim Game                   | $O(N)$   | $O(N)/O(1)$ | OK!  |      |
 | Staircase Nim              | $O(N)$   | $O(N)$      | OK!  |      |
-| Wythoff                    | $O(1)$   | $O(1)$      |      |      |
+| Wythoff Game               | $O(1)$   | $O(1)$      | OK!  |      |
 | Sprague Grundy(SG) Theorem | $O(N^2)$ | $O(N)$      | OK!  |      |
 |                            |          |             |      |      |
 |                            |          |             |      |      |
