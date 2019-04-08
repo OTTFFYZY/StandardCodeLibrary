@@ -27,7 +27,7 @@ int mp(char t[],int n,char p[],int m,int nxt[])
 		while(j!=-1&&t[i]!=p[j])
 			j=nxt[j];
 		++i;++j;
-		if(j==m) cnt++;
+		if(j==m) cnt++; // match [i-m,i)
 	}
 	return cnt;
 }
