@@ -8,20 +8,21 @@
 
 ## Contents
 
-| Contents                                  | Time     | Memory   | Code | Test |
-| ----------------------------------------- | -------- | -------- | ---- | ---- |
-| Longest Palindromic Subsequence (LPS)     | $O(N^2)$ | $O(N)$   | OK!  |      |
-| Number of Palindromic Subsequence         | $O(N^2)$ | $O(N)$   | OK!  |      |
-| Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
-| Matrix Chain Multiplication (MCM)         | $O(N^3)$ | $O(N^2)$ | OK!  |      |
-| Optimal Triangulation (convex, polygon)   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
-| Stones Merging (basic)                    | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
-| Stones Merging (quadrilateral inequality) | $O(N^2)$ | $O(N^2)$ | OK!  |      |
-| Stones Merging (circle)                   | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
-| Stones Merging (Garsia Wachs)             |          |          |      |      |
-| Stones K Merging                          | $O(N^3)$ | $O(N^3)$ | OK!  | OK!  |
-| Regular Brackets Sequence                 | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
-| Clear the String                          | $O(N^3)$ | $O(N^2)$ | OK!  | OK!  |
+| Contents                                   | Time           | Memory         | Code | Test |
+| ------------------------------------------ | -------------- | -------------- | ---- | ---- |
+| Longest Palindromic Subsequence (LPS)      | $O(N^2)$       | $O(N)$         | OK!  |      |
+| Number of Palindromic Subsequence          | $O(N^2)$       | $O(N)$         | OK!  | OK!  |
+| Number of Distinct Palindromic Subsequence | $O(N_L^2 N_B)$ | $O(N_L^2 N_B)$ | OK!  | OK!  |
+| Regular Brackets Sequence                  | $O(N^3)$       | $O(N^2)$       | OK!  | OK!  |
+| Matrix Chain Multiplication (MCM)          | $O(N^3)$       | $O(N^2)$       | OK!  |      |
+| Optimal Triangulation (convex, polygon)    | $O(N^3)$       | $O(N^2)$       | OK!  | OK!  |
+| Stones Merging (basic)                     | $O(N^3)$       | $O(N^2)$       | OK!  | OK!  |
+| Stones Merging (quadrilateral inequality)  | $O(N^2)$       | $O(N^2)$       | OK!  |      |
+| Stones Merging (circle)                    | $O(N^3)$       | $O(N^2)$       | OK!  | OK!  |
+| Stones Merging (Garsia Wachs)              |                |                |      |      |
+| Stones K Merging                           | $O(N^3)$       | $O(N^3)$       | OK!  | OK!  |
+| Regular Brackets Sequence                  | $O(N^3)$       | $O(N^2)$       | OK!  | OK!  |
+| Clear the String                           | $O(N^3)$       | $O(N^2)$       | OK!  | OK!  |
 
 
 
@@ -39,13 +40,31 @@ $dp[i][j]=dp[i-2][j+1]+2\ (if\ s[j]==s[j+i-1])$
 
 ## Number of Palindromic Subsequence
 
-$dp[i][j]: Number\ of\ Palindromic\ Subsequence\ of\ Interval\ [j,j+i)​$
+$dp[i][j]: Number\ of\ Palindromic\ Subsequence\ of\ Interval\ [j,j+i)$
 
 $dp[0][j]=0$
 
-$dp[i][j]=dp[i-1][j]+dp[i-1][j+1]-dp[i-2][j+1]​$
+$dp[i][j]=dp[i-1][j]+dp[i-1][j+1]-dp[i-2][j+1]$
 
-$ dp[i][j]+=dp[i-2][j+1]+1\ (if\ s[j]==s[j+i-1]) ​$
+$ dp[i][j]+=dp[i-2][j+1]+1\ (if\ s[j]==s[j+i-1]) $
+
+
+
+## Number of Distinct Palindromic Subsequence
+
+$dp[i][j][k]: Number\ of\ Palindromic\ Subsequence\ of\ Interval\ [i,j] \ and \ Bordered \ by \ k$
+
+Init:
+
+$dp[i][i][s[i]]=1$
+
+$dp[i][j][k]=0, others$
+
+
+
+$dp[i][j][k]=dp[i+1][j][k]+dp[i][j-1][k]-dp[i+1][j-1][k]$
+
+$ dp[i][j][s[j]]=2+\sum_{k}{dp[i+1][j-1][k]}\ (if\ s[j]==s[j+i-1]) $
 
 
 
