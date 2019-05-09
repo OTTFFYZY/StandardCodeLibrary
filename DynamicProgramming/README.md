@@ -6,16 +6,17 @@
 
 ## Contents (Coarse)
 
-| Contents             |
-| -------------------- |
-| LIS & LCS            |
-| Pack DP              |
-| Interval DP          |
-| State Compression DP |
-| Number Bit DP        |
-| Tree DP              |
-| Special Problem      |
-|                      |
+| Contents              |
+| --------------------- |
+| Linear DP Recurrences |
+| LIS & LCS             |
+| Pack DP               |
+| Interval DP           |
+| State Compression DP  |
+| Number Bit DP         |
+| Tree DP               |
+| Special Problem       |
+|                       |
 
 
 
