@@ -1,8 +1,19 @@
 # Basic Data Structure
 
 
+- [Basic Data Structure](#basic-data-structure)
+  - [Contents](#contents)
+  - [Union-Find Set](#union-find-set)
+    - [Problem](#problem)
+  - [Fenwick Tree / Binary Index Tree](#fenwick-tree--binary-index-tree)
+    - [Problems](#problems)
+  - [Monotone Stack & Monotone Queue](#monotone-stack--monotone-queue)
+    - [Max Rectangle In Histogram](#max-rectangle-in-histogram)
+    - [Find ACB](#find-acb)
+    - [Max Value In The Sliding Window](#max-value-in-the-sliding-window)
+    - [Huffman-Tree-Like Merge](#huffman-tree-like-merge)
+    - [Max Extension](#max-extension)
 
-[TOC]
 
 ## Contents
 
