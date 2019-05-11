@@ -4,7 +4,7 @@ For ACM/ICPC or other Algorithm Contests.
 
 
 
-[TOC]
+{:toc}
 
 
 
