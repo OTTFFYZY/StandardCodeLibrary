@@ -15,9 +15,10 @@
 | MP & KMP (Knuth-Morris-Pratt)  | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
 | Extend KMP                     | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  | OK!  |
 | Aho-Corasick Automaton         | $O(T\!+\!\sum P)$ | $O(T\!+\!\sum P)$ | OK!  |      |
-| Suffix Array (multiplication)  | $O(NlogN)$        | $O(N)$            |      |      |
+| Suffix Array (multiplication)  | $O(NlogN)$        | $O(N)$            | OK!  |      |
 | Suffix Array (DC3)             | $O(N)$            | $O(N)$            |      |      |
 | Suffix Array (induce sort)     | $O(N)$            | $O(N)$            |      |      |
+| Height Array                   | $O(N)$            | $O(N)$            | OK!  |      |
 | Suffix Automaton               | $O(N)$            | $O(N)$            |      |      |
 | Suffix Tree (suffix automaton) | $O(N)$            | $O(N)$            |      |      |
 | Manacher                       | $O(N)$            | $O(N)$            | OK!  | OK!  |
