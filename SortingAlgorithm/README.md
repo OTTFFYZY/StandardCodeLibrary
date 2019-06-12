@@ -18,6 +18,7 @@
 | Heap Sort           | $O(NlogN)$       |        | Yes              | No     | OK!  |      |
 | Counting Sort       | $O(N_N\!+\!N_B)$ |        | $O(N_N\!+\!N_B)$ | Yes    | OK!  |      |
 | Radix Sort          |                  |        |                  | Yes    | OK!  |      |
+| Radix Sort (string) | $O(\sum L + N)$  |        |                  |        | OK!  |      |
 | Bucket Sort         |                  |        |                  | Yes    | OK!  |      |
 | Shell Sort          |                  |        |                  |        |      |      |
 | Three-Color Sorting | $O(N)$           | $O(N)$ | Yes              | No     | OK!  | OK!  |
