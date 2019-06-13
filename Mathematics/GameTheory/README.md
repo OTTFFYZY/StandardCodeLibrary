@@ -16,7 +16,7 @@
 | Staircase Nim              | $O(N)$   | $O(N)$      | OK!  |      |
 | Wythoff Game               | $O(1)$   | $O(1)$      | OK!  |      |
 | Sprague Grundy(SG) Theorem | $O(N^2)$ | $O(N)$      | OK!  |      |
-|                            |          |             |      |      |
+| Nim k                      |          |             |      |      |
 |                            |          |             |      |      |
 |                            |          |             |      |      |
 
