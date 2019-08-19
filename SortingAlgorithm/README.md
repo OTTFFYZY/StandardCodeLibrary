@@ -21,6 +21,6 @@
 | Radix Sort (string) | $O(\sum L)$         | $O(\sum L)$      | $$O(\sum L)$$    | Yes    | OK!  |      |
 | Bucket Sort         | $/$                 | $O(N)$           | $O(N)$           | Yes    | OK!  |      |
 | Shell Sort          | $O(N^2)$            | $O(N)$           | $O(1)$           | Yes    |      |      |
-| Three-Color Sorting | $O(N)$              | $O(N)$           | Yes              | No     | OK!  | OK!  |
-|                     |                     |                  |                  |        |      |      |
+| Three-Color Sorting | $O(N)$              | $O(N)$           | $O(1)$           | No     | OK!  | OK!  |
+| Gnome Sort          | $O(N^2)$            | $O(N)$           | $O(1)$           | Yes    | OK!  | OK!  |
 
