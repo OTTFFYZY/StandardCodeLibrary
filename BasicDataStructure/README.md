@@ -51,6 +51,10 @@ rasq -> Range Add Single-Point Query
 
 rarq -> Range Add Range Query
 
+For range change and range query we can use difference, or we can maintain the changes directly.
+
+
+
 ### Problems
 
 lrjb: LA4329
