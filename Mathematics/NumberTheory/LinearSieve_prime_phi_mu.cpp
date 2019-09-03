@@ -6,7 +6,7 @@ void get_pri()
 	for(int i=2;i<M;i++)
 	{
 		if(!isp[i]) pri[npri++]=i;
-		for(int j=0;j<npri&&pri[j]<M/i;j++)
+		for(int j=0;j<npri&&pri[j]<=(M-1)/i;j++)
 		{
 			isp[i*pri[j]]=1;
 			if(i%pri[j]==0) break;
@@ -25,7 +25,7 @@ void get_phi()
 			pri[npri++]=i;
 			phi[i]=i-1;
 		}
-		for(int j=0;j<npri&&pri[j]<M/i;j++)
+		for(int j=0;j<npri&&pri[j]<=(M-1)/i;j++)
 		{
 			isp[i*pri[j]]=1;
 			if(i%pri[j]==0)
@@ -50,7 +50,7 @@ void get_mu()
 			pri[npri++]=i;
 			mu[i]=-1;
 		}
-		for(int j=0;j<npri&&pri[j]<M/i;j++)
+		for(int j=0;j<npri&&pri[j]<=(M-1)/i;j++)
 		{
 			isp[i*pri[j]]=1;
 			if(i%pri[j]==0)

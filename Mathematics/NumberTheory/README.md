@@ -8,35 +8,36 @@
 
 ## Contents
 
-| Contents                           | Time                | Memory      | Code | Test |
-| ---------------------------------- | ------------------- | ----------- | ---- | ---- |
-| Modular Operator (+, -, *, ^, mod) | $/$                 | $/$         | OK!  | OK!  |
-| GCD & LCM (Euclid Method)          | $O(\log N)$         | $/$         | OK!  |      |
-| Extend Euclid                      | $O(\log N)$         | $O(1)$      | OK!  | OK!  |
-| Inverse Element / Modular Division | $O(\log N)$         | $O(1)$      | OK!  |      |
-| Prime Table (basic, bitmap)        | $O(N \log(\log N))$ | $O(N)$      | OK!  |      |
-| Is Prime (basic)                   | $O(\sqrt{N})$       | $O(1)$      | OK!  |      |
-| Is Prime (Miller-Robin)            | $O(N_T \log N_N)$   | $O(1)$      | OK!  |      |
-| Factorization (basic)              | $O(\sqrt{N})$       | $O(\log N)$ | OK!  | OK!  |
-| Factorization (Pollard-Rho)        |                     |             |      |      |
-| Factorization Table                | $O(N)$              | $O(N)$      | OK!  | OK!  |
-| Phi Function $\varphi(x)$          | $O(\sqrt{N})$       | $O(1)$      | OK!  |      |
-| Phi Table                          | $O(N \log(\log N))$ | $O(N)$      | OK!  |      |
-| Power Reduction Formula            | $O(N_L+\sqrt{N_M})$ | $O(1)$      | OK!  | OK!  |
-| Chinese Remainder Theory           | $O(N \log N)$       | $O(1)$      | OK!  |      |
-| Modular Linear Equations           |                     |             |      |      |
-| Modular Combinatorial Number       | $/$                 | $/$         | OK!  |      |
-| Lucas Theory / Extend Lucas Theory |                     |             |      |      |
-| Linear Sieve (prime, phi, mu)      | $O(N)$              | $O(N)$      | OK！ |      |
-| Mobius Inversion                   |                     |             |      |      |
-| Pell Function                      |                     |             |      |      |
-|                                    |                     |             |      |      |
+| Contents                           | Time                                   | Memory      | Code | Test |
+| ---------------------------------- | -------------------------------------- | ----------- | ---- | ---- |
+| Modular Operator (+, -, *, ^, mod) | $/$                                    | $/$         | OK!  | OK!  |
+| GCD & LCM (Euclid Method)          | $O(\log N)$                            | $/$         | OK!  |      |
+| Extend Euclid                      | $O(\log N)$                            | $O(1)$      | OK!  | OK!  |
+| Inverse Element / Modular Division | $O(\log N)$                            | $O(1)$      | OK!  |      |
+| Prime Table (basic, bitmap)        | $O(N \log(\log N))$                    | $O(N)$      | OK!  |      |
+| Is Prime (basic)                   | $O(\sqrt{N})$                          | $O(1)$      | OK!  |      |
+| Is Prime (Miller-Robin)            | $O(N_T \log N_N)$                      | $O(1)$      | OK!  |      |
+| Factorization (basic)              | $O(\sqrt{N})$                          | $O(\log N)$ | OK!  | OK!  |
+| Factorization (Pollard-Rho)        |                                        |             |      |      |
+| Factorization Table                | $O(N)$                                 | $O(N)$      | OK!  | OK!  |
+| Phi Function $\varphi(x)$          | $O(\sqrt{N})/O(\frac{\sqrt{N}}{logN})$ | $O(1)$      | OK!  |      |
+| Phi Table                          | $O(N \log(\log N))$                    | $O(N)$      | OK!  |      |
+| Power Reduction Formula            | $O(N_L+\sqrt{N_M})$                    | $O(1)$      | OK!  | OK!  |
+| Chinese Remainder Theory           | $O(N \log N)$                          | $O(1)$      | OK!  |      |
+| Modular Linear Equations           |                                        |             |      |      |
+| Modular Combinatorial Number       | $/$                                    | $/$         | OK!  |      |
+| Lucas Theory / Extend Lucas Theory |                                        |             |      |      |
+| Linear Sieve (prime, phi, mu)      | $O(N)$                                 | $O(N)$      | OK！ |      |
+| Mobius Inversion                   |                                        |             |      |      |
+| Pell Function                      |                                        |             |      |      |
+| Number Theory Blocking             | $O(\sqrt{n})$                          | $O(1)$      |      |      |
+|                                    |                                        |             |      |      |
 
 
 
 
 
-## Modular Operator
+## Modular Operation
 
 1.  $(a + b)\%M = ((a\%M) + (b\%M))\%M$
 2.  $(a-b)\%M=((a\%M)+M-(b\%M))\%M$
@@ -62,13 +63,15 @@ $gcd(A,B)=p_{1}^{min(a_1,b_1)}\cdot p_{2}^{min(a_2,b_2)}\cdots p_{k}^{min(a_k,b_
 
 $lcm(A,B)=p_{1}^{max(a_1,b_1)}\cdot p_{2}^{max(a_2,b_2)}\cdots p_{k}^{max(a_k,b_k)}$
 
-$gcd(A,B)lcm(A,B)=AB$
+$gcd(A,B) \cdot lcm(A,B) = AB$
 
 
+
+$gcd(a,b)=gcd(a,a-b)=gcd(a-b,b) \quad (a>b)$
 
 $gcd(a,b)=gcd(b,a\%b)$
 
-$gcd(a,0)=a$
+$gcd(a,0) = gcd(0,a) = a$
 
 
 
@@ -76,7 +79,7 @@ $gcd(a,0)=a$
 
 $ax+by=c=gcd(a,b)$
 
-$\begin{align} gcd(a,b)&=c=ax+by \\ gcd(b,a\%b)&=c=ax+by \\ \end{align}$
+$\begin{align} gcd(a,b)&=c=ax+by \\ gcd(b,a\%b)&=c=ax+by \\ gcd(0,c)&=c=ax+by \\   \end{align}$
 
 
 
@@ -149,4 +152,20 @@ $A^B \equiv A^{B \% \varphi(C)+\varphi(C)}(mod\ C)\ (B \ge \varphi(C))$
 ### $p<10^6$
 
 
+
+## Number Theory Blocking
+
+$ \sum_{i=1}^{n} \lfloor \frac{n}{i} \rfloor $
+
+
+
+Only  $k$ kind of $\lfloor \frac{n}{i} \rfloor$, where $ k \leq 2 \sqrt{n}$
+
+Proof: for $i \leq \sqrt{n}$, there are at most $\sqrt{n}$ kinds
+
+for $ i \gt \sqrt{n}$, $\lfloor \frac{n}{i} \rfloor \lt \sqrt{n}$, at most $\sqrt{n} - 1$ kinds
+
+
+
+The largest $x$ for $\lfloor \frac{n}{i} \rfloor = \lfloor \frac{n}{x} \rfloor$, $x = \lfloor \frac{n}{\lfloor \frac{n}{i} \rfloor} \rfloor$
 
