@@ -18,7 +18,8 @@
 | Bellman-Ford (slf)                    | $O(VE)$      | $O(V\!+\!E)$ |      |      |
 | Bellman-Ford (lll)                    | $O(VE)$      | $O(V\!+\!E)$ |      |      |
 | Floyd                                 | $O(V^3)$     | $O(V^2)$     | OK!  |      |
-| Find Minimum Loop (Floyd, spfa)       |              |              |      |      |
+| Minimum Loop (Floyd)                  | $O(V^3)$     | $O(V^2)$     | OK!  |      |
+| Minimum Loop (spfa)                   |              |              |      |      |
 | Second-Shortest Path (Dijkstra, spfa) |              |              |      |      |
 | Kth-Shortest Path                     |              |              |      |      |
 | Shortest Path / Longest Path in DAG   | $O(V\!+\!E)$ | $O(V)$       | OK!  |      |
