@@ -56,6 +56,22 @@ For range change and range query we can use difference, or we can maintain the c
 
 
 
+### Sum
+
+add (+, -)
+
+query (prefix sum -> range sum) -> (point value -> point set)
+
+### prefix min
+
+init (bit[i] -> INF)
+
+set smaller (v <= a[i])
+
+query (prefix min)
+
+
+
 ### Problems
 
 lrjb: LA4329
