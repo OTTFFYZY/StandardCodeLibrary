@@ -75,3 +75,9 @@ A sequence $((a_{1},b_{1}),\ldots ,(a_{n},b_{n}))$ of nonnegative integer pairs 
 $$
 \sum_{i=1}^{k} a_{i} \leq \sum_{i=1}^{n} min(b_{i},k)
 $$
+
+
+### Maximum Triangle Free Graph (Turan’s Theorem)
+
+The n-vertex triangle-free graph with the maximum number of edges is a complete bipartite graph in which the numbers of vertices on each side of the bipartition are as equal as possible.
+

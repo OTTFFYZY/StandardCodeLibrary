@@ -10,6 +10,7 @@ int n;
 int b[M];
 
 // each part i a[i_0]<a[i_1]<a[i_2]...
+// => longest non-increasing subsequence
 int partition()
 {
 	int m=0;
