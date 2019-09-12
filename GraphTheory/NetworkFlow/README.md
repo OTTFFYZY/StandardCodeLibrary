@@ -15,7 +15,7 @@
 | Max Flow (Dinic)         | $O(V^2E)$ | $O(V\!+\!E)$ | OK!  |      |
 | Max Flow (HLPP)          |           |              |      |      |
 | Max Flow (Push Relabel)  |           |              |      |      |
-| Min Cost Max Flow (spfa) |           |              |      |      |
+| Min Cost Max Flow (spfa) |           |              | OK!  | OK!  |
 | Min Cost Max Flow (zkw)  |           |              |      |      |
 
 
