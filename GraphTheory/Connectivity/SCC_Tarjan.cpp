@@ -13,6 +13,7 @@ int nv,ne;
 int dfn[MV],low[MV],ndfn;
 int st[MV],inst[MV],stp;
 int sccno[MV],nscc;
+vector<int> scc[MV];
 
 void tarjan(int u)
 {
@@ -35,6 +36,7 @@ void tarjan(int u)
 		{
 			inst[st[stp]]=0;
 			sccno[st[stp]]=nscc;
+			scc[nscc].push_back(st[stp]);
 			if(st[stp--]==u) break;
 		}
 		nscc++;
@@ -48,7 +50,7 @@ void scc_tarjan()
 	memset(inst,0,sizeof(inst));
 	stp=0;
 	nscc=0;
-	for(int i=0;i<nv;i++)
+	for(int i=1;i<=nv;i++)
 		if(!dfn[i]) tarjan(i);
 }
 
