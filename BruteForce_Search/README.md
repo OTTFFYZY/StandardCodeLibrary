@@ -23,6 +23,7 @@
 | Find K-th Smallest Number (BFPRT)      | $O(N)$        | $O(N)$  | OK!  |      |
 | N Queens                               | $O(N!)$       | $/$     | OK!  | OK!  |
 | Median of Two Sorted Arrays            | $O(log(N+M))$ | $O(1)$  | OK!  | OK!  |
+| Knight Distance                        | $O(1)$        | $O(1)$  | OK!  | OK!  |
 
 
 
