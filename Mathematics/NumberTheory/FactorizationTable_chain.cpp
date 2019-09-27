@@ -6,19 +6,21 @@ void get_pri()
     {
         if(!isp[i])
         {
-            pre[i]=npri;
+            pre[i]=i;
+            //pre[i]=npri;
             pri[npri++]=i;
         }
         for(int j=0;j<npri&&pri[j]<M/i;j++)
         {
             isp[i*pri[j]]=1;
-            pre[i*pri[j]]=j;
+            //pre[i*pri[j]]=j;
+            pre[i*pri[j]]=pri[j];
             if(i%pri[j]==0) break;
         }
     }
 }
 
-/* O(nloglogn)
+/* O(nlogn)
 void getpri()
 {
 	for(int i=2;i<M;i++)    //i*i <=n <= INT_MAX
@@ -35,6 +37,7 @@ void getpri()
         }
 }
 */
+/*
 int fac[M];
 void get_factor(int n)
 {
@@ -43,4 +46,18 @@ void get_factor(int n)
         fac[pre[n]]++;
         n/=pri[pre[n]];
     }
+}
+*/
+
+vector<int> get_factor(int nu)
+{
+    vector<int> fa;
+    if(nu==1) return R-L+1;
+    //cout<<"!!! "<<nu<<" ";
+    while(nu!=1)
+    {
+        fa.push_back(pre[nu]);
+        nu/=pre[nu];
+    }
+    return fa;
 }

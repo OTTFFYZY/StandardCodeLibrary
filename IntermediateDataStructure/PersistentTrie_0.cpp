@@ -52,12 +52,13 @@ struct PTrie
 		tn[nn].word=1;
 		return nr;
 	}
-	int find(char *c,int o)
+	int find(char *s,int o)
 	{
 		for(;*s;s++)
 		{
 			int c=*s-BASE;
 			if(tn[o].ch[c]==-1) return 0;
+			o=tn[u].ch[c];
 		}
 		return tn[o].word==1;
 	}
