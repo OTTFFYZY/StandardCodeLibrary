@@ -19,6 +19,17 @@ void get_pri()
         }
     }
 }
+vector<int> get_factor(int nu)
+{
+    vector<int> fa;
+    if(nu==1) return fa; // fa.push_back(1);
+    while(nu!=1)
+    {
+        fa.push_back(pre[nu]);
+        nu/=pre[nu];
+    }
+    return fa;
+}
 
 /* O(nlogn)
 void getpri()
@@ -48,16 +59,3 @@ void get_factor(int n)
     }
 }
 */
-
-vector<int> get_factor(int nu)
-{
-    vector<int> fa;
-    if(nu==1) return R-L+1;
-    //cout<<"!!! "<<nu<<" ";
-    while(nu!=1)
-    {
-        fa.push_back(pre[nu]);
-        nu/=pre[nu];
-    }
-    return fa;
-}
