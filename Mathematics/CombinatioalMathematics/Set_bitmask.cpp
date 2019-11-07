@@ -43,9 +43,9 @@ inline int highbit(int x)
     return p;
 }
 
-int only1(int x)  // x is the power of 2
+int powerOf2(int x)  // x is the power of 2
 {
-	return v&&!v&(v-1);
+	return x&&!(x&(x-1));
 }
 
 int main()
