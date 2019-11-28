@@ -1,4 +1,4 @@
-# haTree Algorithms
+# Tree Algorithms
 
 
 

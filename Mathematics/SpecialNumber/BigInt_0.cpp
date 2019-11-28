@@ -77,7 +77,6 @@ struct BigInt
 		return 1;
 	}
 	bool operator<(const BigInt &B) const 
-
 	{
 		if(sgn!=B.sgn) return sgn<B.sgn;
 		if(n!=B.n) return n*sgn<B.n*sgn;

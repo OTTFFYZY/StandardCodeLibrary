@@ -30,6 +30,7 @@ For ACM/ICPC or other Algorithm Contests.
 | Mathematics                         |
 | Computational Geometry              |
 | String Algorithm                    |
+| Constructive Algorithm              |
 | Data Maker & Special Judge & Debug  |
 | Others (Tips & Skills & Techniques) |
 | Java & Python                       |
