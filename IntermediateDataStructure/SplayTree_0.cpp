@@ -5,9 +5,9 @@
 using namespace std;
 
 #define son(x,y) tn[(x)].ch[(y)]
-#define ls(x) tn[x].ch[0]
-#define rs(x) tn[x].ch[1]
-#define fa(x) tn[x].fa
+#define ls(x) tn[(x)].ch[0]
+#define rs(x) tn[(x)].ch[1]
+#define fa(x) tn[(x)].fa
 
 const int M=1e5+5;
 

@@ -20,6 +20,7 @@
 | Floyd                                 | $O(V^3)$     | $O(V^2)$     | OK!  |      |
 | Minimum Loop (Floyd)                  | $O(V^3)$     | $O(V^2)$     | OK!  |      |
 | Minimum Loop (spfa)                   |              |              |      |      |
+| Find Negtive Loop (dfs spfa)          | $O(VE)$      | $O(V\!+\!E)$ | OK!  | OK!  |
 | Second-Shortest Path (Dijkstra, spfa) |              |              |      |      |
 | Kth-Shortest Path                     |              |              |      |      |
 | Shortest Path / Longest Path in DAG   | $O(V\!+\!E)$ | $O(V)$       | OK!  |      |
