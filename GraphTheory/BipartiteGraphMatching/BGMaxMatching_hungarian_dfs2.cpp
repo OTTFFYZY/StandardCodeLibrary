@@ -4,35 +4,34 @@
 #include <algorithm>
 using namespace std;
 
-const int M=5005;
-vector<int> g[M]; // a->b
-int a[M],b[M],match[M],vis[M];
+const int M=505;
+int g[M][M];
 
-int dfs(int u)
+int vis[M],match[M];
+
+bool dfs(int u)
 {
-	vis[u]=1;
-	for(int v:g[u])
-	{
-		if(vis[v]) continue;
-		if(match[v]==-1||dfs(match[v]))
+	for(int v=0;v<n;v++)
+		if(g[u][v]&&!vis[v])
 		{
-			match[v]=u;
-			return 1;
+			vis[v]=1;
+			if(match[v]==-1||dfs(match[v]))
+			{
+				match[v]=u;
+				return true;
+			}
 		}
-	}
-	return 0;
+	return false;
 }
 
-int hungarian(int n) // vertices in left set
+int max_match()
 {
+	memset(match,-1,sizeof(match));
 	int ans=0;
 	for(int i=0;i<n;i++)
 	{
-		if(match[i]==-1)
-		{
-			memset(vis,0,sizeof(vis));
-			if(dfs(i)) ans++;
-		}
+		memset(vis,0,sizeof(vis));
+		if(dfs(i)) ans++;
 	}
 	return ans;
 }
