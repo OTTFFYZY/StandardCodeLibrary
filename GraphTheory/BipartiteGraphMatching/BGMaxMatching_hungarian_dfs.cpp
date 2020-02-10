@@ -5,13 +5,17 @@
 
 using namespace std;
 
-const int MV=1e3+5;
+const int MV=1005;
 vector<int> g[MV];
+// id from 0
+// ids in left set and which in right could be same
+// only left to right edges in g 
+
 int nvl; //vertex in the left side
 
 int vis[MV],match[MV];
 //vis    in alternating path
-//match  result
+//match[i] result right i match left match[i]
 
 bool dfs(int u)
 {
@@ -19,14 +23,13 @@ bool dfs(int u)
 	{
 		if(vis[v]) continue;
 		vis[v]=1;
-		if(match[v]==-1||dfs(v))
+		if(match[v]==-1||dfs(match[v]))
 		{
 			match[v]=u;
-			match[u]=v;
-			return 1;
+			return true;
 		}
 	}
-	return 0;
+	return false;
 }
 
 int hungarian()
@@ -34,11 +37,10 @@ int hungarian()
 	int ans=0;
 	memset(match,-1,sizeof(match));
 	for(int i=0;i<nvl;i++)
-		if(match[i]==-1)
-		{
-			memset(vis,0,sizeof(vis));
-			if(dfs(i)) ans++;
-		}
+	{
+		memset(vis,0,sizeof(vis));
+		ans+=dfs(i);
+	}
 	return ans;
 }
 

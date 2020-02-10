@@ -10,7 +10,8 @@
 
 | Contents                                           | Time           | Memory       | Code | Test |
 | -------------------------------------------------- | -------------- | ------------ | ---- | ---- |
-| Bipartite Graph Max Matching (Hungarian)           | $O(VE)$        | $O(V\!+\!E)$ | OK!  |      |
+| Bipartite Graph Max Matching (Hungarian dfs)       | $O(VE)$        | $O(V\!+\!E)$ | OK!  | OK!  |
+| Bipartite Graph Max Matching (Hungarian bfs)       | $O(VE)$        | $O(V\!+\!E)$ | OK!  |      |
 | Bipartite Graph Max Matching (Hopcroft-Karp)       | $O(\sqrt{V}E)$ | $O(V\!+\!E)$ | OK!  |      |
 | Bipartite Graph Max Matching (Network Flow)        |                |              |      |      |
 | Bipartite Graph Multiple Matching                  |                |              |      |      |
