@@ -16,7 +16,7 @@ struct SAM // Suffix Automaton
 			memset(nxt,NULL,sizeof(nxt));
 		}
 	}state[M*2];
-	Node *root,*pn,*last;
+	State *root,*pn,*last;
 	void init()
 	{
 		root=pn=last=state;
@@ -34,7 +34,7 @@ struct SAM // Suffix Automaton
 			return;
 		}
 		State *q=p->nxt[c];
-		if(p->len+1=q->len)
+		if(p->len+1==q->len)
 		{
 			np->link=q;
 			return;
