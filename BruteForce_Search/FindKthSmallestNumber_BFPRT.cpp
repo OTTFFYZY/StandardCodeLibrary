@@ -46,6 +46,7 @@ int partition(int v[],int l,int r,int pid)
 	return pid;
 }
 
+// k in [1 ~ r-l+1]
 int BFPRT(int v[],int l,int r,int k)
 {
 	int pid=pivot(v,l,r);
