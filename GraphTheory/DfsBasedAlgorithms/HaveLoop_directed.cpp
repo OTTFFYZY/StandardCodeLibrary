@@ -22,7 +22,7 @@ void add_edge(int fr,int to) //directed
 int vis[MV];
 bool dfs(int u)
 {
-	if(vis[u]) return vis[u]=1;
+	if(vis[u]) return vis[u]==1;
 	vis[u]=1;
 	for(auto v:g[u])
 		if(dfs(v)) return 1;

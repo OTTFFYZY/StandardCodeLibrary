@@ -24,8 +24,7 @@ int vis[MV];
 int topo[MV],ord[MV],p; // ans
 bool dfs(int u)
 {
-	if(vis[u]==1) return 1;
-	if(vis[u]==2) return 0;
+	if(vis[u]) return vis[u]==1;
 	vis[u]=1;
 	for(auto v:g[u])
 		if(dfs(v)) return 1;
