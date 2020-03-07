@@ -14,7 +14,7 @@
 | Prim (priority_queue)                    | $O(ElogE)$ | $O(V\!+\!E)$ | OK!  |      |
 | Prim (heap)                              | $O(ElogV)$ | $O(V\!+\!E)$ | OK!  |      |
 | Kruskal                                  | $O(ElogE)$ | $O(E\!+\!V)$ | OK!  |      |
-| Secondary Minimum Spanning Tree          |            |              |      |      |
+| Secondary Minimum Spanning Tree          | $O(ElogE)$ | $O(E+VlogV)$ | OK!  | OK!  |
 | Strictly Secondary Minimum Spanning Tree |            |              |      |      |
 | Plane Manhattan Distance MST             |            |              |      |      |
 | Single Degree-Constrained MST            |            |              |      |      |
