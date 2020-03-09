@@ -30,15 +30,17 @@
 | Range Minimum Query Sparse-Table (basic)                | $O(NlogN) \sim O(1)$     | $O(NlogN)$     | OK!  |      |
 | Range Minimum Query Sparse-Table (2d0)                  | $O(N^2logN) \sim O(N)$   | $O(N^2logN)$   | OK!  |      |
 | Range Minimum Query Sparse-Table (2d1)                  | $O(N^2log^2N) \sim O(1)$ | $O(N^2log^2N)$ | OK!  |      |
-| Fenwick Tree / Binary Index Tree (basic, rasq, rarq)    | $O(logN)$                | $O(NlogN)$     | OK!  |      |
-| Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) | $O(log^2N)$              | $O(N^2log^2N)$ | OK!  |      |
+| Fenwick Tree / Binary Index Tree (basic)                | $O(\log N)$              | $O(N)$         | OK!  |      |
+| Fenwick Tree / Binary Index Tree (rasq)                 | $O(\log N)$              | $O(N)$         | OK!  |      |
+| Fenwick Tree / Binary Index Tree (rarq)                 | $O(\log N)$              | $O(\log N)$    | OK!  | OK!  |
+| Fenwick Tree / Binary Index Tree (2d, 2d-rasq, 2d-rarq) | $O(\log^2N)$             | $O(N^2)$       | OK!  |      |
 | Prefix Sum                                              | $O(N) \sim O(1)$         | $O(N)$         | OK!  |      |
 | Bitmap                                                  | $O(1)$                   | $O(N)$         | OK!  |      |
 | Monotone Stack / Queue                                  | $O(N)$                   | $O(N)$         | OK!  |      |
 
 
 
-## Union-Find Set 
+## Union-Find Set
 
 ### Problem
 
