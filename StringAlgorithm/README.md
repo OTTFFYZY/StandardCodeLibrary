@@ -30,11 +30,16 @@
 
 ## Manacher
 
-mp[i]: ms[i] is palindromic center, the max extension in ms to left or right (including ms[i])
+$mp[i]$: $ms[i]$ is palindromic center, the max extension in ms to left or right (including $ms[i]$)
 
-the length of this palindrome in the original string is mp[i]-1
+the length of this palindrome in the original string $s[]$ is $mp[i]-1$
 
 $\begin{matrix} s\ index: &0,&1,&2,&\dots,&i \\ ms\ index:&2,&4,&6,&\dots,&(i+1)*2 \end{matrix}$
+
+The max range of palindrome in s, centered at $i$ in ms:
+
+$ \begin{align} & [\frac{i-1}{2} - \frac{mp[i]-1}{2}, \frac{i}{2} + \frac{mp[i]-1}{2} -1] \\ = &  [\frac{i-mp[i]}{2},\frac{i+mp[i]-3}{2}] \end{align}$
+
 
 
 ## String Smallest Cyclic Shift

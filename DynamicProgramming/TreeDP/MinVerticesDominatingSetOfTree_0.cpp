@@ -4,9 +4,10 @@ using namespace std;
 const int INF=0x3f3f3f3f;
 const int M=1e5+5;
 vector<int> g[M];
-int dp[M][2];
+int dp[M][3];
 // dp[u][0] select u
-// dp[u][1] not select u and all (u,v) covered
+// dp[u][1] not select u and dominate by son of u
+// dp[u][2] not select u and not dominate by son of u
 
 void dfs(int u,int fa)
 {
@@ -38,9 +39,10 @@ void dfs(int u,int fa)
 	if(!f) dp[u][1]+=diff;
 }
 
-int min_cov_set(int u)
+int min_dom_set(int u)
 {
-	
+	dfs(u,-1);
+	return min(dp[u][0],dp[u][1]);
 }
 
 int main()
