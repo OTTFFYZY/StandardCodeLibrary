@@ -3,7 +3,7 @@ typedef long long LL;
 
 // n,m <=1e6
 const int M=1e6+5;
-const int MOD=1e9+7;
+const int MO=1e9+7;
 inline int add(int x,int y)
 {
 	x+=y;
@@ -62,8 +62,8 @@ LL qp(LL a,LL n)
 	LL ans=1;
 	while(n)
 	{
-		if(n&1) ans=ans*a%MOD;
-		a=a*a%MOD;
+		if(n&1) ans=ans*a%MO;
+		a=a*a%MO;
 		n>>=1;
 	}
 	return ans;
@@ -73,6 +73,6 @@ LL C2(LL n,LL m)
 	if(m>n) return 0;
 	LL ans=1;
 	for(int i=1;i<=m;i++)
-		ans=ans*(n-i+1)%MOD*qp(i,MOD-2)%MOD;
+		ans=ans*(n-i+1)%MOD*qp(i,MOD-2)%MO;
 	return ans;
 }
