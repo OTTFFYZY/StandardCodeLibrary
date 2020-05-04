@@ -14,7 +14,8 @@
 | Trie (array)                   | $O(N)$            | $O(\sum N)$       | OK!  |      |
 | MP & KMP (Knuth-Morris-Pratt)  | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  |      |
 | Extend KMP                     | $O(T\!+\!P)$      | $O(T\!+\!P)$      | OK!  | OK!  |
-| Aho-Corasick Automaton         | $O(T\!+\!\sum P)$ | $O(T\!+\!\sum P)$ | OK!  |      |
+| Aho-Corasick Automaton         | $O(T\!+\!\sum P)$ | $O(T\!+\!\sum P)$ | OK!  | OK!  |
+| Trie Graph                     | $O(T\!+\!\sum P)$ | $O(T\!+\!\sum P)$ | OK!  | OK!  |
 | Suffix Array (multiplication)  | $O(NlogN)$        | $O(N)$            | OK!  |      |
 | Suffix Array (DC3)             | $O(N)$            | $O(N)$            |      |      |
 | Suffix Array (induce sort)     | $O(N)$            | $O(N)$            |      |      |

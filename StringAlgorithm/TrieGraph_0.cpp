@@ -1,140 +1,100 @@
-#include <iostream>
-#include <stdio.h>
-#include <string.h>
-#include <queue>
+#include <bits/stdc++.h>
 using namespace std;
 
+const int MP=75;
+const int MN=150;
+const int MT=1e6+5;
+
+const int AC_SIGMA=26,AC_N=MP*MN;
 struct TN
 {
-	int word;
-	TN *nxt,*p[26];
-	//char c;
-	TN():word(0),nxt(NULL)
-	{
-		for(int i=0;i<26;i++)
-			p[i]=NULL;
-	}
-	void clear()
-	{
-		word=0; nxt=NULL;
-		for(int i=0;i<26;i++)
-			p[i]=NULL;
-	}
+	TN *go[AC_SIGMA],*fail,*fa;
+	int sz; // number of word cover by this node
+	int cnt; // number of times this node matches
 };
-const int M=1e5+5;
-struct Pool
-{
-	TN a[M];
-	int na;
-	void clear()
-	{
-		na=0;
-	}
-	TN *NEW()
-	{
-		a[na].clear();
-		return &a[na++];
-	}
-}pool;
-
 struct Trie
 {
-	TN *root;
-	void clear()
+	TN pool[AC_N],*cur,*root,*q[AC_N];
+	int tail;
+	TN *newnode() 
 	{
-		pool.clear();
-		root=pool.NEW();
-		//root->c='*';
+		TN *p=cur++;
+		memset(p->go,0,sizeof(p->go)); p->fail=p->fa=NULL; p->cnt=p->sz=0;
+		return p;
 	}
-	void insert(char s[])
+	void init() { cur=pool; root=newnode(); }
+	TN *append(TN *p,int w)
 	{
-		TN *u=root;
-		for(int i=0,c;s[i];i++)
-		{
-			c=s[i]-'a';
-			if(u->p[c]==NULL)
-				u->p[c]=pool.NEW();
-			u=u->p[c];
-			//u->c=s[i];
-		}
-		u->word++;
+		if (!p->go[w]) 
+			p->go[w]=newnode(),p->go[w]->fa=p;
+		return p=p->go[w];
 	}
-	void build()
+	void build() // trie graph
 	{
-		queue<TN*> qu;
-		qu.push(root);
-		while(!qu.empty())
-		{
-			TN *u=qu.front(); qu.pop();
-			for(int i=0;i<26;i++)
+		tail=1;
+		q[0]=root;
+		for(int i=0;i<tail;i++) 
+			for(int j=0;j<AC_SIGMA;j++) 
 			{
-				if(u->p[i]==NULL) continue;
-				if(u==root) u->p[i]->nxt=root;
-				else
-				{
-					TN *tmp=u->nxt;
-					while(tmp)
-					{
-						if(tmp->p[i])
-						{
-							u->p[i]->nxt=tmp->p[i];
-							u->p[i]->word+=tmp->p[i]->word;
-							break;
-						}
-						tmp=tmp->nxt;
-					}
-					if(!tmp) u->p[i]->nxt=root;
-				}
-				qu.push(u->p[i]);
+				if(!q[i]->go[j]) continue;
+				TN *v=q[i]->go[j],*p=v->fa->fail;
+				while(p&&!p->go[j]) p=p->fail;
+				if(p) v->fail=p->go[j]; 
+				else v->fail=root;
+				q[tail++]=q[i]->go[j];
 			}
-		}
+		for(int i=0;i<tail;i++) 
+			if(q[i]->fail) q[i]->sz+=q[i]->fail->sz;
+		for(int i=0;i<tail;i++) 
+			for(int j=0;j<AC_SIGMA;j++)  
+			{
+				if(q[i]->go[j]) continue;
+				TN *p=q[i]->fail;
+				if(!p) q[i]->go[j]=root;
+				else q[i]->go[j]=p->go[j];
+			}
 	}
-	int query(char s[])
+	void cal()
 	{
-		TN *u=root;
-		int cnt=0;
-		for(int i=0,c;s[i];i++)
-		{
-			//cout<<"s[i] "<<s[i]<<" c "<<u->c<<endl;
-			c=s[i]-'a';
-			while(!u->p[c]&&u!=root)
-				u=u->nxt;
-			u=u->p[c];
-			if(!u) u=root;
-			//if(u->word) cout<<" "<<i<<" "<<u->word<<endl;
-			cnt+=u->word;
-		}
-		return cnt;
+		for(int i=tail-1;i>0;i--) 
+			if (q[i]->fail) q[i]->fail->cnt+=q[i]->cnt;
 	}
 }trie;
 
-char p[10][20]=
-{
-	"abcac","abcb","bcac","bac","cba","cac"
-};
-char t[10][50]=
-{
-	"abcabcb","abcac","babcbabcabcbabcabcba"
-//   0123456   01234   01234567890123456789
-};
+
+char p[MN][MP];
+TN* pos[MN];
+char t[MT];
 
 int main()
 {
-	trie.clear();
-	for(int i=0;i<6;i++)
-		trie.insert(p[i]);
-	//cout<<"insert ok! "<<pool.na<<endl;
-	trie.build();
-	/*
-	for(int i=0;i<pool.na;i++)
+	int n;
+	while(scanf("%d",&n)&&n)
 	{
-		cout<<i<<" "<<pool.a[i].c<<" ";
-		if(pool.a[i].nxt) cout<<(pool.a[i].nxt-pool.a)<<endl;
-		else cout<<"*"<<endl;
+		trie.init();
+		for(int i=0;i<n;i++)
+		{
+			scanf("%s",p[i]);
+			TN *u=trie.root;
+			for(char *c=p[i];*c;c++)
+				u=trie.append(u,*c-'a');
+			pos[i]=u;
+		}
+		trie.build();
+		scanf("%s",t);
+		TN *u=trie.root;
+		for(char *c=t;*c;c++)
+		{
+			u=trie.append(u,*c-'a');
+			u->cnt++;
+		}
+		trie.cal();
+		int mx=0;
+		for(int i=0;i<n;i++)
+			mx=max(mx,pos[i]->cnt);
+		printf("%d\n",mx);
+		for(int i=0;i<n;i++)
+			if(pos[i]->cnt==mx) printf("%s\n",p[i]);
 	}
-	cout<<"build ok!"<<endl;
-	*/
-	for(int i=0;i<3;i++)
-		cout<<trie.query(t[i])<<endl;
 	return 0;
 }
