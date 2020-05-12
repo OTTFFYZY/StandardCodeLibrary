@@ -24,3 +24,14 @@
 | Three-Color Sorting | $O(N)$              | $O(N)$           | $O(1)$           | No     | OK!  | OK!  |
 | Gnome Sort          | $O(N^2)$            | $O(N)$           | $O(1)$           | Yes    | OK!  | OK!  |
 
+## Strict Weak Ordering
+
+incomparability not A<B, not B<A -> A==B
+
+irreflexivity A==B -> A<B false B<A false
+
+asymmetry A<B -> not B<A
+
+transitivity A<B, B<C -> A<C
+
+transitivity of incomparability A==B, B==C -> A==C

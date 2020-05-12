@@ -7,6 +7,7 @@ const int AC_SIGMA=26,AC_N=M;
 struct TN
 {
 	TN *go[AC_SIGMA],*fail,*fa;
+	int sz;
 	int cnt;
 };
 struct Trie
@@ -40,6 +41,8 @@ struct Trie
 				else v->fail=root;
 				q[tail++]=q[i]->go[j];
 			}
+		for(int i=0;i<tail;i++) 
+			if(q[i]->fail) q[i]->sz+=q[i]->fail->sz;
 	}
 	void cal()
 	{

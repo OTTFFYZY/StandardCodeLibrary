@@ -37,6 +37,7 @@
 | Prefix Sum                                              | $O(N) \sim O(1)$         | $O(N)$         | OK!  |      |
 | Bitmap                                                  | $O(1)$                   | $O(N)$         | OK!  |      |
 | Monotone Stack / Queue                                  | $O(N)$                   | $O(N)$         | OK!  |      |
+| Permutation Build Tree                                  | $O(N \alpha(N))$         | $O(N)$         | OK!  |      |
 
 
 
