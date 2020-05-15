@@ -20,7 +20,8 @@
 | Min Vertices Cover Set Of Tree (precise cover dp) |                     |        |      |      |
 | Min Edges Cover Set Of Tree (dp)                  |                     |        |      |      |
 | Min Edges Cover Set Of Tree (greedy)              |                     |        |      |      |
-| Tree Chain Partition                              | $O(N) \sim O(logN)$ | $O(N)$ | OK!  |      |
+| Heavy Light Decomposition                         | $O(N \log N) \sim O(\log^2 N)$ | $O(N)$ | OK!  | OK!  |
+| Centriod Decomposition | $ O(N \log N) $ | $O(N)$ | OK! |  |
 | Morris Traversal (pre-order)                      | $O(N)$              | $O(1)$ | OK!  | OK!  |
 | Morris Traversal (in-order)                       | $O(N)$              | $O(1)$ | OK!  | OK!  |
 | Morris Traversal (post-order)                     | $O(N)$              | $O(1)$ | OK!  | OK!  |

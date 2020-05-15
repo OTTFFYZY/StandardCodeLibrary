@@ -8,6 +8,7 @@
 using namespace std;
 
 mt19937 rnd(chrono::system_clock::now().time_since_epoch().count());
+mt19937_64 rnd_64(chrono::system_clock::now().time_since_epoch().count());
 // rnd() is a better generator
 
 
@@ -28,6 +29,10 @@ int main()
 {
 	for(int i=0;i<10;i++)
 		cout<<rnd()<<" ";
+	cout<<endl;
+
+	for(int i=0;i<10;i++)
+		cout<<rnd_64()<<" ";
 	cout<<endl;
 
 	srand(time(0));
