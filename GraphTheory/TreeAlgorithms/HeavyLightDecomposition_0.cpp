@@ -100,6 +100,10 @@ struct HLDecomposition
 		ndfn=0;
 		dfs2(root,root);
 	}
+	void updnode(int a,LL v)
+	{
+		segt.update(dfn[a],dfn[a],v);
+	}
 	void updpath(int a,int b,LL v)
 	{
 		while(top[a]!=top[b])
