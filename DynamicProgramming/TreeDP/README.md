@@ -15,7 +15,7 @@
 | Longest Path of Tree                 | $O(N)$ | $O(N)$ | OK!  |      |
 | Min Vertices Cover Set of Tree       | $O(N)$ | $O(N)$ |      |      |
 | Min Edges Cover Set of Tree          | $O(N)$ | $O(N)$ |      |      |
-| Min Vertices Dominating Set of Tree  | $O(N)$ | $O(N)$ |      |      |
+| Min Vertices Dominating Set of Tree  | $O(N)$ | $O(N)$ | OK!  | OK!  |
 |                                      |        |        |      |      |
 |                                      |        |        |      |      |
 
