@@ -99,5 +99,10 @@ int main()
 	for(int i=A;i;i>>=1)
 		cnt+=i&1;
 
-	//
+	// floor((x+y)/2.0)
+	// (x&y)+((x^y)>>1)
+	// ceil((x+y)/2.0)
+	// (x|y)-((x^y)>>1)
+
+	return 0;
 }
