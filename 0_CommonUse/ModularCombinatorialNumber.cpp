@@ -49,3 +49,8 @@ int C(int n,int m)
 	if(n<m) return 0;
 	return mul(mul(fa[n],ifa[m]),ifa[n-m]);
 }
+
+int A(int n,int m)
+{
+	return mul(fa[n],ifa[n-m]);
+}
