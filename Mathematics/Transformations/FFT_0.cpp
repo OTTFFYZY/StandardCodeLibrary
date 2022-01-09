@@ -16,13 +16,14 @@ namespace FFT {
 		Complex(double rl=0.0,double im=0.0):rl(rl),im(im) {}
 		Complex operator+(Complex B) { return Complex(rl+B.rl,im+B.im); }
 		Complex operator-(Complex B) { return Complex(rl-B.rl,im-B.im); }
-		Complex operator*(Complex B) { return Complex(rl*B.rl-im*B.im,rl*B.im+im*B.rl); }
+		Complex operator*(Complex B) 
+		{ return Complex(rl*B.rl-im*B.im,rl*B.im+im*B.rl); }
 	};
-	int r[M],l;
-	void fft(Complex *P,int n,int op)
+	int rev[M],l;
+	void fft(Complex *A,int n,int op)
 	{
 		for(int i=1;i<n;i++)		 
-			if(i<r[i]) swap(P[i],P[r[i]]);
+			if(i<rev[i]) swap(A[i],A[rev[i]]);
 		for(int i=1;i<n;i<<=1)
 		{
 			Complex W=Complex(cos(PI/i),op*sin(PI/i));
@@ -31,16 +32,12 @@ namespace FFT {
 				Complex w=Complex(1,0);
 				for(int k=0;k<i;k++,w=w*W)
 				{
-					Complex X=P[j+k],Y=w*P[j+k+i];
-					P[j+k]=X+Y;P[j+k+i]=X-Y;
+					Complex tmp=w*A[j+k+i];
+					A[j+k+i]=A[i+k]-tmp; A[j+k]=A[i+k]+tmp;
 				}
 			}
 		}
-		if(op==-1)
-		{
-			for(int i=0;i<n;i++)
-				P[i].rl/=n;
-		}
+		if(op==-1) { for(int i=0;i<n;i++) A[i].rl/=n; }
 	}
 	int mul(Complex *A,int n,Complex *B,int m,Complex *C)
 	{
@@ -49,7 +46,7 @@ namespace FFT {
 		for(n=1;n<=m;n<<=1) l++;
 		l--;
 		for(int i=0;i<n;i++) 
-			r[i]=(r[i>>1]>>1)|((i&1)<<l);
+			rev[i]=(rev[i>>1]>>1)|((i&1)<<l);
 		fft(A,n,1); fft(B,n,1);
 		for(int i=0;i<n;i++) C[i]=A[i]*B[i];
 		fft(C,n,-1);

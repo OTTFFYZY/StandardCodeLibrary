@@ -3,7 +3,7 @@ import java.io.*;
 
 public class JavaIO {
     public static void main(String[] args) {
-        Scanner jin = new Scanner(new BufferedInPutStream(System.in));
+        Scanner jin = new Scanner(new BufferedInputStream(System.in));
         // Scanner jin = new Scanner(System.in);
         
         // jin.hasNextInt()
